@@ -6,12 +6,21 @@
     grid-row-gap: 0px;
     }
     
-    .header { grid-area: 1 / 1 / 2 / 6; }
+    .header { 
+        grid-area: 1 / 1 / 2 / 6; 
+        
+    }
     .menu { grid-area: 2 / 1 / 6 / 2; }
     .main { grid-area: 2 / 2 / 6 / 5; }
     .right { grid-area: 2 / 5 / 6 / 6; }
     
+h1 {
+    text-align:center;
+}
 
+#searchbox {
+    justify-self: left;
+}
     
     
 
