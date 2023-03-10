@@ -20,11 +20,11 @@
 
 .grid-container {
     display: grid;   
-    grid-template-areas:
+    grid-template:
     "header header header header header header"
     "menu main main main main right"
     "menu main main main main right"
-    "footer footer footer footer footer footer" / 1fr 1fr 5fr 5fr;
+    "footer footer footer footer footer footer" / 1fr 1fr 5fr 5fr 1fr;
     gap: 10px;
     background-color: #a3a5a7;
     padding: 10px;
