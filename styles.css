@@ -48,23 +48,10 @@ html {
         justify-self: center;
     }
 
-    #categories {
+    #categories, #addMovie, #myMovies, #myFavorites {
         position:relative;
-        align-items:center;
-    
-    }
-
-    #addMovie {
-        position:relative;
-       
-    }
-
-    #myMovies {
-        position:relative;
-    }
-
-    #myFavorites {
-        position:relative;
+        justify-self: center;
+        align-items: center;
     }
 
     .left {
