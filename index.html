@@ -1,73 +1,82 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Stardos+Stencil"/>
-        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Special+Elite"/>
-        <link href='https://fonts.googleapis.com/css?family=Coustard' rel='stylesheet'>
-        <title>Movies</title>
-        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-        <script src="main.js" defer></script> 
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Stardos+Stencil" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Special+Elite" />
+    <link href='https://fonts.googleapis.com/css?family=Coustard' rel='stylesheet'>
+    <title>Movies</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="main.js" defer></script>
+</head>
 
-    <body>
+<body>
 
-        <div class="grid-container">
+    <div class="grid-container">
 
-            <div class="header">
+        <div class="header">
 
-                <h1>Carrots and sticks</h1>
+            <h1>Carrots and sticks</h1>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
-                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
-                    officia deserunt mollit anim id est laborum.</p>
-
-            </div>
-
-            <div class="menu">
-                <input type="text" id="searchbox" placeholder="Search for a movie">               
-                <input id="addMovie" type="button" value="Add a movie">
-                <input id="myMovies" type="button" value="My movies" >
-                <input id="myFavorites" type="button" value="My favorites"> 
-                <input id="categories" type="button" value="Categories">
-            </div>
-
-            <div class="main">
-
-                <h2>Our users favorite movies</h2>
-
-                <ul id="titlesWithBestScore">   
-                    <li><h3 class="title">Title</h3></li>
-                    <li><p class="score">Score</p></li>
-                    <li><p class="tags">Tags</p></li>
-                    <li><p class="description>">Description</p></li>
-                    <li><img class ="photo" src="" alt=""></li>   
-                </ul>
-
-            </div>
-
-            <div class="ads">
-
-                <p>ADVERTS</p>
-                
-            </div>
-
-            <div class="footer">
-
-                <p>FOOTER</p>
-
-            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                officia deserunt mollit anim id est laborum.</p>
 
         </div>
 
-    </body>
+        <div class="menu">
+            <div id="app">
+                <input type="text" id="searchbox" placeholder="Search for a movie" v-model="search">
+                <input id="addMovie" type="button" value="Add a movie">
+                <input id="myMovies" type="button" value="My movies">
+                <input id="myFavorites" type="button" value="My favorites">
+                <input id="categories" type="button" value="Categories">
+            </div>
+        </div>
+
+        <div class="main">
+
+            <h2>Our users favorite movies</h2>
+
+            <ul id="titlesWithBestScore">
+                <li>
+                    <h3 class="title">Title</h3>
+                </li>
+                <li>
+                    <p class="score">Score</p>
+                </li>
+                <li>
+                    <p class="tags">Tags</p>
+                </li>
+                <li>
+                    <p class="description>">Description</p>
+                </li>
+                <li><img class="photo" src="" alt=""></li>
+            </ul>
+
+        </div>
+
+        <div class="ads">
+
+            <p>ADVERTS</p>
+
+        </div>
+
+        <div class="footer">
+
+            <p>FOOTER</p>
+
+        </div>
+
+    </div>
+
+</body>
 
 </html>
