@@ -289,23 +289,21 @@ Vue.createApp({
                 }
             }
 
-        },
-
-        searchMovies(search) {
-            const regexPattern = new RegExp(this.search.split("").join("?.*"), "i");
+            const regexPattern = new RegExp(this.search.split("").join(".*?"), "i");
             this.searchResults = [];
 
             if (this.search === "") {
                 return;
             }
 
-            for (let i = 0; i < movieLibrary.length; i++) {
-                const movie = movieLibrary[i];
+            for (let i = 0; i < movieGenreArrays.length; i++) {
+                const movie = movieGenreArrays[i];
 
-                if (regexPattern.test(movie.title)) {
+                if (regexPattern.test(movie)) {
                     this.searchResults.push(movie);
                 }
             }
+
         }
     }
 }).mount("#app");
