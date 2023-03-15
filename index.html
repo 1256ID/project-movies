@@ -46,33 +46,34 @@
 
                 <ul id="titlesWithBestScore">
                     <li>
-                        <h3 class="title">Title</h3>
-                    </li>
-                    <li>
-                        <p class="score">Score</p>
-                    </li>
-                    <li>
+                        <h3 class="title">Title</h3>                                  
+                        <p class="score">Score</p>                                 
                         <p class="tags">Tags</p>
-                    </li>
-                    <li>
                         <p class="description>">Description</p>
+                        <img class="photo" src="" alt="">
                     </li>
-                    <li><img class="photo" src="" alt=""></li>
                 </ul>
 
                 <ul id="searchResults">
+
                     <li v-for="movie in searchResults" :key="movie">{{ movie }}</li>
+
                 </ul>
 
             </div>
-        </div>
-        <div class="ads">
-            <p>ADVERTS</p>
-        </div>
 
-        <div class="footer">
-            <p>FOOTER</p>
+
+
+            <div class="ads">
+                <p>ADVERTS</p>
+            </div>
+    
+            <div class="footer">
+                <p>FOOTER</p>
+            </div>
+            
         </div>
+        
     </div>
 
 </body>
