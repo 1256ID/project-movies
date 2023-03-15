@@ -289,21 +289,9 @@ Vue.createApp({
                 }
             }
 
-            //Osäker på om det här funkar                  //matchar varje bokstav i sökordet
-            const regexPattern = new RegExp(this.search.split("").join(".*?"), "i");
-
-            for (let i = 0; i < movieLibrary.length; i++) {
-                const movie = movieLibrary[i];
-
-                if (regexPattern.test(movie.title)) {
-                    searchResults.push(movie);
-                };
-            };
-
-            this.movies = movies;
         },
 
-        searchMovies() {
+        searchMovies(search) {
             const regexPattern = new RegExp(this.search.split("").join("?.*"), "i");
             this.searchResults = [];
 
