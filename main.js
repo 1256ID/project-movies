@@ -2,13 +2,13 @@ Vue.createApp({
     data() {
         return {
             search: "",
-            movies: []
+            movies: [],
+            searchResults: []
         };
     },
     methods: {
-        movies() {
+        movieLibrary() {
             const movieGenreArrays = {
-
                 comedy: [
                     "Laugh Out Loud Landlord",
                     "The Awkward Family Trip",
@@ -287,7 +287,37 @@ Vue.createApp({
                         "The Alien Menace"
                     ]
                 }
+            }
+
+            //Osäker på om det här funkar                  //matchar varje bokstav i sökordet
+            const regexPattern = new RegExp(this.search.split("").join(".*?"), "i");
+
+            for (let i = 0; i < movieLibrary.length; i++) {
+                const movie = movieLibrary[i];
+
+                if (regexPattern.test(movie.title)) {
+                    searchResults.push(movie);
+                };
             };
+
+            this.movies = movies;
+        },
+
+        searchMovies() {
+            const regexPattern = new RegExp(this.search.split("").join("?.*"), "i");
+            this.searchResults = [];
+
+            if (this.search === "") {
+                return;
+            }
+
+            for (let i = 0; i < movieLibrary.length; i++) {
+                const movie = movieLibrary[i];
+
+                if (regexPattern.test(movie.title)) {
+                    this.searchResults.push(movie);
+                }
+            }
         }
     }
 }).mount("#app");
