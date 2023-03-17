@@ -1,0 +1,1993 @@
+{
+    "drama": [
+        {
+            "title": "The Family Secret",
+            "genre": "Drama",
+            "year": 2009,
+            "month": 5,
+            "duration": 53,
+            "themes": [
+                "Social",
+                "Edgy",
+                "Heartrending"
+            ]
+        },
+        {
+            "title": "Broken Dreams",
+            "genre": "Drama",
+            "year": 2005,
+            "month": 6,
+            "duration": 74,
+            "themes": [
+                "Inspiring",
+                "Dysfunctional",
+                "Moving"
+            ]
+        },
+        {
+            "title": "The Betrayal",
+            "genre": "Drama",
+            "year": 2003,
+            "month": 5,
+            "duration": 88,
+            "themes": [
+                "Inspiring",
+                "Heartrending",
+                "Tragic"
+            ]
+        },
+        {
+            "title": "Unbroken Resolve",
+            "genre": "Drama",
+            "year": 2015,
+            "month": 4,
+            "duration": 13,
+            "themes": [
+                "Historical",
+                "Realistic",
+                "Social"
+            ]
+        },
+        {
+            "title": "The Price of Redemption",
+            "genre": "Drama",
+            "year": 2015,
+            "month": 3,
+            "duration": 36,
+            "themes": [
+                "Historical",
+                "Social",
+                "Edgy"
+            ]
+        },
+        {
+            "title": "The Inheritance",
+            "genre": "Drama",
+            "year": 2002,
+            "month": 5,
+            "duration": 16,
+            "themes": [
+                "Realistic",
+                "Inspiring",
+                "Tragic"
+            ]
+        },
+        {
+            "title": "The Unforgiven",
+            "genre": "Drama",
+            "year": 2000,
+            "month": 2,
+            "duration": 62,
+            "themes": [
+                "Controversial",
+                "Family",
+                "Psychological"
+            ]
+        },
+        {
+            "title": "The Lost Heir",
+            "genre": "Drama",
+            "year": 2013,
+            "month": 1,
+            "duration": 23,
+            "themes": [
+                "Heartrending",
+                "Tragic",
+                "Character-driven"
+            ]
+        },
+        {
+            "title": "The Wounded Heart",
+            "genre": "Drama",
+            "year": 2015,
+            "month": 2,
+            "duration": 6,
+            "themes": [
+                "Psychological",
+                "Symbolic",
+                "Historical"
+            ]
+        },
+        {
+            "title": "The Promise",
+            "genre": "Drama",
+            "year": 2004,
+            "month": 6,
+            "duration": 95,
+            "themes": [
+                "Realistic",
+                "Dysfunctional",
+                "Symbolic"
+            ]
+        },
+        {
+            "title": "The Sacrifice",
+            "genre": "Drama",
+            "year": 2000,
+            "month": 1,
+            "duration": 99,
+            "themes": [
+                "Moving",
+                "Controversial",
+                "Social"
+            ]
+        },
+        {
+            "title": "The Unspoken Truth",
+            "genre": "Drama",
+            "year": 2006,
+            "rating": "5,48",
+            "tags": [
+                "Independent",
+                "Symbolic",
+                "Independent"
+            ]
+        },
+        {
+            "title": "The Reckoning",
+            "genre": "Drama",
+            "year": 2010,
+            "rating": "4,44",
+            "tags": [
+                "Intense",
+                "Inspiring",
+                "Controversial"
+            ]
+        },
+        {
+            "title": "The Redemption Road",
+            "genre": "Drama",
+            "year": 2002,
+            "rating": "5,04",
+            "tags": [
+                "Dysfunctional",
+                "Psychological",
+                "Edgy"
+            ]
+        },
+        {
+            "title": "The Legacy",
+            "genre": "Drama",
+            "year": 2010,
+            "rating": "3,37",
+            "tags": [
+                "Edgy",
+                "Tragic",
+                "Powerful"
+            ]
+        },
+        {
+            "title": "The Hard Truth",
+            "genre": "Drama",
+            "year": 2008,
+            "rating": "9,39",
+            "tags": [
+                "Historical",
+                "Tragic",
+                "Artistic"
+            ]
+        },
+        {
+            "title": "The Long Road Home",
+            "genre": "Drama",
+            "year": 2015,
+            "rating": "6,57",
+            "tags": [
+                "Tragic",
+                "Historical",
+                "Independent"
+            ]
+        },
+        {
+            "title": "The Hidden Agenda",
+            "genre": "Drama",
+            "year": 2019,
+            "rating": "1,65",
+            "tags": [
+                "Realistic",
+                "Compelling",
+                "Family"
+            ]
+        },
+        {
+            "title": "The Bittersweet Goodbye",
+            "genre": "Drama",
+            "year": 2003,
+            "rating": "6,30",
+            "tags": [
+                "Gripping",
+                "Powerful",
+                "Historical"
+            ]
+        },
+        {
+            "title": "The Unfinished Business",
+            "genre": "Drama",
+            "year": 2017,
+            "rating": "3,34",
+            "tags": [
+                "Compelling",
+                "Family",
+                "Dysfunctional"
+            ]
+        },
+        {
+            "title": "The Silent Tears",
+            "genre": "Drama",
+            "year": 2015,
+            "rating": "3,55",
+            "tags": [
+                "Character-driven",
+                "Edgy",
+                "Moving"
+            ]
+        },
+        {
+            "title": "The Temptation",
+            "genre": "Drama",
+            "year": 2008,
+            "rating": "6,76",
+            "tags": [
+                "Inspiring",
+                "Intense",
+                "Heartrending"
+            ]
+        },
+        {
+            "title": "The Burden of Guilt",
+            "genre": "Drama",
+            "year": 2018,
+            "rating": "5,30",
+            "tags": [
+                "Dysfunctional",
+                "Symbolic",
+                "Family"
+            ]
+        },
+        {
+            "title": "The Forgotten Promise",
+            "genre": "Drama",
+            "year": 2004,
+            "rating": "7,77",
+            "tags": [
+                "Character-driven",
+                "Heartrending",
+                "Powerful"
+            ]
+        },
+        {
+            "title": "The Heart of Betrayal",
+            "genre": "Drama",
+            "year": 2017,
+            "rating": "8,69",
+            "tags": [
+                "Controversial",
+                "Independent",
+                "Family"
+            ]
+        },
+        {
+            "title": "The Broken Bond",
+            "genre": "Drama",
+            "year": 2009,
+            "rating": "4,07",
+            "tags": [
+                "Intense",
+                "Controversial",
+                "Gripping"
+            ]
+        },
+        {
+            "title": "The Weight of Regret",
+            "genre": "Drama",
+            "year": 2004,
+            "rating": "2,53",
+            "tags": [
+                "Gripping",
+                "Edgy",
+                "Realistic"
+            ]
+        },
+        {
+            "title": "The Cost of Justice",
+            "genre": "Drama",
+            "year": 2018,
+            "rating": "3,25",
+            "tags": [
+                "Heartrending",
+                "Family",
+                "Character-driven"
+            ]
+        },
+        {
+            "title": "The Unforgotten Memories",
+            "genre": "Drama",
+            "year": 2001,
+            "rating": "4,43",
+            "tags": [
+                "Social",
+                "Tragic",
+                "Dysfunctional"
+            ]
+        },
+        {
+            "title": "The Lost Hope",
+            "genre": "Drama",
+            "year": 2016,
+            "rating": "5,59",
+            "tags": [
+                "Moving",
+                "Intense",
+                "Artistic"
+            ]
+        },
+        {
+            "title": "The Endless Battle",
+            "genre": "Drama",
+            "year": 2003,
+            "rating": "3,52",
+            "tags": [
+                "Tragic",
+                "Dysfunctional",
+                "Realistic"
+            ]
+        },
+        {
+            "title": "The Path of Forgiveness",
+            "genre": "Drama",
+            "year": 2005,
+            "rating": "9,15",
+            "tags": [
+                "Psychological",
+                "Social",
+                "Powerful"
+            ]
+        },
+        {
+            "title": "The Untold Story",
+            "genre": "Drama",
+            "year": 2012,
+            "rating": "1,48",
+            "tags": [
+                "Gripping",
+                "Independent",
+                "Moving"
+            ]
+        },
+        {
+            "title": "The Broken Trust",
+            "genre": "Drama",
+            "year": 2000,
+            "rating": "9,91",
+            "tags": [
+                "Compelling",
+                "Character-driven",
+                "Powerful"
+            ]
+        },
+        {
+            "title": "The Shadow of Doubt",
+            "genre": "Drama",
+            "year": 2016,
+            "rating": "5,66",
+            "tags": [
+                "Symbolic",
+                "Inspiring",
+                "Tragic"
+            ]
+        },
+        {
+            "title": "The End of Innocence",
+            "genre": "Drama",
+            "year": 2005,
+            "rating": "7,53",
+            "tags": [
+                "Character-driven",
+                "Historical",
+                "Controversial"
+            ]
+        },
+        {
+            "title": "The Crossroads of Life",
+            "genre": "Drama",
+            "year": 2015,
+            "rating": "9,19",
+            "tags": [
+                "Social",
+                "Tragic",
+                "Symbolic"
+            ]
+        },
+        {
+            "title": "The Heartbreakers",
+            "genre": "Drama",
+            "year": 2019,
+            "rating": "5,54",
+            "tags": [
+                "Inspiring",
+                "Symbolic",
+                "Realistic"
+            ]
+        },
+        {
+            "title": "The Struggle Within",
+            "genre": "Drama",
+            "year": 2004,
+            "rating": "7,33",
+            "tags": [
+                "Psychological",
+                "Artistic",
+                "Powerful"
+            ]
+        },
+        {
+            "title": "The Shattered Dreams",
+            "genre": "Drama",
+            "year": 2008,
+            "rating": "4,41",
+            "tags": [
+                "Realistic",
+                "Moving",
+                "Social"
+            ]
+        },
+        {
+            "title": "The Undeniable Truth",
+            "genre": "Drama",
+            "year": 2003,
+            "rating": "2,24",
+            "tags": [
+                "Gripping",
+                "Intense",
+                "Dysfunctional"
+            ]
+        },
+        {
+            "title": "The Life Changing Moment",
+            "genre": "Drama",
+            "year": 2001,
+            "rating": "9,87",
+            "tags": [
+                "Family",
+                "Compelling",
+                "Powerful"
+            ]
+        },
+        {
+            "title": "The Cost of Love",
+            "genre": "Drama",
+            "year": 2011,
+            "rating": "9,12",
+            "tags": [
+                "Symbolic",
+                "Heartrending",
+                "Inspiring"
+            ]
+        },
+        {
+            "title": "The Unspoken Pain",
+            "genre": "Drama",
+            "year": 2015,
+            "rating": "7,95",
+            "tags": [
+                "Symbolic",
+                "Tragic",
+                "Family"
+            ]
+        },
+        {
+            "title": "The Tragic Destiny",
+            "genre": "Drama",
+            "year": 2007,
+            "rating": "1,71",
+            "tags": [
+                "Intense",
+                "Historical",
+                "Independent"
+            ]
+        },
+        {
+            "title": "The Unfulfilled Promises",
+            "genre": "Drama",
+            "year": 2001,
+            "rating": "9,68",
+            "tags": [
+                "Edgy",
+                "Moving",
+                "Tragic"
+            ]
+        },
+        {
+            "title": "The Dark Side of Ambition",
+            "genre": "Drama",
+            "year": 2018,
+            "rating": "1,03",
+            "tags": [
+                "Powerful",
+                "Symbolic",
+                "Moving"
+            ]
+        },
+        {
+            "title": "The Broken Silence",
+            "genre": "Drama",
+            "year": 2018,
+            "rating": "1,87",
+            "tags": [
+                "Controversial",
+                "Social",
+                "Edgy"
+            ]
+        },
+        {
+            "title": "The Past that Haunts",
+            "genre": "Drama",
+            "year": 2011,
+            "rating": "5,38",
+            "tags": [
+                "Social",
+                "Psychological"
+            ]
+        },
+        {
+            "title": "The Ultimate Sacrifice",
+            "genre": "Drama",
+            "year": 2011,
+            "rating": "1,13",
+            "tags": [
+                "Moving",
+                "Independent",
+                "Realistic"
+            ]
+        }
+    ],
+    "romance":[
+        
+    ],
+    "action": [
+        {
+            "title": "Code of Vengeance",
+            "genre": "Action",
+            "year": 2002,
+            "rating": "3,45",
+            "tags": [
+                "Tension",
+                "Epic",
+                "Danger"
+            ]
+        },
+        {
+            "title": "Thunderbolt Protocol",
+            "genre": "Action",
+            "year": 2017,
+            "rating": "8,82",
+            "tags": [
+                "Mission",
+                "Gritty",
+                "Martialarts"
+            ]
+        },
+        {
+            "title": "Renegade Justice",
+            "genre": "Action",
+            "year": 2004,
+            "rating": "6,21",
+            "tags": [
+                "Thrill",
+                "Mission",
+                "Riveting"
+            ]
+        },
+        {
+            "title": "Bloodline of Honor",
+            "genre": "Action",
+            "year": 2003,
+            "rating": "1,64",
+            "tags": [
+                "Epic",
+                "Thrill",
+                "Martialarts"
+            ]
+        },
+        {
+            "title": "Rampage Hunter",
+            "genre": "Action",
+            "year": 2008,
+            "rating": "2,54",
+            "tags": [
+                "Gritty",
+                "Riveting",
+                "Excitement"
+            ]
+        },
+        {
+            "title": "Shadow Sentinel",
+            "genre": "Action",
+            "year": 2017,
+            "rating": "2,13",
+            "tags": [
+                "Adrenaline",
+                "Spectacle",
+                "Martialarts"
+            ]
+        },
+        {
+            "title": "Bulletstorm Battalion",
+            "genre": "Action",
+            "year": 2013,
+            "rating": "8,86",
+            "tags": [
+                "Chase",
+                "Danger",
+                "Daring"
+            ]
+        },
+        {
+            "title": "Warzone Wraith",
+            "genre": "Action",
+            "year": 2015,
+            "rating": "7,22",
+            "tags": [
+                "Combat",
+                "Heroic",
+                "Thrill"
+            ]
+        },
+        {
+            "title": "Midnight Runners",
+            "genre": "Action",
+            "year": 2019,
+            "rating": "1,26",
+            "tags": [
+                "Revenge",
+                "Daring",
+                "Excitement"
+            ]
+        },
+        {
+            "title": "Mercenary Outlaws",
+            "genre": "Action",
+            "year": 2009,
+            "rating": "3,21",
+            "tags": [
+                "Danger",
+                "Stunts",
+                "Revenge"
+            ]
+        },
+        {
+            "title": "Vigilante Vengeance",
+            "genre": "Action",
+            "year": 2004,
+            "rating": "8,08",
+            "tags": [
+                "Heroic",
+                "Adventure",
+                "Revenge"
+            ]
+        },
+        {
+            "title": "Jungle Raiders",
+            "genre": "Action",
+            "year": 2013,
+            "rating": "1,33",
+            "tags": [
+                "Martialarts",
+                "Heroic",
+                "Gunplay"
+            ]
+        },
+        {
+            "title": "Killer Instincts",
+            "genre": "Action",
+            "year": 2000,
+            "rating": "8,68",
+            "tags": [
+                "Adrenaline",
+                "Stunts",
+                "Spectacle"
+            ]
+        },
+        {
+            "title": "Lone Wolf Legacy",
+            "genre": "Action",
+            "year": 2002,
+            "rating": "7,46",
+            "tags": [
+                "Gunplay",
+                "Tension",
+                "Combat"
+            ]
+        },
+        {
+            "title": "Mad Dog Militia",
+            "genre": "Action",
+            "year": 2012,
+            "rating": "1,97",
+            "tags": [
+                "Combat",
+                "Warfare",
+                "Adventure"
+            ]
+        },
+        {
+            "title": "Neon Nightfall",
+            "genre": "Action",
+            "year": 2005,
+            "rating": "6,97",
+            "tags": [
+                "Combat",
+                "Chase",
+                "Spectacle"
+            ]
+        },
+        {
+            "title": "Omega Squadrons",
+            "genre": "Action",
+            "year": 2016,
+            "rating": "4,11",
+            "tags": [
+                "Mission",
+                "Tension",
+                "Chase"
+            ]
+        },
+        {
+            "title": "Phoenix Rising",
+            "genre": "Action",
+            "year": 2004,
+            "rating": "7,30",
+            "tags": [
+                "Excitement",
+                "Martialarts",
+                "Mission"
+            ]
+        },
+        {
+            "title": "Quick Draw Justice",
+            "genre": "Action",
+            "year": 2013,
+            "rating": "5,61",
+            "tags": [
+                "Martialarts",
+                "Daring",
+                "Danger"
+            ]
+        },
+        {
+            "title": "Razor's Edge Retribution",
+            "genre": "Action",
+            "year": 2015,
+            "rating": "3,67",
+            "tags": [
+                "Thrill",
+                "Chase",
+                "Gritty"
+            ]
+        },
+        {
+            "title": "Shadow Strike Force",
+            "genre": "Action",
+            "year": 2004,
+            "rating": "6,09",
+            "tags": [
+                "Adrenaline",
+                "Gunplay",
+                "Adventure"
+            ]
+        },
+        {
+            "title": "Tactical Takedown",
+            "genre": "Action",
+            "year": 2008,
+            "rating": "7,81",
+            "tags": [
+                "Thrill",
+                "Gritty",
+                "Danger"
+            ]
+        },
+        {
+            "title": "Urban Warriors",
+            "genre": "Action",
+            "year": 2016,
+            "rating": "6,95",
+            "tags": [
+                "Stunts",
+                "Heroic",
+                "Warfare"
+            ]
+        },
+        {
+            "title": "Viper Venom",
+            "genre": "Action",
+            "year": 2000,
+            "rating": "3,25",
+            "tags": [
+                "Riveting",
+                "Martialarts",
+                "Gunplay"
+            ]
+        },
+        {
+            "title": "Wasteland Warriors",
+            "genre": "Action",
+            "year": 2018,
+            "rating": "2,04",
+            "tags": [
+                "Thrill",
+                "Martialarts",
+                "Spectacle"
+            ]
+        },
+        {
+            "title": "Xenon X-treme",
+            "genre": "Action",
+            "year": 2018,
+            "rating": "3,44",
+            "tags": [
+                "Chase",
+                "Excitement",
+                "Riveting"
+            ]
+        },
+        {
+            "title": "Yellow Jacket Yakuza",
+            "genre": "Action",
+            "year": 2010,
+            "rating": "9,88",
+            "tags": [
+                "Riveting",
+                "Epic",
+                "Spectacle"
+            ]
+        },
+        {
+            "title": "Zombie Apocalypse Assault",
+            "genre": "Action",
+            "year": 2004,
+            "rating": "1,65",
+            "tags": [
+                "Warfare",
+                "Daring",
+                "Adventure"
+            ]
+        },
+        {
+            "title": "Armored Avenger Alliance",
+            "genre": "Action",
+            "year": 2017,
+            "rating": "2,45",
+            "tags": [
+                "Adventure",
+                "Riveting",
+                "Gunplay"
+            ]
+        },
+        {
+            "title": "Bulletproof Battalion",
+            "genre": "Action",
+            "year": 2016,
+            "rating": "5,05",
+            "tags": [
+                "Gunplay",
+                "Adrenaline",
+                "Martialarts"
+            ]
+        },
+        {
+            "title": "Cipher Strike",
+            "genre": "Action",
+            "year": 2015,
+            "rating": "8,11",
+            "tags": [
+                "Tension",
+                "Daring",
+                "Danger"
+            ]
+        },
+        {
+            "title": "Death Dealer Diversion",
+            "genre": "Action",
+            "year": 2019,
+            "rating": "8,39",
+            "tags": [
+                "Tension",
+                "Combat",
+                "Chase"
+            ]
+        },
+        {
+            "title": "Elite Executioners",
+            "genre": "Action",
+            "year": 2010,
+            "rating": "2,38",
+            "tags": [
+                "Adrenaline",
+                "Excitement",
+                "Combat"
+            ]
+        },
+        {
+            "title": "Final Hour Fighters",
+            "genre": "Action",
+            "year": 2001,
+            "rating": "3,67",
+            "tags": [
+                "Chase",
+                "Epic",
+                "Revenge"
+            ]
+        },
+        {
+            "title": "Ghost Reconnaissance",
+            "genre": "Action",
+            "year": 2007,
+            "rating": "1,93",
+            "tags": [
+                "Epic",
+                "Martialarts",
+                "Adventure"
+            ]
+        },
+        {
+            "title": "Hardline Hitters",
+            "genre": "Action",
+            "year": 2006,
+            "rating": "4,75",
+            "tags": [
+                "Tension",
+                "Adventure",
+                "Warfare"
+            ]
+        },
+        {
+            "title": "Iron Will Warriors",
+            "genre": "Action",
+            "year": 2018,
+            "rating": "4,07",
+            "tags": [
+                "Danger",
+                "Gunplay",
+                "Chase"
+            ]
+        },
+        {
+            "title": "Judgment Day Justice",
+            "genre": "Action",
+            "year": 2009,
+            "rating": "2,25",
+            "tags": [
+                "Revenge",
+                "Epic",
+                "Danger"
+            ]
+        }
+    ],
+    "comedy": [
+        {
+            "title": "The Awkward Family Trip",
+            "genre": "Comedy",
+            "year": 2015,
+            "rating": "9,05",
+            "tags": [
+                "Blackcomedy",
+                "Mockumentary",
+                "Zany"
+            ]
+        },
+        {
+            "title": "Clumsy Cupid Chronicles",
+            "genre": "Comedy",
+            "year": 2017,
+            "rating": "8,20",
+            "tags": [
+                "Farce",
+                "Sardonic",
+                "Quirky"
+            ]
+        },
+        {
+            "title": "Overly Ambitious Office Party",
+            "genre": "Comedy",
+            "year": 2013,
+            "rating": "2,00",
+            "tags": [
+                "Mockumentary",
+                "Witty",
+                "Sardonic"
+            ]
+        },
+        {
+            "title": "The Crazy Cat Lady Chronicles",
+            "genre": "Comedy",
+            "year": 2010,
+            "rating": "6,28",
+            "tags": [
+                "Zany",
+                "Goofy",
+                "Sarcastic"
+            ]
+        },
+        {
+            "title": "The Hapless Housekeeper",
+            "genre": "Comedy",
+            "year": 2001,
+            "rating": "9,90",
+            "tags": [
+                "Sarcastic",
+                "Goofy",
+                "Bawdy"
+            ]
+        },
+        {
+            "title": "The Bumbling Burglars",
+            "genre": "Comedy",
+            "year": 2005,
+            "rating": "8,07",
+            "tags": [
+                "Parody",
+                "Quirky",
+                "Witty"
+            ]
+        },
+        {
+            "title": "The Inept Inventors",
+            "genre": "Comedy",
+            "year": 2017,
+            "rating": "8,44",
+            "tags": [
+                "Sarcastic",
+                "Zany",
+                "Hilarious"
+            ]
+        },
+        {
+            "title": "The Dorky Detectives",
+            "genre": "Comedy",
+            "year": 2006,
+            "rating": "9,71",
+            "tags": [
+                "Mockumentary",
+                "Zany",
+                "Hilarious"
+            ]
+        },
+        {
+            "title": "The Accidental Arsonists",
+            "genre": "Comedy",
+            "year": 2011,
+            "rating": "2,17",
+            "tags": [
+                "Parody",
+                "Irreverent",
+                "Offbeat"
+            ]
+        },
+        {
+            "title": "The Silly Spies",
+            "genre": "Comedy",
+            "year": 2016,
+            "rating": "6,54",
+            "tags": [
+                "Witty",
+                "Irreverent",
+                "Blackcomedy"
+            ]
+        },
+        {
+            "title": "The Absent-Minded Accountant",
+            "genre": "Comedy",
+            "year": 2006,
+            "rating": "4,59",
+            "tags": [
+                "Irreverent",
+                "Offbeat",
+                "Hilarious"
+            ]
+        },
+        {
+            "title": "The Quirky Quizmasters",
+            "genre": "Comedy",
+            "year": 2005,
+            "rating": "9,12",
+            "tags": [
+                "Zany",
+                "Blackcomedy",
+                "Hilarious"
+            ]
+        },
+        {
+            "title": "The Fumbling Firefighters",
+            "genre": "Comedy",
+            "year": 2015,
+            "rating": "3,18",
+            "tags": [
+                "Zany",
+                "Irreverent",
+                "Sarcastic"
+            ]
+        },
+        {
+            "title": "The Goofy Ghost Hunters",
+            "genre": "Comedy",
+            "year": 2001,
+            "rating": "4,17",
+            "tags": [
+                "Irreverent",
+                "Sarcastic",
+                "Farce"
+            ]
+        },
+        {
+            "title": "The Zany Zookeepers",
+            "genre": "Comedy",
+            "year": 2007,
+            "rating": "3,00",
+            "tags": [
+                "Ridiculous",
+                "Sardonic",
+                "Bawdy"
+            ]
+        },
+        {
+            "title": "The Slapstick Salesmen",
+            "genre": "Comedy",
+            "year": 2011,
+            "rating": "4,97",
+            "tags": [
+                "Sardonic",
+                "Bawdy",
+                "Blackcomedy"
+            ]
+        },
+        {
+            "title": "The Wacky Wedding Planners",
+            "genre": "Comedy",
+            "year": 2014,
+            "rating": "1,81",
+            "tags": [
+                "Sardonic",
+                "Offbeat",
+                "Ridiculous"
+            ]
+        },
+        {
+            "title": "The Awkward Acquaintances",
+            "genre": "Comedy",
+            "year": 2003,
+            "rating": "5,86",
+            "tags": [
+                "Hilarious",
+                "Quirky",
+                "Ridiculous"
+            ]
+        },
+        {
+            "title": "The Comical Con Artists",
+            "genre": "Comedy",
+            "year": 2019,
+            "rating": "4,90",
+            "tags": [
+                "Ridiculous",
+                "Slapstick",
+                "Quirky"
+            ]
+        },
+        {
+            "title": "The Lovable Losers",
+            "genre": "Comedy",
+            "year": 2001,
+            "rating": "8,03",
+            "tags": [
+                "Offbeat",
+                "Goofy",
+                "Slapstick"
+            ]
+        },
+        {
+            "title": "The Eccentric Entrepreneurs",
+            "genre": "Comedy",
+            "year": 2012,
+            "rating": "9,81",
+            "tags": [
+                "Sardonic",
+                "Goofy",
+                "Zany"
+            ]
+        },
+        {
+            "title": "The Offbeat Olympians",
+            "genre": "Comedy",
+            "year": 2016,
+            "rating": "9,30",
+            "tags": [
+                "Satirical",
+                "Mockumentary",
+                "Sardonic"
+            ]
+        },
+        {
+            "title": "The Hilarious Housewives",
+            "genre": "Comedy",
+            "year": 2009,
+            "rating": "7,87",
+            "tags": [
+                "Slapstick",
+                "Witty",
+                "Screwball"
+            ]
+        },
+        {
+            "title": "The Dumbfounded Diners",
+            "genre": "Comedy",
+            "year": 2006,
+            "rating": "5,59",
+            "tags": [
+                "Slapstick",
+                "Witty",
+                "Offbeat"
+            ]
+        },
+        {
+            "title": "The Nutty News Anchors",
+            "genre": "Comedy",
+            "year": 2004,
+            "rating": "2,30",
+            "tags": [
+                "Sarcastic",
+                "Parody",
+                "Quirky"
+            ]
+        },
+        {
+            "title": "The Cheesy Chefs",
+            "genre": "Comedy",
+            "year": 2017,
+            "rating": "7,43",
+            "tags": [
+                "Screwball",
+                "Sardonic",
+                "Quirky"
+            ]
+        },
+        {
+            "title": "The Bizarre Babysitters",
+            "genre": "Comedy",
+            "year": 2002,
+            "rating": "1,86",
+            "tags": [
+                "Sarcastic",
+                "Witty",
+                "Screwball"
+            ]
+        },
+        {
+            "title": "The Clueless Carpenters",
+            "genre": "Comedy",
+            "year": 2007,
+            "rating": "3,58",
+            "tags": [
+                "Slapstick",
+                "Deadpan",
+                "Irreverent"
+            ]
+        },
+        {
+            "title": "The Amusing Astronauts",
+            "genre": "Comedy",
+            "year": 2003,
+            "rating": "5,85",
+            "tags": [
+                "Ridiculous",
+                "Quirky",
+                "Witty"
+            ]
+        },
+        {
+            "title": "The Witty Waitstaff",
+            "genre": "Comedy",
+            "year": 2001,
+            "rating": "8,30",
+            "tags": [
+                "Mockumentary",
+                "Deadpan",
+                "Screwball"
+            ]
+        },
+        {
+            "title": "The Ditsy Divas",
+            "genre": "Comedy",
+            "year": 2005,
+            "rating": "1,09",
+            "tags": [
+                "Screwball",
+                "Mockumentary",
+                "Quirky"
+            ]
+        },
+        {
+            "title": "The Comical Construction Crew",
+            "genre": "Comedy",
+            "year": 2017,
+            "rating": "4,18",
+            "tags": [
+                "Zany",
+                "Farce",
+                "Sardonic"
+            ]
+        },
+        {
+            "title": "The Kooky Kitchen Crew",
+            "genre": "Comedy",
+            "year": 2014,
+            "rating": "2,20",
+            "tags": [
+                "Sarcastic",
+                "Slapstick",
+                "Offbeat"
+            ]
+        },
+        {
+            "title": "The Silly Scientists",
+            "genre": "Comedy",
+            "year": 2009,
+            "rating": "3,92",
+            "tags": [
+                "Zany",
+                "Quirky",
+                "Screwball"
+            ]
+        },
+        {
+            "title": "The Hilarious Hairdressers",
+            "genre": "Comedy",
+            "year": 2019,
+            "rating": "3,09",
+            "tags": [
+                "Witty",
+                "Mockumentary",
+                "Bawdy"
+            ]
+        },
+        {
+            "title": "The Quirky Quarterbacks",
+            "genre": "Comedy",
+            "year": 2000,
+            "rating": "8,28",
+            "tags": [
+                "Ridiculous",
+                "Deadpan",
+                "Zany"
+            ]
+        },
+        {
+            "title": "The Nonsensical Nannies",
+            "genre": "Comedy",
+            "year": 2003,
+            "rating": "4,20",
+            "tags": [
+                "Slapstick",
+                "Parody",
+                "Witty"
+            ]
+        },
+        {
+            "title": "The Whimsical Weathermen",
+            "genre": "Comedy",
+            "year": 2019,
+            "rating": "3,76",
+            "tags": [
+                "Irreverent",
+                "Offbeat",
+                "Absurd"
+            ]
+        },
+        {
+            "title": "The Jocular Journalists",
+            "genre": "Comedy",
+            "year": 2014,
+            "rating": "1,26",
+            "tags": [
+                "Witty",
+                "Irreverent",
+                "Farce"
+            ]
+        },
+        {
+            "title": "The Jocular Journalists",
+            "genre": "Comedy",
+            "year": 2014,
+            "rating": "1,26",
+            "tags": [
+                "Witty",
+                "Irreverent",
+                "Farce"
+            ]
+        },
+        {
+            "title": "The Improbable Impostors",
+            "genre": "Comedy",
+            "year": 2017,
+            "rating": "9,10",
+            "tags": [
+                "Offbeat",
+                "Irreverent",
+                "Screwball"
+            ]
+        },
+        {
+            "title": "The Hysterical House Hunters",
+            "genre": "Comedy",
+            "year": 2013,
+            "rating": "9,05",
+            "tags": [
+                "Satirical",
+                "Absurd",
+                "Mockumentary"
+            ]
+        },
+        {
+            "title": "The Comical Counselors",
+            "genre": "Comedy",
+            "year": 2001,
+            "rating": "6,91",
+            "tags": [
+                "Screwball",
+                "Mockumentary",
+                "Quirky"
+            ]
+        },
+        {
+            "title": "The Eccentric Electricians",
+            "genre": "Comedy",
+            "year": 2003,
+            "rating": "8,02",
+            "tags": [
+                "Witty",
+                "Farce",
+                "Sardonic"
+            ]
+        },
+        {
+            "title": "The Zany Zookeepers",
+            "genre": "Comedy",
+            "year": 2010,
+            "rating": "6,37",
+            "tags": [
+                "Farce",
+                "Bawdy",
+                "Parody"
+            ]
+        },
+        {
+            "title": "The Madcap Magicians",
+            "genre": "Comedy",
+            "year": 2014,
+            "rating": "3,36",
+            "tags": [
+                "Absurd",
+                "Satirical",
+                "Bawdy"
+            ]
+        },
+        {
+            "title": "The Wacky Wildlife Photographers",
+            "genre": "Comedy",
+            "year": 2001,
+            "rating": "1,86",
+            "tags": [
+                "Witty",
+                "Farce",
+                "Deadpan"
+            ]
+        },
+        {
+            "title": "The Foolish Flight Attendants",
+            "genre": "Comedy",
+            "year": 2019,
+            "rating": "4,21",
+            "tags": [
+                "Parody",
+                "Zany",
+                "Bawdy"
+            ]
+        },
+        {
+            "title": "The Dopey Deliverymen",
+            "genre": "Comedy",
+            "year": 2004,
+            "rating": "7,53",
+            "tags": [
+                "Satirical",
+                "Deadpan",
+                "Ridiculous"
+            ]
+        },
+        {
+            "title": "The Goofy Gymnasts",
+            "genre": "Comedy",
+            "year": 2008,
+            "rating": "3,68",
+            "tags": [
+                "Sardonic",
+                "Hilarious",
+                "Irreverent"
+            ]
+        }
+    ],
+    "horror": [
+        {
+            "robots": [
+                {
+                    "title": "The Rise of the Machines",
+                    "genre": "Robots",
+                    "year": 2019,
+                    "rating": "7,03",
+                    "tags": [
+                        "Futuristic",
+                        "Artificial",
+                        "Sci-fi"
+                    ]
+                },
+                {
+                    "title": "Cybernetic Rebellion",
+                    "genre": "Robots",
+                    "year": 2001,
+                    "rating": "9,99",
+                    "tags": [
+                        "Artificial",
+                        "Cyborg",
+                        "Cyberpunk"
+                    ]
+                },
+                {
+                    "title": "The Metal Menace",
+                    "genre": "Robots",
+                    "year": 2009,
+                    "rating": "7,89",
+                    "tags": [
+                        "Superhuman",
+                        "Futuristicthriller",
+                        "Spaceopera"
+                    ]
+                },
+                {
+                    "title": "Rust and Ruin",
+                    "genre": "Robots",
+                    "year": 2002,
+                    "rating": "5,35",
+                    "tags": [
+                        "Technological",
+                        "Mechanical",
+                        "Cyberpunk"
+                    ]
+                },
+                {
+                    "title": "Artificial Intelligence: The Endgame",
+                    "genre": "Robots",
+                    "year": 2013,
+                    "rating": "9,01",
+                    "tags": [
+                        "Cyberpunk",
+                        "Mechanical",
+                        "Superhuman"
+                    ]
+                },
+                {
+                    "title": "The Mechanized Apocalypse",
+                    "genre": "Robots",
+                    "year": 2000,
+                    "rating": "4,16",
+                    "tags": [
+                        "Futuristic",
+                        "Virtual",
+                        "Artificial"
+                    ]
+                },
+                {
+                    "title": "Digital Domination",
+                    "genre": "Robots",
+                    "year": 2003,
+                    "rating": "2,36",
+                    "tags": [
+                        "Futuristicaction",
+                        "Technological",
+                        "Artificial"
+                    ]
+                },
+                {
+                    "title": "Robot Rampage",
+                    "genre": "Robots",
+                    "year": 2004,
+                    "rating": "4,27",
+                    "tags": [
+                        "Futuristiccomedy",
+                        "Futuristichorror",
+                        "Sci-fi"
+                    ]
+                },
+                {
+                    "title": "Metallic Mayhem",
+                    "genre": "Robots",
+                    "year": 2000,
+                    "rating": "7,26",
+                    "tags": [
+                        "Futuristicadventure",
+                        "Cyberspace",
+                        "Futuristicromance"
+                    ]
+                },
+                {
+                    "title": "The Circuit Breaker",
+                    "genre": "Robots",
+                    "year": 2018,
+                    "rating": "5,80",
+                    "tags": [
+                        "Futuristicthriller",
+                        "Artificial",
+                        "Superhuman"
+                    ]
+                }
+            ],
+            "zombies": [
+                {
+                    "title": "Rise of the Undead Hordes",
+                    "genre": "Zombies",
+                    "year": 2017,
+                    "rating": "4,96",
+                    "tags": [
+                        "Epidemic",
+                        "Carnage",
+                        "Carrion"
+                    ]
+                },
+                {
+                    "title": "Night of the Living Dread",
+                    "genre": "Zombies",
+                    "year": 2012,
+                    "rating": "1,84",
+                    "tags": [
+                        "Devour",
+                        "Graveyard",
+                        "Decay"
+                    ]
+                },
+                {
+                    "title": "Corpse Carnage",
+                    "genre": "Zombies",
+                    "year": 2003,
+                    "rating": "1,04",
+                    "tags": [
+                        "Apocalypse",
+                        "Epidemic",
+                        "Cannibal"
+                    ]
+                },
+                {
+                    "title": "The Last Stand of the Flesh Eaters",
+                    "genre": "Zombies",
+                    "year": 2004,
+                    "rating": "6,78",
+                    "tags": [
+                        "Apocalypse",
+                        "Carnage",
+                        "Braindead"
+                    ]
+                },
+                {
+                    "title": "Zombie Apocalypse: Endgame",
+                    "genre": "Zombies",
+                    "year": 2012,
+                    "rating": "7,89",
+                    "tags": [
+                        "Graveyard",
+                        "Plague",
+                        "Contamination"
+                    ]
+                },
+                {
+                    "title": "Graveyard Shift: Beyond the Grave",
+                    "genre": "Zombies",
+                    "year": 2011,
+                    "rating": "5,85",
+                    "tags": [
+                        "Apocalypse",
+                        "Infection",
+                        "Carnage"
+                    ]
+                },
+                {
+                    "title": "Flesh and Bone: A Zombie Love Story",
+                    "genre": "Zombies",
+                    "year": 2009,
+                    "rating": "8,87",
+                    "tags": [
+                        "Rot",
+                        "Necrosis",
+                        "Decay"
+                    ]
+                },
+                {
+                    "title": "Brain Dead: The Reckoning",
+                    "genre": "Zombies",
+                    "year": 2019,
+                    "rating": "4,88",
+                    "tags": [
+                        "Carrion",
+                        "Contagion",
+                        "Infection"
+                    ]
+                },
+                {
+                    "title": "Undead Uprising",
+                    "genre": "Zombies",
+                    "year": 2014,
+                    "rating": "9,05",
+                    "tags": [
+                        "Necrosis",
+                        "Plague",
+                        "Carrion"
+                    ]
+                },
+                {
+                    "title": "The Walking Horde",
+                    "genre": "Zombies",
+                    "year": 2010,
+                    "rating": "8,46",
+                    "tags": [
+                        "Cannibal",
+                        "Necrosis",
+                        "Infestation"
+                    ]
+                }
+            ],
+            "vampires": [
+                [
+                    {
+                        "title": "Bloodlust: Rise of the Vampires",
+                        "genre": "Vampires",
+                        "year": 2001,
+                        "rating": "7,70",
+                        "tags": [
+                            "Eternal",
+                            "Immortal",
+                            "Gothicthriller"
+                        ]
+                    },
+                    {
+                        "title": "Eternal Night: The Vampire Chronicles",
+                        "genre": "Vampires",
+                        "year": 2001,
+                        "rating": "9,49",
+                        "tags": [
+                            "Undead",
+                            "Enigmatic",
+                            "Romantic"
+                        ]
+                    },
+                    {
+                        "title": "The Fangs of Fate",
+                        "genre": "Vampires",
+                        "year": 2017,
+                        "rating": "5,59",
+                        "tags": [
+                            "Fanged",
+                            "Enthralling",
+                            "Nightmarish"
+                        ]
+                    },
+                    {
+                        "title": "Undead Love",
+                        "genre": "Vampires",
+                        "year": 2019,
+                        "rating": "6,62",
+                        "tags": [
+                            "Gothic",
+                            "Bloodthirsty",
+                            "Gothicromance"
+                        ]
+                    },
+                    {
+                        "title": "Midnight's Kiss",
+                        "genre": "Vampires",
+                        "year": 2002,
+                        "rating": "9,05",
+                        "tags": [
+                            "Seductive",
+                            "Gothicromance",
+                            "Supernatural"
+                        ]
+                    },
+                    {
+                        "title": "Blood Moon: The Reckoning",
+                        "genre": "Vampires",
+                        "year": 2007,
+                        "rating": "1,82",
+                        "tags": [
+                            "Eternal",
+                            "Gothicthriller",
+                            "Supernatural"
+                        ]
+                    },
+                    {
+                        "title": "Immortal Hunger",
+                        "genre": "Vampires",
+                        "year": 2015,
+                        "rating": "5,02",
+                        "tags": [
+                            "Enigmatic",
+                            "Gothichorror",
+                            "Gothicthriller"
+                        ]
+                    },
+                    {
+                        "title": "Darkness Eternal",
+                        "genre": "Vampires",
+                        "year": 2011,
+                        "rating": "4,24",
+                        "tags": [
+                            "Nightmarish",
+                            "Undead",
+                            "Lovestory"
+                        ]
+                    },
+                    {
+                        "title": "The Thirst Within",
+                        "genre": "Vampires",
+                        "year": 2007,
+                        "rating": "7,71",
+                        "tags": [
+                            "Bloodthirsty",
+                            "Gothic",
+                            "Romantic"
+                        ]
+                    },
+                    {
+                        "title": "Vampire's Embrace",
+                        "genre": "Vampires",
+                        "year": 2003,
+                        "rating": "7,05",
+                        "tags": [
+                            "Darkfantasy",
+                            "Bloodthirsty",
+                            "Gothicmelodrama"
+                        ]
+                    }
+                ]
+            ],
+            "aliens": [
+                {
+                    "title": "Invasion Earth",
+                    "genre": "Aliens",
+                    "year": 2008,
+                    "rating": "6,29",
+                    "tags": [
+                        "Alienabduction",
+                        "Alientechnology",
+                        "Aliencontact"
+                    ]
+                },
+                {
+                    "title": "Alien Abduction",
+                    "genre": "Aliens",
+                    "year": 2002,
+                    "rating": "8,19",
+                    "tags": [
+                        "Alientechnology",
+                        "Outerspace",
+                        "Alienrace"
+                    ]
+                },
+                {
+                    "title": "Beyond the Stars",
+                    "genre": "Aliens",
+                    "year": 2019,
+                    "rating": "6,47",
+                    "tags": [
+                        "Alienwar",
+                        "Otherworldly",
+                        "Outerspace"
+                    ]
+                },
+                {
+                    "title": "The Extraterrestrial Threat",
+                    "genre": "Aliens",
+                    "year": 2007,
+                    "rating": "6,26",
+                    "tags": [
+                        "Abduction",
+                        "Aliencontact",
+                        "Alieninvasion"
+                    ]
+                },
+                {
+                    "title": "Cosmic Menace",
+                    "genre": "Aliens",
+                    "year": 2000,
+                    "rating": "2,73",
+                    "tags": [
+                        "Outerspace",
+                        "Aliencontact",
+                        "Alienwar"
+                    ]
+                },
+                {
+                    "title": "The Invasion Begins",
+                    "genre": "Aliens",
+                    "year": 2004,
+                    "rating": "7,98",
+                    "tags": [
+                        "Encounter",
+                        "Aliencontact",
+                        "Outerspace"
+                    ]
+                },
+                {
+                    "title": "Alien Encounter",
+                    "genre": "Aliens",
+                    "year": 2011,
+                    "rating": "8,86",
+                    "tags": [
+                        "Alienconspiracy",
+                        "Alieninvasion",
+                        "Alienromance"
+                    ]
+                },
+                {
+                    "title": "Exoplanetary Terror",
+                    "genre": "Aliens",
+                    "year": 2017,
+                    "rating": "7,63",
+                    "tags": [
+                        "Alienwar",
+                        "Abduction",
+                        "Sciencefiction"
+                    ]
+                },
+                {
+                    "title": "War of the Worlds",
+                    "genre": "Aliens",
+                    "year": 2012,
+                    "rating": "2,09",
+                    "tags": [
+                        "Alienthreat",
+                        "Alienconspiracy",
+                        "Alienabduction"
+                    ]
+                },
+                {
+                    "title": "The Alien Menace",
+                    "genre": "Aliens",
+                    "year": 2010,
+                    "rating": "1,15",
+                    "tags": [
+                        "Alienrace",
+                        "Sciencefiction",
+                        "Alienhorror"
+                    ]
+                }
+            ]
+        }
+    ]
+}
