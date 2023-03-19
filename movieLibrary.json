@@ -4,9 +4,8 @@
             "title": "The Family Secret",
             "genre": "Drama",
             "year": 2009,
-            "month": 5,
-            "duration": 53,
-            "themes": [
+            "rating": "5,53",
+            "tags": [
                 "Social",
                 "Edgy",
                 "Heartrending"
@@ -16,9 +15,8 @@
             "title": "Broken Dreams",
             "genre": "Drama",
             "year": 2005,
-            "month": 6,
-            "duration": 74,
-            "themes": [
+            "rating": "6,74",
+            "tags": [
                 "Inspiring",
                 "Dysfunctional",
                 "Moving"
@@ -28,9 +26,8 @@
             "title": "The Betrayal",
             "genre": "Drama",
             "year": 2003,
-            "month": 5,
-            "duration": 88,
-            "themes": [
+            "rating": "5,88",
+            "tags": [
                 "Inspiring",
                 "Heartrending",
                 "Tragic"
@@ -40,9 +37,8 @@
             "title": "Unbroken Resolve",
             "genre": "Drama",
             "year": 2015,
-            "month": 4,
-            "duration": 13,
-            "themes": [
+            "rating": "4,13",
+            "tags": [
                 "Historical",
                 "Realistic",
                 "Social"
@@ -52,9 +48,8 @@
             "title": "The Price of Redemption",
             "genre": "Drama",
             "year": 2015,
-            "month": 3,
-            "duration": 36,
-            "themes": [
+            "rating": "3,36",
+            "tags": [
                 "Historical",
                 "Social",
                 "Edgy"
@@ -64,9 +59,8 @@
             "title": "The Inheritance",
             "genre": "Drama",
             "year": 2002,
-            "month": 5,
-            "duration": 16,
-            "themes": [
+            "rating": "5,16",
+            "tags": [
                 "Realistic",
                 "Inspiring",
                 "Tragic"
@@ -76,9 +70,8 @@
             "title": "The Unforgiven",
             "genre": "Drama",
             "year": 2000,
-            "month": 2,
-            "duration": 62,
-            "themes": [
+            "rating": "2,62",
+            "tags": [
                 "Controversial",
                 "Family",
                 "Psychological"
@@ -88,9 +81,8 @@
             "title": "The Lost Heir",
             "genre": "Drama",
             "year": 2013,
-            "month": 1,
-            "duration": 23,
-            "themes": [
+            "rating": "1,23",
+            "tags": [
                 "Heartrending",
                 "Tragic",
                 "Character-driven"
@@ -100,9 +92,8 @@
             "title": "The Wounded Heart",
             "genre": "Drama",
             "year": 2015,
-            "month": 2,
-            "duration": 6,
-            "themes": [
+            "rating": "2,6",
+            "tags": [
                 "Psychological",
                 "Symbolic",
                 "Historical"
@@ -112,9 +103,8 @@
             "title": "The Promise",
             "genre": "Drama",
             "year": 2004,
-            "month": 6,
-            "duration": 95,
-            "themes": [
+            "rating": "6,95",
+            "tags": [
                 "Realistic",
                 "Dysfunctional",
                 "Symbolic"
@@ -124,9 +114,8 @@
             "title": "The Sacrifice",
             "genre": "Drama",
             "year": 2000,
-            "month": 1,
-            "duration": 99,
-            "themes": [
+            "rating": "1,99",
+            "tags": [
                 "Moving",
                 "Controversial",
                 "Social"
@@ -561,9 +550,7 @@
             ]
         }
     ],
-    "romance":[
-        
-    ],
+    "romance": [],
     "action": [
         {
             "title": "Code of Vengeance",
