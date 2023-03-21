@@ -25,7 +25,11 @@ Vue.createApp({
                 ...this.jsonData.action,
                 ...this.jsonData.drama,
                 ...this.jsonData.romance,
-                ...this.jsonData.horror
+                ...this.jsonData.horror.robots,
+                ...this.jsonData.horror.aliens,
+                ...this.jsonData.horror.zombies,
+                ...this.jsonData.horror.vampires
+                
             ];
 
             //Sorts the highest rated movies.

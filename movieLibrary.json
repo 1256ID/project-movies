@@ -1523,458 +1523,456 @@
             ]
         }
     ],
-    "horror": [
-        {
-            "robots": [
+    "horror": {
+        "robots": [
+            {
+                "title": "The Rise of the Machines",
+                "genre": "Robots",
+                "year": 2019,
+                "rating": "7,03",
+                "tags": [
+                    "Futuristic",
+                    "Artificial",
+                    "Sci-fi"
+                ]
+            },
+            {
+                "title": "Cybernetic Rebellion",
+                "genre": "Robots",
+                "year": 2001,
+                "rating": "9,99",
+                "tags": [
+                    "Artificial",
+                    "Cyborg",
+                    "Cyberpunk"
+                ]
+            },
+            {
+                "title": "The Metal Menace",
+                "genre": "Robots",
+                "year": 2009,
+                "rating": "7,89",
+                "tags": [
+                    "Superhuman",
+                    "Futuristicthriller",
+                    "Spaceopera"
+                ]
+            },
+            {
+                "title": "Rust and Ruin",
+                "genre": "Robots",
+                "year": 2002,
+                "rating": "5,35",
+                "tags": [
+                    "Technological",
+                    "Mechanical",
+                    "Cyberpunk"
+                ]
+            },
+            {
+                "title": "Artificial Intelligence: The Endgame",
+                "genre": "Robots",
+                "year": 2013,
+                "rating": "9,01",
+                "tags": [
+                    "Cyberpunk",
+                    "Mechanical",
+                    "Superhuman"
+                ]
+            },
+            {
+                "title": "The Mechanized Apocalypse",
+                "genre": "Robots",
+                "year": 2000,
+                "rating": "4,16",
+                "tags": [
+                    "Futuristic",
+                    "Virtual",
+                    "Artificial"
+                ]
+            },
+            {
+                "title": "Digital Domination",
+                "genre": "Robots",
+                "year": 2003,
+                "rating": "2,36",
+                "tags": [
+                    "Futuristicaction",
+                    "Technological",
+                    "Artificial"
+                ]
+            },
+            {
+                "title": "Robot Rampage",
+                "genre": "Robots",
+                "year": 2004,
+                "rating": "4,27",
+                "tags": [
+                    "Futuristiccomedy",
+                    "Futuristichorror",
+                    "Sci-fi"
+                ]
+            },
+            {
+                "title": "Metallic Mayhem",
+                "genre": "Robots",
+                "year": 2000,
+                "rating": "7,26",
+                "tags": [
+                    "Futuristicadventure",
+                    "Cyberspace",
+                    "Futuristicromance"
+                ]
+            },
+            {
+                "title": "The Circuit Breaker",
+                "genre": "Robots",
+                "year": 2018,
+                "rating": "5,80",
+                "tags": [
+                    "Futuristicthriller",
+                    "Artificial",
+                    "Superhuman"
+                ]
+            }
+        ],
+        "zombies": [
+            {
+                "title": "Rise of the Undead Hordes",
+                "genre": "Zombies",
+                "year": 2017,
+                "rating": "4,96",
+                "tags": [
+                    "Epidemic",
+                    "Carnage",
+                    "Carrion"
+                ]
+            },
+            {
+                "title": "Night of the Living Dread",
+                "genre": "Zombies",
+                "year": 2012,
+                "rating": "1,84",
+                "tags": [
+                    "Devour",
+                    "Graveyard",
+                    "Decay"
+                ]
+            },
+            {
+                "title": "Corpse Carnage",
+                "genre": "Zombies",
+                "year": 2003,
+                "rating": "1,04",
+                "tags": [
+                    "Apocalypse",
+                    "Epidemic",
+                    "Cannibal"
+                ]
+            },
+            {
+                "title": "The Last Stand of the Flesh Eaters",
+                "genre": "Zombies",
+                "year": 2004,
+                "rating": "6,78",
+                "tags": [
+                    "Apocalypse",
+                    "Carnage",
+                    "Braindead"
+                ]
+            },
+            {
+                "title": "Zombie Apocalypse: Endgame",
+                "genre": "Zombies",
+                "year": 2012,
+                "rating": "7,89",
+                "tags": [
+                    "Graveyard",
+                    "Plague",
+                    "Contamination"
+                ]
+            },
+            {
+                "title": "Graveyard Shift: Beyond the Grave",
+                "genre": "Zombies",
+                "year": 2011,
+                "rating": "5,85",
+                "tags": [
+                    "Apocalypse",
+                    "Infection",
+                    "Carnage"
+                ]
+            },
+            {
+                "title": "Flesh and Bone: A Zombie Love Story",
+                "genre": "Zombies",
+                "year": 2009,
+                "rating": "8,87",
+                "tags": [
+                    "Rot",
+                    "Necrosis",
+                    "Decay"
+                ]
+            },
+            {
+                "title": "Brain Dead: The Reckoning",
+                "genre": "Zombies",
+                "year": 2019,
+                "rating": "4,88",
+                "tags": [
+                    "Carrion",
+                    "Contagion",
+                    "Infection"
+                ]
+            },
+            {
+                "title": "Undead Uprising",
+                "genre": "Zombies",
+                "year": 2014,
+                "rating": "9,05",
+                "tags": [
+                    "Necrosis",
+                    "Plague",
+                    "Carrion"
+                ]
+            },
+            {
+                "title": "The Walking Horde",
+                "genre": "Zombies",
+                "year": 2010,
+                "rating": "8,46",
+                "tags": [
+                    "Cannibal",
+                    "Necrosis",
+                    "Infestation"
+                ]
+            }
+        ],
+        "vampires": [
+            [
                 {
-                    "title": "The Rise of the Machines",
-                    "genre": "Robots",
-                    "year": 2019,
-                    "rating": "7,03",
-                    "tags": [
-                        "Futuristic",
-                        "Artificial",
-                        "Sci-fi"
-                    ]
-                },
-                {
-                    "title": "Cybernetic Rebellion",
-                    "genre": "Robots",
+                    "title": "Bloodlust: Rise of the Vampires",
+                    "genre": "Vampires",
                     "year": 2001,
-                    "rating": "9,99",
+                    "rating": "7,70",
                     "tags": [
-                        "Artificial",
-                        "Cyborg",
-                        "Cyberpunk"
+                        "Eternal",
+                        "Immortal",
+                        "Gothicthriller"
                     ]
                 },
                 {
-                    "title": "The Metal Menace",
-                    "genre": "Robots",
-                    "year": 2009,
-                    "rating": "7,89",
+                    "title": "Eternal Night: The Vampire Chronicles",
+                    "genre": "Vampires",
+                    "year": 2001,
+                    "rating": "9,49",
                     "tags": [
-                        "Superhuman",
-                        "Futuristicthriller",
-                        "Spaceopera"
+                        "Undead",
+                        "Enigmatic",
+                        "Romantic"
                     ]
                 },
                 {
-                    "title": "Rust and Ruin",
-                    "genre": "Robots",
-                    "year": 2002,
-                    "rating": "5,35",
-                    "tags": [
-                        "Technological",
-                        "Mechanical",
-                        "Cyberpunk"
-                    ]
-                },
-                {
-                    "title": "Artificial Intelligence: The Endgame",
-                    "genre": "Robots",
-                    "year": 2013,
-                    "rating": "9,01",
-                    "tags": [
-                        "Cyberpunk",
-                        "Mechanical",
-                        "Superhuman"
-                    ]
-                },
-                {
-                    "title": "The Mechanized Apocalypse",
-                    "genre": "Robots",
-                    "year": 2000,
-                    "rating": "4,16",
-                    "tags": [
-                        "Futuristic",
-                        "Virtual",
-                        "Artificial"
-                    ]
-                },
-                {
-                    "title": "Digital Domination",
-                    "genre": "Robots",
-                    "year": 2003,
-                    "rating": "2,36",
-                    "tags": [
-                        "Futuristicaction",
-                        "Technological",
-                        "Artificial"
-                    ]
-                },
-                {
-                    "title": "Robot Rampage",
-                    "genre": "Robots",
-                    "year": 2004,
-                    "rating": "4,27",
-                    "tags": [
-                        "Futuristiccomedy",
-                        "Futuristichorror",
-                        "Sci-fi"
-                    ]
-                },
-                {
-                    "title": "Metallic Mayhem",
-                    "genre": "Robots",
-                    "year": 2000,
-                    "rating": "7,26",
-                    "tags": [
-                        "Futuristicadventure",
-                        "Cyberspace",
-                        "Futuristicromance"
-                    ]
-                },
-                {
-                    "title": "The Circuit Breaker",
-                    "genre": "Robots",
-                    "year": 2018,
-                    "rating": "5,80",
-                    "tags": [
-                        "Futuristicthriller",
-                        "Artificial",
-                        "Superhuman"
-                    ]
-                }
-            ],
-            "zombies": [
-                {
-                    "title": "Rise of the Undead Hordes",
-                    "genre": "Zombies",
+                    "title": "The Fangs of Fate",
+                    "genre": "Vampires",
                     "year": 2017,
-                    "rating": "4,96",
+                    "rating": "5,59",
                     "tags": [
-                        "Epidemic",
-                        "Carnage",
-                        "Carrion"
+                        "Fanged",
+                        "Enthralling",
+                        "Nightmarish"
                     ]
                 },
                 {
-                    "title": "Night of the Living Dread",
-                    "genre": "Zombies",
-                    "year": 2012,
-                    "rating": "1,84",
-                    "tags": [
-                        "Devour",
-                        "Graveyard",
-                        "Decay"
-                    ]
-                },
-                {
-                    "title": "Corpse Carnage",
-                    "genre": "Zombies",
-                    "year": 2003,
-                    "rating": "1,04",
-                    "tags": [
-                        "Apocalypse",
-                        "Epidemic",
-                        "Cannibal"
-                    ]
-                },
-                {
-                    "title": "The Last Stand of the Flesh Eaters",
-                    "genre": "Zombies",
-                    "year": 2004,
-                    "rating": "6,78",
-                    "tags": [
-                        "Apocalypse",
-                        "Carnage",
-                        "Braindead"
-                    ]
-                },
-                {
-                    "title": "Zombie Apocalypse: Endgame",
-                    "genre": "Zombies",
-                    "year": 2012,
-                    "rating": "7,89",
-                    "tags": [
-                        "Graveyard",
-                        "Plague",
-                        "Contamination"
-                    ]
-                },
-                {
-                    "title": "Graveyard Shift: Beyond the Grave",
-                    "genre": "Zombies",
-                    "year": 2011,
-                    "rating": "5,85",
-                    "tags": [
-                        "Apocalypse",
-                        "Infection",
-                        "Carnage"
-                    ]
-                },
-                {
-                    "title": "Flesh and Bone: A Zombie Love Story",
-                    "genre": "Zombies",
-                    "year": 2009,
-                    "rating": "8,87",
-                    "tags": [
-                        "Rot",
-                        "Necrosis",
-                        "Decay"
-                    ]
-                },
-                {
-                    "title": "Brain Dead: The Reckoning",
-                    "genre": "Zombies",
+                    "title": "Undead Love",
+                    "genre": "Vampires",
                     "year": 2019,
-                    "rating": "4,88",
+                    "rating": "6,62",
                     "tags": [
-                        "Carrion",
-                        "Contagion",
-                        "Infection"
+                        "Gothic",
+                        "Bloodthirsty",
+                        "Gothicromance"
                     ]
                 },
                 {
-                    "title": "Undead Uprising",
-                    "genre": "Zombies",
-                    "year": 2014,
+                    "title": "Midnight's Kiss",
+                    "genre": "Vampires",
+                    "year": 2002,
                     "rating": "9,05",
                     "tags": [
-                        "Necrosis",
-                        "Plague",
-                        "Carrion"
+                        "Seductive",
+                        "Gothicromance",
+                        "Supernatural"
                     ]
                 },
                 {
-                    "title": "The Walking Horde",
-                    "genre": "Zombies",
-                    "year": 2010,
-                    "rating": "8,46",
-                    "tags": [
-                        "Cannibal",
-                        "Necrosis",
-                        "Infestation"
-                    ]
-                }
-            ],
-            "vampires": [
-                [
-                    {
-                        "title": "Bloodlust: Rise of the Vampires",
-                        "genre": "Vampires",
-                        "year": 2001,
-                        "rating": "7,70",
-                        "tags": [
-                            "Eternal",
-                            "Immortal",
-                            "Gothicthriller"
-                        ]
-                    },
-                    {
-                        "title": "Eternal Night: The Vampire Chronicles",
-                        "genre": "Vampires",
-                        "year": 2001,
-                        "rating": "9,49",
-                        "tags": [
-                            "Undead",
-                            "Enigmatic",
-                            "Romantic"
-                        ]
-                    },
-                    {
-                        "title": "The Fangs of Fate",
-                        "genre": "Vampires",
-                        "year": 2017,
-                        "rating": "5,59",
-                        "tags": [
-                            "Fanged",
-                            "Enthralling",
-                            "Nightmarish"
-                        ]
-                    },
-                    {
-                        "title": "Undead Love",
-                        "genre": "Vampires",
-                        "year": 2019,
-                        "rating": "6,62",
-                        "tags": [
-                            "Gothic",
-                            "Bloodthirsty",
-                            "Gothicromance"
-                        ]
-                    },
-                    {
-                        "title": "Midnight's Kiss",
-                        "genre": "Vampires",
-                        "year": 2002,
-                        "rating": "9,05",
-                        "tags": [
-                            "Seductive",
-                            "Gothicromance",
-                            "Supernatural"
-                        ]
-                    },
-                    {
-                        "title": "Blood Moon: The Reckoning",
-                        "genre": "Vampires",
-                        "year": 2007,
-                        "rating": "1,82",
-                        "tags": [
-                            "Eternal",
-                            "Gothicthriller",
-                            "Supernatural"
-                        ]
-                    },
-                    {
-                        "title": "Immortal Hunger",
-                        "genre": "Vampires",
-                        "year": 2015,
-                        "rating": "5,02",
-                        "tags": [
-                            "Enigmatic",
-                            "Gothichorror",
-                            "Gothicthriller"
-                        ]
-                    },
-                    {
-                        "title": "Darkness Eternal",
-                        "genre": "Vampires",
-                        "year": 2011,
-                        "rating": "4,24",
-                        "tags": [
-                            "Nightmarish",
-                            "Undead",
-                            "Lovestory"
-                        ]
-                    },
-                    {
-                        "title": "The Thirst Within",
-                        "genre": "Vampires",
-                        "year": 2007,
-                        "rating": "7,71",
-                        "tags": [
-                            "Bloodthirsty",
-                            "Gothic",
-                            "Romantic"
-                        ]
-                    },
-                    {
-                        "title": "Vampire's Embrace",
-                        "genre": "Vampires",
-                        "year": 2003,
-                        "rating": "7,05",
-                        "tags": [
-                            "Darkfantasy",
-                            "Bloodthirsty",
-                            "Gothicmelodrama"
-                        ]
-                    }
-                ]
-            ],
-            "aliens": [
-                {
-                    "title": "Invasion Earth",
-                    "genre": "Aliens",
-                    "year": 2008,
-                    "rating": "6,29",
-                    "tags": [
-                        "Alienabduction",
-                        "Alientechnology",
-                        "Aliencontact"
-                    ]
-                },
-                {
-                    "title": "Alien Abduction",
-                    "genre": "Aliens",
-                    "year": 2002,
-                    "rating": "8,19",
-                    "tags": [
-                        "Alientechnology",
-                        "Outerspace",
-                        "Alienrace"
-                    ]
-                },
-                {
-                    "title": "Beyond the Stars",
-                    "genre": "Aliens",
-                    "year": 2019,
-                    "rating": "6,47",
-                    "tags": [
-                        "Alienwar",
-                        "Otherworldly",
-                        "Outerspace"
-                    ]
-                },
-                {
-                    "title": "The Extraterrestrial Threat",
-                    "genre": "Aliens",
+                    "title": "Blood Moon: The Reckoning",
+                    "genre": "Vampires",
                     "year": 2007,
-                    "rating": "6,26",
+                    "rating": "1,82",
                     "tags": [
-                        "Abduction",
-                        "Aliencontact",
-                        "Alieninvasion"
+                        "Eternal",
+                        "Gothicthriller",
+                        "Supernatural"
                     ]
                 },
                 {
-                    "title": "Cosmic Menace",
-                    "genre": "Aliens",
-                    "year": 2000,
-                    "rating": "2,73",
+                    "title": "Immortal Hunger",
+                    "genre": "Vampires",
+                    "year": 2015,
+                    "rating": "5,02",
                     "tags": [
-                        "Outerspace",
-                        "Aliencontact",
-                        "Alienwar"
+                        "Enigmatic",
+                        "Gothichorror",
+                        "Gothicthriller"
                     ]
                 },
                 {
-                    "title": "The Invasion Begins",
-                    "genre": "Aliens",
-                    "year": 2004,
-                    "rating": "7,98",
-                    "tags": [
-                        "Encounter",
-                        "Aliencontact",
-                        "Outerspace"
-                    ]
-                },
-                {
-                    "title": "Alien Encounter",
-                    "genre": "Aliens",
+                    "title": "Darkness Eternal",
+                    "genre": "Vampires",
                     "year": 2011,
-                    "rating": "8,86",
+                    "rating": "4,24",
                     "tags": [
-                        "Alienconspiracy",
-                        "Alieninvasion",
-                        "Alienromance"
+                        "Nightmarish",
+                        "Undead",
+                        "Lovestory"
                     ]
                 },
                 {
-                    "title": "Exoplanetary Terror",
-                    "genre": "Aliens",
-                    "year": 2017,
-                    "rating": "7,63",
+                    "title": "The Thirst Within",
+                    "genre": "Vampires",
+                    "year": 2007,
+                    "rating": "7,71",
                     "tags": [
-                        "Alienwar",
-                        "Abduction",
-                        "Sciencefiction"
+                        "Bloodthirsty",
+                        "Gothic",
+                        "Romantic"
                     ]
                 },
                 {
-                    "title": "War of the Worlds",
-                    "genre": "Aliens",
-                    "year": 2012,
-                    "rating": "2,09",
+                    "title": "Vampire's Embrace",
+                    "genre": "Vampires",
+                    "year": 2003,
+                    "rating": "7,05",
                     "tags": [
-                        "Alienthreat",
-                        "Alienconspiracy",
-                        "Alienabduction"
-                    ]
-                },
-                {
-                    "title": "The Alien Menace",
-                    "genre": "Aliens",
-                    "year": 2010,
-                    "rating": "1,15",
-                    "tags": [
-                        "Alienrace",
-                        "Sciencefiction",
-                        "Alienhorror"
+                        "Darkfantasy",
+                        "Bloodthirsty",
+                        "Gothicmelodrama"
                     ]
                 }
             ]
-        }
-    ]
+        ],
+        "aliens": [
+            {
+                "title": "Invasion Earth",
+                "genre": "Aliens",
+                "year": 2008,
+                "rating": "6,29",
+                "tags": [
+                    "Alienabduction",
+                    "Alientechnology",
+                    "Aliencontact"
+                ]
+            },
+            {
+                "title": "Alien Abduction",
+                "genre": "Aliens",
+                "year": 2002,
+                "rating": "8,19",
+                "tags": [
+                    "Alientechnology",
+                    "Outerspace",
+                    "Alienrace"
+                ]
+            },
+            {
+                "title": "Beyond the Stars",
+                "genre": "Aliens",
+                "year": 2019,
+                "rating": "6,47",
+                "tags": [
+                    "Alienwar",
+                    "Otherworldly",
+                    "Outerspace"
+                ]
+            },
+            {
+                "title": "The Extraterrestrial Threat",
+                "genre": "Aliens",
+                "year": 2007,
+                "rating": "6,26",
+                "tags": [
+                    "Abduction",
+                    "Aliencontact",
+                    "Alieninvasion"
+                ]
+            },
+            {
+                "title": "Cosmic Menace",
+                "genre": "Aliens",
+                "year": 2000,
+                "rating": "2,73",
+                "tags": [
+                    "Outerspace",
+                    "Aliencontact",
+                    "Alienwar"
+                ]
+            },
+            {
+                "title": "The Invasion Begins",
+                "genre": "Aliens",
+                "year": 2004,
+                "rating": "7,98",
+                "tags": [
+                    "Encounter",
+                    "Aliencontact",
+                    "Outerspace"
+                ]
+            },
+            {
+                "title": "Alien Encounter",
+                "genre": "Aliens",
+                "year": 2011,
+                "rating": "8,86",
+                "tags": [
+                    "Alienconspiracy",
+                    "Alieninvasion",
+                    "Alienromance"
+                ]
+            },
+            {
+                "title": "Exoplanetary Terror",
+                "genre": "Aliens",
+                "year": 2017,
+                "rating": "7,63",
+                "tags": [
+                    "Alienwar",
+                    "Abduction",
+                    "Sciencefiction"
+                ]
+            },
+            {
+                "title": "War of the Worlds",
+                "genre": "Aliens",
+                "year": 2012,
+                "rating": "2,09",
+                "tags": [
+                    "Alienthreat",
+                    "Alienconspiracy",
+                    "Alienabduction"
+                ]
+            },
+            {
+                "title": "The Alien Menace",
+                "genre": "Aliens",
+                "year": 2010,
+                "rating": "1,15",
+                "tags": [
+                    "Alienrace",
+                    "Sciencefiction",
+                    "Alienhorror"
+                ]
+            }
+        ]
+    }
 }
