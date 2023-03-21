@@ -54,6 +54,18 @@
                         <img class="photo" src="" alt="">
                     </li> -->
                 </ol>
+                
+                <div id="favorites-list">
+                    <div v-if="favorites.length > 0">
+                        <h2>Favorites</h2>
+                        <ol>
+                            <li v-for="(favorite, index) in favorites">
+                                {{ favorite.title }}
+                                <button type="button" @click="removeFromFavorites(index)">Remove</button>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
 
                 <!-- Comment 
 

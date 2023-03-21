@@ -29,7 +29,6 @@ Vue.createApp({
                 ...this.jsonData.horror.aliens,
                 ...this.jsonData.horror.zombies,
                 ...this.jsonData.horror.vampires
-                
             ];
 
             //Sorts the highest rated movies.
@@ -41,12 +40,20 @@ Vue.createApp({
 
             this.topMovies = allMovies.slice(0, 10);
         },
+
         addToFavorites(movie) {
             this.favorites.push(movie);
         },
-        
-        searchMovies() {
 
+        removeFromFavorites(index) {
+            this.favorites.splice(index, 1);
+        },
+
+        // goToFavorites(elementID) {
+        //     document.getElementById(elementID).textContent = "";
+        // },
+
+        searchMovies() {
         }
     }
 }).mount("#app");
