@@ -3,6 +3,7 @@ Vue.createApp({
         return {
             search: "",
             movies: [],
+            favorites: [],
             topMovies: [],
             searchResults: [],
             jsonData: null
@@ -24,7 +25,7 @@ Vue.createApp({
                 ...this.jsonData.action,
                 ...this.jsonData.drama,
                 ...this.jsonData.romance,
-                ...this.jsonData.horror,
+                ...this.jsonData.horror
             ];
 
             //Sorts the highest rated movies.
@@ -35,6 +36,9 @@ Vue.createApp({
             });
 
             this.topMovies = allMovies.slice(0, 10);
+        },
+        addToFavorites(movie) {
+            this.favorites.push(movie);
         },
         
         searchMovies() {

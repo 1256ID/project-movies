@@ -44,6 +44,7 @@
                         <!-- INTE BR, !CSS! -->
                         {{movie.title}} - {{movie.rating}} <br>
                         {{movie.genre}} : {{movie.tags[0] +", "+ movie.tags[1] +", "+ movie.tags[2]}}
+                        <button type="button" @click="addToFavorites(movie)">Add to Favorites</button>
                     </li>
                     <!-- <li>
                         <h3 class="title">Title</h3>                                  
