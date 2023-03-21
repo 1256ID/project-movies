@@ -32,7 +32,8 @@
                     <input type="text" id="searchbox" placeholder="Search for a movie" v-model="search">
                     <input id="addMovie" type="button" value="Add a movie">
                     <input id="myMovies" type="button" value="My movies">
-                    <input id="myFavorites" type="button" value="My favorites">
+                    <!-- <input id="myFavorites" type="button" value="My favorites"> -->
+                    <button type="button" @click="goToFavorites()">My favorites</button>
                     <input id="categories" type="button" value="Categories">
                 </form>
             </div>
@@ -54,7 +55,7 @@
                         <img class="photo" src="" alt="">
                     </li> -->
                 </ol>
-                
+
                 <div id="favorites-list">
                     <div v-if="favorites.length > 0">
                         <h2>Favorites</h2>

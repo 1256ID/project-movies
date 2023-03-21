@@ -49,9 +49,12 @@ Vue.createApp({
             this.favorites.splice(index, 1);
         },
 
-        // goToFavorites(elementID) {
-        //     document.getElementById(elementID).textContent = "";
-        // },
+        goToFavorites() {
+            document.querySelector(".main").textContent = ""
+        },
+
+        showFavorites() {
+        },
 
         searchMovies() {
         }
