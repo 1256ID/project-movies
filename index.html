@@ -38,44 +38,39 @@
             </div>
 
             <div class="main">
-                <h2>Our users favorite movies</h2>
-                <ol id="titlesWithBestScore">
-                    <li v-for="movie in topMovies">
-                        <!-- INTE BR, !CSS! -->
-                        {{movie.title}} - {{movie.rating}} <br>
-                        {{movie.genre}} : {{movie.tags[0] +", "+ movie.tags[1] +", "+ movie.tags[2]}}
-                        <button type="button" @click="addToFavorites(movie)">Add to Favorites</button>
-                    </li>
-                    <!-- <li>
+                <div id="topMovies">
+                    <h2>Our users favorite movies</h2>
+                    <ol id="titlesWithBestScore">
+                        <li v-for="movie in topMovies">
+                            <!-- INTE BR, !CSS! -->
+                            {{movie.title}} - {{movie.rating}} <br>
+                            {{movie.genre}} : {{movie.tags[0] +", "+ movie.tags[1] +", "+ movie.tags[2]}}
+                            <button type="button" @click="addToFavorites(movie)">Add to Favorites</button>
+                        </li>
+                        <!-- <li>
                         <h3 class="title">Title</h3>                                  
                         <p class="score">Score</p>                                 
                         <p class="tags">Tags</p>
                         <p class="description>">Description</p>
                         <img class="photo" src="" alt="">
                     </li> -->
-                </ol>
-
+                    </ol>
+                </div>
                 <div id="favorites-list">
-                    <div v-if="favorites.length > 0">
-                        <h2>Favorites</h2>
-                        <ol>
-                            <li v-for="(favorite, index) in favorites">
-                                {{ favorite.title }}
-                                <button type="button" @click="removeFromFavorites(index)">Remove</button>
-                            </li>
-                        </ol>
-                    </div>
+                    <h2>Favorites</h2>
+                    <ol>
+                        <li v-for="(favorite, index) in favorites">
+                            {{ favorite.title }}
+                            <button type="button" @click="removeFromFavorites(index)">Remove</button>
+                        </li>
+                    </ol>
                 </div>
 
-                <!-- Comment 
-
-                <ul id="searchResults">
-
-                    <li v-for="movie in searchResults" :key="movie">{{ movie }}</li>
-
-                </ul>
-
-                -->
+                <!-- <div id="results">
+                    <ul id="searchResults">
+                        <li v-for="movie in searchResults" :key="movie">{{ movie }}</li>
+                    </ul>
+                </div> -->
             </div>
 
             <div class="ads">

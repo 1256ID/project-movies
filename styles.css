@@ -150,4 +150,6 @@ li::marker {
     visibility: hidden;
 }
     
-
+#favorites-list {
+    display: none;
+}
