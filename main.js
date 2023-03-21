@@ -49,11 +49,10 @@ Vue.createApp({
             this.favorites.splice(index, 1);
         },
 
-        goToFavorites() {
-            document.querySelector(".main").textContent = ""
-        },
-
         showFavorites() {
+            document.querySelector(".main").textContent = ""
+            let button = document.getElementById("myFavorites");
+            button.value = "Top Movies";
         },
 
         searchMovies() {
