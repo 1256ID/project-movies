@@ -50,19 +50,20 @@ Vue.createApp({
         },
 
         showFavorites() {
-            document.querySelector("#topMovies").style.display = "none";
-            document.querySelector("#favorites-list").style.display = "block";
             let button = document.getElementById("myFavorites");
-            button.value = "Top Movies";
-            button.onclick = this.showTopMovies;
-        },
-        
-        showTopMovies() {
-            document.querySelector("#topMovies").style.display = "block";
-            document.querySelector("#favorites-list").style.display = "none";
-            let button = document.getElementById("myFavorites");
-            button.value = "My favorites";
-            button.onclick = this.showFavorites;
+            let favPage = button.value === "My favorites";
+
+            if (favPage) {
+                document.querySelector("#topMovies").style.display = "none";
+                document.querySelector("#favorites-list").style.display = "block";
+                button.value = "Top Movies";
+            }
+
+            else {
+                document.querySelector("#topMovies").style.display = "block";
+                document.querySelector("#favorites-list").style.display = "none";
+                button.value = "My favorites";
+            }
         },
 
         searchMovies() {
