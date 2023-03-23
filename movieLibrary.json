@@ -1972,5 +1972,89 @@
                 ]
             }
         ]
-    }
+    },
+    "comedyImages": [
+        "Media/comedy/1.png",
+        "Media/comedy/2.png",
+        "Media/comedy/3.png",
+        "Media/comedy/4.png",
+        "Media/comedy/5.png",
+        "Media/comedy/6.png",
+        "Media/comedy/7.png",
+        "Media/comedy/8.png",
+        "Media/comedy/9.png",
+        "Media/comedy/10.png"
+    ],
+    "actionImages": [
+        "Media/action/1.png",
+        "Media/action/2.png",
+        "Media/action/3.png",
+        "Media/action/4.png",
+        "Media/action/5.png",
+        "Media/action/6.png",
+        "Media/action/7.png",
+        "Media/action/8.png",
+        "Media/action/9.png",
+        "Media/action/10.png"
+    ],
+    "dramaImages": [
+        "Media/drama-romance/1.png",
+        "Media/drama-romance/2.png",
+        "Media/drama-romance/3.png",
+        "Media/drama-romance/4.png",
+        "Media/drama-romance/5.png",
+        "Media/drama-romance/6.png",
+        "Media/drama-romance/7.png",
+        "Media/drama-romance/8.png",
+        "Media/drama-romance/9.png",
+        "Media/drama-romance/10.png"
+    ],
+    "zombiesImages": [
+        "Media/zombies/1.png",
+        "Media/zombies/2.png",
+        "Media/zombies/3.png",
+        "Media/zombies/4.png",
+        "Media/zombies/5.png",
+        "Media/zombies/6.png",
+        "Media/zombies/7.png",
+        "Media/zombies/8.png",
+        "Media/zombies/9.png",
+        "Media/zombies/10.png"
+    ],
+    "vampiresImages": [
+        "Media/vampires/1.png",
+        "Media/vampires/2.png",
+        "Media/vampires/3.png",
+        "Media/vampires/4.png",
+        "Media/vampires/5.png",
+        "Media/vampires/6.png",
+        "Media/vampires/7.png",
+        "Media/vampires/8.png",
+        "Media/vampires/9.png",
+        "Media/vampires/10.png"
+    ],
+    "aliensImages": [
+        "Media/aliens/1.png",
+        "Media/aliens/2.png",
+        "Media/aliens/3.png",
+        "Media/aliens/4.png",
+        "Media/aliens/5.png",
+        "Media/aliens/6.png",
+        "Media/aliens/7.png",
+        "Media/aliens/8.png",
+        "Media/aliens/9.png",
+        "Media/aliens/10.png"
+    ],
+    "robotsImages": [
+        "Media/robots/1.png",
+        "Media/robots/2.png",
+        "Media/robots/3.png",
+        "Media/robots/4.png",
+        "Media/robots/5.png",
+        "Media/robots/6.png",
+        "Media/robots/7.png",
+        "Media/robots/8.png",
+        "Media/robots/9.png",
+        "Media/robots/10.png"
+    ]
 }

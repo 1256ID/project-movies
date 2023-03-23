@@ -19,6 +19,72 @@ Vue.createApp({
             });
     },
     methods: {
+        addMoviePosters() {
+
+            let allMovies = [
+                ...this.jsonData.comedy,
+                ...this.jsonData.action,
+                ...this.jsonData.drama,
+                ...this.jsonData.romance,
+                ...this.jsonData.horror.robots,
+                ...this.jsonData.horror.aliens,
+                ...this.jsonData.horror.zombies,
+                ...this.jsonData.horror.vampires
+            ];
+
+            const comedyImages = this.jsonData.comedyImages;
+            const actionImages = this.jsonData.actionImages;
+            const dramaImages = this.jsonData.dramaImages;
+            const zombiesImages = this.jsonData.zombiesImages;
+            const vampiresImages = this.jsonData.vampiresImages;
+            const aliensImages = this.jsonData.aliensImages;
+            const robotsImages = this.jsonData.robotsImages;
+
+            let moviePoster;
+
+            for (let i = 0; i < allMovies.lenght; i++) {
+
+                if (genre === "comedy") {
+                    moviePoster = this.selectRandom(comedyImages);
+                }
+
+                if (genre === "action") {
+                    moviePoster = this.selectRandom(actionImages);
+                }
+
+                if (genre === "drama") {
+                    moviePoster = this.selectRandom(dramaImages);
+                }
+
+                if (genre === "romance") {
+                    moviePoster = this.selectRandom(dramaImages);
+                }
+
+                if (genre === "Zombies") {
+                    moviePoster = this.selectRandom(zombiesImages);
+                }
+
+                if (genre === "Vampires") {
+                    moviePoster = this.selectRandom(vampiresImages);
+                }
+
+                if (genre === "Aliens") {
+                    moviePoster = this.selectRandom(aliensImages);
+                }
+
+                if (genre === "Robots") {
+                    moviePoster = this.selectRandom(robotsImages);
+                }
+
+                let poster = {
+                    image: moviePoster
+                }
+                movies.push(poster);
+                topMovies.push(poster);
+                searchResults.push(poster);
+            }
+        },
+
         getTopMovies() {
             //Combines all genre arrays into one.
             let allMovies = [
@@ -38,6 +104,58 @@ Vue.createApp({
                     return -1;
                 }
             });
+
+            const comedyImages = this.jsonData.comedyImages;
+            const actionImages = this.jsonData.actionImages;
+            const dramaImages = this.jsonData.dramaImages;
+            const zombiesImages = this.jsonData.zombiesImages;
+            const vampiresImages = this.jsonData.vampiresImages;
+            const aliensImages = this.jsonData.aliensImages;
+            const robotsImages = this.jsonData.robotsImages;
+
+            let moviePoster;
+
+            for (let i = 0; i < 10; i++) {
+
+                if (json.genre === "comedy") {
+                    moviePoster = this.selectRandom(comedyImages);
+                }
+
+                if (genre === "action") {
+                    moviePoster = this.selectRandom(actionImages);
+                }
+
+                if (genre === "drama") {
+                    moviePoster = this.selectRandom(dramaImages);
+                }
+
+                if (genre === "romance") {
+                    moviePoster = this.selectRandom(dramaImages);
+                }
+
+                if (genre === "Zombies") {
+                    moviePoster = this.selectRandom(zombiesImages);
+                }
+
+                if (genre === "Vampires") {
+                    moviePoster = this.selectRandom(vampiresImages);
+                }
+
+                if (genre === "Aliens") {
+                    moviePoster = this.selectRandom(aliensImages);
+                }
+
+                if (genre === "Robots") {
+                    moviePoster = this.selectRandom(robotsImages);
+                }
+
+                let poster = {
+                    image: moviePoster
+                }
+                movies.push(poster);
+                topMovies.push(poster);
+                searchResults.push(poster);
+            }
 
             this.topMovies = allMovies.slice(0, 10);
         },

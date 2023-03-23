@@ -47,6 +47,7 @@
                     <ol id="titlesWithBestScore">
 
                         <li v-for="movie in topMovies">
+                            <img :src="movie.image" alt="Movie poster">
                             <!-- INTE BR, !CSS! -->
                             {{movie.title}} - {{movie.rating}} <br>
                             {{movie.genre}} : {{movie.tags[0] +", "+ movie.tags[1] +", "+ movie.tags[2]}}
