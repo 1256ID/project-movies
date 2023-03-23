@@ -15,13 +15,11 @@ Vue.createApp({
             .then(json => {
                 this.jsonData = json;
                 this.getTopMovies();
-                // this.searchMovies();
             });
     },
     methods: {
-        addMoviePosters() {
-
-            let allMovies = [
+        searchMovies() {
+            const allMovies = [
                 ...this.jsonData.comedy,
                 ...this.jsonData.action,
                 ...this.jsonData.drama,
@@ -32,58 +30,80 @@ Vue.createApp({
                 ...this.jsonData.horror.vampires
             ];
 
-            const comedyImages = this.jsonData.comedyImages;
-            const actionImages = this.jsonData.actionImages;
-            const dramaImages = this.jsonData.dramaImages;
-            const zombiesImages = this.jsonData.zombiesImages;
-            const vampiresImages = this.jsonData.vampiresImages;
-            const aliensImages = this.jsonData.aliensImages;
-            const robotsImages = this.jsonData.robotsImages;
+            let result =
+                allMovies.filter(movie =>
+                    movie.title.toLowerCase().includes(this.search.toLowerCase())
+                    || movie.tags.some(tag => tag.toLowerCase().includes(this.search.toLowerCase()))
+                    || movie.genre.toLowerCase().includes(this.search.toLowerCase()) || movie.year == this.search);
 
-            let moviePoster;
-
-            for (let i = 0; i < allMovies.lenght; i++) {
-
-                if (genre === "comedy") {
-                    moviePoster = this.selectRandom(comedyImages);
-                }
-
-                if (genre === "action") {
-                    moviePoster = this.selectRandom(actionImages);
-                }
-
-                if (genre === "drama") {
-                    moviePoster = this.selectRandom(dramaImages);
-                }
-
-                if (genre === "romance") {
-                    moviePoster = this.selectRandom(dramaImages);
-                }
-
-                if (genre === "Zombies") {
-                    moviePoster = this.selectRandom(zombiesImages);
-                }
-
-                if (genre === "Vampires") {
-                    moviePoster = this.selectRandom(vampiresImages);
-                }
-
-                if (genre === "Aliens") {
-                    moviePoster = this.selectRandom(aliensImages);
-                }
-
-                if (genre === "Robots") {
-                    moviePoster = this.selectRandom(robotsImages);
-                }
-
-                let poster = {
-                    image: moviePoster
-                }
-                movies.push(poster);
-                topMovies.push(poster);
-                searchResults.push(poster);
-            }
+            this.searchResults = result;
         },
+
+        // addMoviePosters() {
+
+        //     let allMovies = [
+        //         ...this.jsonData.comedy,
+        //         ...this.jsonData.action,
+        //         ...this.jsonData.drama,
+        //         ...this.jsonData.romance,
+        //         ...this.jsonData.horror.robots,
+        //         ...this.jsonData.horror.aliens,
+        //         ...this.jsonData.horror.zombies,
+        //         ...this.jsonData.horror.vampires
+        //     ];
+
+        //     const comedyImages = this.jsonData.comedyImages;
+        //     const actionImages = this.jsonData.actionImages;
+        //     const dramaImages = this.jsonData.dramaImages;
+        //     const zombiesImages = this.jsonData.zombiesImages;
+        //     const vampiresImages = this.jsonData.vampiresImages;
+        //     const aliensImages = this.jsonData.aliensImages;
+        //     const robotsImages = this.jsonData.robotsImages;
+
+        //     let moviePoster;
+
+        //     for (let i = 0; i < allMovies.lenght; i++) {
+
+        //         if (genre === "comedy") {
+        //             moviePoster = this.selectRandom(comedyImages);
+        //         }
+
+        //         if (genre === "action") {
+        //             moviePoster = this.selectRandom(actionImages);
+        //         }
+
+        //         if (genre === "drama") {
+        //             moviePoster = this.selectRandom(dramaImages);
+        //         }
+
+        //         if (genre === "romance") {
+        //             moviePoster = this.selectRandom(dramaImages);
+        //         }
+
+        //         if (genre === "Zombies") {
+        //             moviePoster = this.selectRandom(zombiesImages);
+        //         }
+
+        //         if (genre === "Vampires") {
+        //             moviePoster = this.selectRandom(vampiresImages);
+        //         }
+
+        //         if (genre === "Aliens") {
+        //             moviePoster = this.selectRandom(aliensImages);
+        //         }
+
+        //         if (genre === "Robots") {
+        //             moviePoster = this.selectRandom(robotsImages);
+        //         }
+
+        //         let poster = {
+        //             image: moviePoster
+        //         }
+        //         movies.push(poster);
+        //         topMovies.push(poster);
+        //         searchResults.push(poster);
+        //     }
+        // },
 
         getTopMovies() {
             //Combines all genre arrays into one.
@@ -152,9 +172,7 @@ Vue.createApp({
                 let poster = {
                     image: moviePoster
                 }
-                movies.push(poster);
                 topMovies.push(poster);
-                searchResults.push(poster);
             }
 
             this.topMovies = allMovies.slice(0, 10);
@@ -164,11 +182,11 @@ Vue.createApp({
 
             // Enable/Disable active/inactive divs
 
-            document.querySelector("#topMovies").style.display = "block";    
+            document.querySelector("#topMovies").style.display = "block";
             document.querySelector("#favorites-list").style.display = "none";
             document.querySelector("#myMoviesPage").style.display = "none";
-            document.querySelector("#addMoviePage").style.display = "none";  
-            
+            document.querySelector("#addMoviePage").style.display = "none";
+
             // Enable/Disable buttons.
 
             document.getElementById("topMovies").disabled = "true";
@@ -195,55 +213,55 @@ Vue.createApp({
             document.querySelector("#addMoviePage").style.display = "none";
 
             // Enable/Disable buttons.
-                
+
             document.getElementById("topMovies").disabled = "false";
             document.getElementById("myFavorites").disabled = "true";
             document.getElementById("myMovies").disabled = "false";
             document.getElementById("addMovie").disabled = "false";
         },
 
-        showMyMovies () {
+        showMyMovies() {
 
-           // Enable/Disable active/inactive divs
+            // Enable/Disable active/inactive divs
 
-           document.querySelector("#topMovies").style.display = "none";
-           document.querySelector("#favorites-list").style.display = "none";
-           document.querySelector("#myMoviesPage").style.display = "block";
-           document.querySelector("#addMoviePage").style.display = "none";
+            document.querySelector("#topMovies").style.display = "none";
+            document.querySelector("#favorites-list").style.display = "none";
+            document.querySelector("#myMoviesPage").style.display = "block";
+            document.querySelector("#addMoviePage").style.display = "none";
 
-           // Enable/Disable buttons.
-               
-           document.getElementById("topMovies").disabled = "false";
-           document.getElementById("myFavorites").disabled = "false";
-           document.getElementById("myMovies").disabled = "true";
-           document.getElementById("addMovie").disabled = "false";
+            // Enable/Disable buttons.
+
+            document.getElementById("topMovies").disabled = "false";
+            document.getElementById("myFavorites").disabled = "false";
+            document.getElementById("myMovies").disabled = "true";
+            document.getElementById("addMovie").disabled = "false";
 
         },
-       
+
 
         addMovie() {
 
         },
-        
-        showAddMovie () {
-            
-           // Enable/Disable active/inactive divs
 
-           document.querySelector("#topMovies").style.display = "none";
-           document.querySelector("#favorites-list").style.display = "none";
-           document.querySelector("#myMoviesPage").style.display = "none";
-           document.querySelector("#addMoviePage").style.display = "block";
+        showAddMovie() {
 
-           // Enable/Disable buttons.
-               
-           document.getElementById("topMovies").disabled = "false";
-           document.getElementById("myFavorites").disabled = "false";
-           document.getElementById("myMovies").disabled = "false";
-           document.getElementById("addMovie").disabled = "true";
-            
+            // Enable/Disable active/inactive divs
+
+            document.querySelector("#topMovies").style.display = "none";
+            document.querySelector("#favorites-list").style.display = "none";
+            document.querySelector("#myMoviesPage").style.display = "none";
+            document.querySelector("#addMoviePage").style.display = "block";
+
+            // Enable/Disable buttons.
+
+            document.getElementById("topMovies").disabled = "false";
+            document.getElementById("myFavorites").disabled = "false";
+            document.getElementById("myMovies").disabled = "false";
+            document.getElementById("addMovie").disabled = "true";
+
         }
 
-        
-        
+
+
     }
 }).mount("#app");
