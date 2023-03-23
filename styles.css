@@ -69,12 +69,14 @@ html {
     }
 
 
-    #categories, #addMovie, #myMovies, #myFavorites {
-        position:relative;
+    #topMovies, #categories, #addMovie, #myMovies, #myFavorites {
+        
         justify-self: center;
         align-items: center;
+        /*
         background-image:url(Media/background-image-whitegrey.png);
-        background-color: rgba(245, 242, 242, 0.11);
+        */
+        
         border:solid 2px rgb(88, 88, 88);
         outline: solid 2px black;
     }
@@ -100,6 +102,7 @@ html {
     .main { 
         grid-area: 3 / 1 / 7 / 6;  
         padding-top:0;
+        
     }
 
     .ads { 
@@ -176,7 +179,5 @@ li::marker {
 
 #addMoviePage {
     display: none;
-    border:solid 10px green;
-    
-    
+    border:solid 10px green;   
 }

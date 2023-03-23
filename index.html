@@ -31,10 +31,11 @@
                 <form @submit.prevent="searchMovies">
                     <input type="text" id="searchbox" placeholder="Search for a movie" v-model="search">
                     <button type="submit">Search</button>
-                    <input id="addMovie" type="button" value="Add a movie">
-                    <input id="myMovies" type="button" value="My movies">
+                    <input id="topMovies" type="button" value="Top movies" @click="showTopMovies()">
                     <input id="myFavorites" type="button" value="My favorites" @click="showFavorites()">
-                    <input id="categories" type="button" value="Categories">
+                    <input id="myMovies" type="button" value="My movies" @click="showMyMovies()">
+                    <input id="addMovie" type="button" value="Add a movie" @click="showAddMovie()">
+                    <input id="categories" type="button" value="Categories"> 
                 </form>
             </div>
 
@@ -75,6 +76,15 @@
                             <button type="button" @click="removeFromFavorites(index)">Remove</button>
                         </li>
                     </ol>
+
+                </div>
+
+
+                <div id="myMoviesPage">
+
+
+
+
 
                 </div>
 
