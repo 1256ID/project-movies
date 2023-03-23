@@ -15,6 +15,7 @@ Vue.createApp({
             .then(json => {
                 this.jsonData = json;
                 this.getTopMovies();
+                // this.searchMovies();
             });
     },
     methods: {
@@ -67,6 +68,22 @@ Vue.createApp({
         },
 
         searchMovies() {
-        }
+            const allMovies = [
+                ...this.jsonData.comedy,
+                ...this.jsonData.action,
+                ...this.jsonData.drama,
+                ...this.jsonData.romance,
+                ...this.jsonData.horror.robots,
+                ...this.jsonData.horror.aliens,
+                ...this.jsonData.horror.zombies,
+                ...this.jsonData.horror.vampires
+            ];
+
+            let result = allMovies.filter(movie => movie.title.toLowerCase().includes(this.search.toLowerCase()));
+
+            this.searchResults = result;
+        },
+
+        
     }
 }).mount("#app");
