@@ -68,5 +68,13 @@ Vue.createApp({
 
         searchMovies() {
         }
+
+        showAddMovie () {
+            let button = document.getElementById("addMovie");   
+        }
+
+        addMovie() {
+
+        }
     }
 }).mount("#app");
