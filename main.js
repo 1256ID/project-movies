@@ -79,20 +79,24 @@ Vue.createApp({
                 ...this.jsonData.horror.vampires
             ];
 
-            let result = allMovies.filter(movie => movie.title.toLowerCase().includes(this.search.toLowerCase()));
+            let result =
+                allMovies.filter(movie =>
+                    movie.title.toLowerCase().includes(this.search.toLowerCase())
+                    || movie.tags.some(tag => tag.toLowerCase().includes(this.search.toLowerCase()))
+                    || movie.genre.toLowerCase().includes(this.search.toLowerCase()) || movie.year == this.search);
 
             this.searchResults = result;
         },
 
-        
-        
-        showAddMovie () {
-            let button = document.getElementById("addMovie");   
+
+
+        showAddMovie() {
+            let button = document.getElementById("addMovie");
         },
 
         addMovie() {
 
         }
-        
+
     }
 }).mount("#app");
