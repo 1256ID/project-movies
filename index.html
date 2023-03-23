@@ -28,8 +28,9 @@
             </div>
 
             <div class="menu">
-                <form>
+                <form @submit.prevent="searchMovies">
                     <input type="text" id="searchbox" placeholder="Search for a movie" v-model="search">
+                    <button type="submit">Search</button>
                     <input id="addMovie" type="button" value="Add a movie">
                     <input id="myMovies" type="button" value="My movies">
                     <input id="myFavorites" type="button" value="My favorites" @click="showFavorites()">
@@ -85,11 +86,16 @@
 
                 </div>
 
-                <!-- <div id="results">
-                    <ul id="searchResults">
-                        <li v-for="movie in searchResults" :key="movie">{{ movie }}</li>
+                <div v-if="searchResults.length > 0">
+                    <h2>Search results:</h2>
+                    <ul>
+                        <li v-for="result in searchResults">
+                            {{ result.title }}
+                        </li>
                     </ul>
-                </div> -->
+                </div>
+
+
             </div>
 
             <div class="ads">

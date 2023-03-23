@@ -1749,118 +1749,116 @@
             }
         ],
         "vampires": [
-            [
-                {
-                    "title": "Bloodlust: Rise of the Vampires",
-                    "genre": "Vampires",
-                    "year": 2001,
-                    "rating": "7,70",
-                    "tags": [
-                        "Eternal",
-                        "Immortal",
-                        "Gothicthriller"
-                    ]
-                },
-                {
-                    "title": "Eternal Night: The Vampire Chronicles",
-                    "genre": "Vampires",
-                    "year": 2001,
-                    "rating": "9,49",
-                    "tags": [
-                        "Undead",
-                        "Enigmatic",
-                        "Romantic"
-                    ]
-                },
-                {
-                    "title": "The Fangs of Fate",
-                    "genre": "Vampires",
-                    "year": 2017,
-                    "rating": "5,59",
-                    "tags": [
-                        "Fanged",
-                        "Enthralling",
-                        "Nightmarish"
-                    ]
-                },
-                {
-                    "title": "Undead Love",
-                    "genre": "Vampires",
-                    "year": 2019,
-                    "rating": "6,62",
-                    "tags": [
-                        "Gothic",
-                        "Bloodthirsty",
-                        "Gothicromance"
-                    ]
-                },
-                {
-                    "title": "Midnight's Kiss",
-                    "genre": "Vampires",
-                    "year": 2002,
-                    "rating": "9,05",
-                    "tags": [
-                        "Seductive",
-                        "Gothicromance",
-                        "Supernatural"
-                    ]
-                },
-                {
-                    "title": "Blood Moon: The Reckoning",
-                    "genre": "Vampires",
-                    "year": 2007,
-                    "rating": "1,82",
-                    "tags": [
-                        "Eternal",
-                        "Gothicthriller",
-                        "Supernatural"
-                    ]
-                },
-                {
-                    "title": "Immortal Hunger",
-                    "genre": "Vampires",
-                    "year": 2015,
-                    "rating": "5,02",
-                    "tags": [
-                        "Enigmatic",
-                        "Gothichorror",
-                        "Gothicthriller"
-                    ]
-                },
-                {
-                    "title": "Darkness Eternal",
-                    "genre": "Vampires",
-                    "year": 2011,
-                    "rating": "4,24",
-                    "tags": [
-                        "Nightmarish",
-                        "Undead",
-                        "Lovestory"
-                    ]
-                },
-                {
-                    "title": "The Thirst Within",
-                    "genre": "Vampires",
-                    "year": 2007,
-                    "rating": "7,71",
-                    "tags": [
-                        "Bloodthirsty",
-                        "Gothic",
-                        "Romantic"
-                    ]
-                },
-                {
-                    "title": "Vampire's Embrace",
-                    "genre": "Vampires",
-                    "year": 2003,
-                    "rating": "7,05",
-                    "tags": [
-                        "Darkfantasy",
-                        "Bloodthirsty",
-                        "Gothicmelodrama"
-                    ]
-                }
-            ]
+            {
+                "title": "Bloodlust: Rise of the Vampires",
+                "genre": "Vampires",
+                "year": 2001,
+                "rating": "7,70",
+                "tags": [
+                    "Eternal",
+                    "Immortal",
+                    "Gothicthriller"
+                ]
+            },
+            {
+                "title": "Eternal Night: The Vampire Chronicles",
+                "genre": "Vampires",
+                "year": 2001,
+                "rating": "9,49",
+                "tags": [
+                    "Undead",
+                    "Enigmatic",
+                    "Romantic"
+                ]
+            },
+            {
+                "title": "The Fangs of Fate",
+                "genre": "Vampires",
+                "year": 2017,
+                "rating": "5,59",
+                "tags": [
+                    "Fanged",
+                    "Enthralling",
+                    "Nightmarish"
+                ]
+            },
+            {
+                "title": "Undead Love",
+                "genre": "Vampires",
+                "year": 2019,
+                "rating": "6,62",
+                "tags": [
+                    "Gothic",
+                    "Bloodthirsty",
+                    "Gothicromance"
+                ]
+            },
+            {
+                "title": "Midnight's Kiss",
+                "genre": "Vampires",
+                "year": 2002,
+                "rating": "9,05",
+                "tags": [
+                    "Seductive",
+                    "Gothicromance",
+                    "Supernatural"
+                ]
+            },
+            {
+                "title": "Blood Moon: The Reckoning",
+                "genre": "Vampires",
+                "year": 2007,
+                "rating": "1,82",
+                "tags": [
+                    "Eternal",
+                    "Gothicthriller",
+                    "Supernatural"
+                ]
+            },
+            {
+                "title": "Immortal Hunger",
+                "genre": "Vampires",
+                "year": 2015,
+                "rating": "5,02",
+                "tags": [
+                    "Enigmatic",
+                    "Gothichorror",
+                    "Gothicthriller"
+                ]
+            },
+            {
+                "title": "Darkness Eternal",
+                "genre": "Vampires",
+                "year": 2011,
+                "rating": "4,24",
+                "tags": [
+                    "Nightmarish",
+                    "Undead",
+                    "Lovestory"
+                ]
+            },
+            {
+                "title": "The Thirst Within",
+                "genre": "Vampires",
+                "year": 2007,
+                "rating": "7,71",
+                "tags": [
+                    "Bloodthirsty",
+                    "Gothic",
+                    "Romantic"
+                ]
+            },
+            {
+                "title": "Vampire's Embrace",
+                "genre": "Vampires",
+                "year": 2003,
+                "rating": "7,05",
+                "tags": [
+                    "Darkfantasy",
+                    "Bloodthirsty",
+                    "Gothicmelodrama"
+                ]
+            }
         ],
         "aliens": [
             {
