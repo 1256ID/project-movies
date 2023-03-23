@@ -1,6 +1,7 @@
 Vue.createApp({
     data() {
         return {
+            currentPage: 'topMovies',   
             search: "",
             movies: [],
             favorites: [],
@@ -40,7 +41,7 @@ Vue.createApp({
                 || movie.genre.toLowerCase().includes(this.search.toLowerCase()) || movie.year == this.search);
 
         this.searchResults = result;
-        
+
         },
 
         getTopMovies() {
@@ -68,6 +69,11 @@ Vue.createApp({
 
         showTopMovies() {
 
+            
+            
+            
+            /*
+
             // Enable/Disable active/inactive divs
 
             document.querySelector("#topMovies").style.display = "block";    
@@ -78,9 +84,10 @@ Vue.createApp({
             // Enable/Disable buttons.
 
             document.getElementById("topMovies").disabled = "true";
-            document.getElementById("myFavorites").disabled = "false";
-            document.getElementById("myMovies").disabled = "false";
-            document.getElementById("addMovie").disabled = "false";
+            document.getElementById("myFavorites").enabled = "true";
+            document.getElementById("myMovies").enabled = "true";
+            document.getElementById("addMovie").enabled = "true";
+            */
         },
 
         addToFavorites(movie) {
@@ -102,10 +109,10 @@ Vue.createApp({
 
             // Enable/Disable buttons.
                 
-            document.getElementById("topMovies").disabled = "false";
+            document.getElementById("topMovies").enabled = "true";
             document.getElementById("myFavorites").disabled = "true";
-            document.getElementById("myMovies").disabled = "false";
-            document.getElementById("addMovie").disabled = "false";
+            document.getElementById("myMovies").enabled = "true";
+            document.getElementById("addMovie").enabled = "true";
         },
 
         showMyMovies () {
@@ -119,10 +126,10 @@ Vue.createApp({
 
            // Enable/Disable buttons.
                
-           document.getElementById("topMovies").disabled = "false";
-           document.getElementById("myFavorites").disabled = "false";
+           document.getElementById("topMovies").enabled = "true";
+           document.getElementById("myFavorites").enabled = "true";
            document.getElementById("myMovies").disabled = "true";
-           document.getElementById("addMovie").disabled = "false";
+           document.getElementById("addMovie").enabled = "true";
 
         },
        
@@ -142,9 +149,9 @@ Vue.createApp({
 
            // Enable/Disable buttons.
                
-           document.getElementById("topMovies").disabled = "false";
-           document.getElementById("myFavorites").disabled = "false";
-           document.getElementById("myMovies").disabled = "false";
+           document.getElementById("topMovies").enabled = "true";
+           document.getElementById("myFavorites").enabled = "true";
+           document.getElementById("myMovies").enabled = "true";
            document.getElementById("addMovie").disabled = "true";
             
         }
