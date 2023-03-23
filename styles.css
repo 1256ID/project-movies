@@ -172,3 +172,8 @@ li::marker {
 #favorites-list {
     display: none;
 }
+
+#addMoviePage {
+    display: none;
+    
+}
