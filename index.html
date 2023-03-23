@@ -39,32 +39,51 @@
             </div>
 
             <div class="main">
+
                 <div id="topMovies">
+
                     <h2>Our users favorite movies</h2>
+
                     <ol id="titlesWithBestScore">
+
                         <li v-for="movie in topMovies">
                             <!-- INTE BR, !CSS! -->
                             {{movie.title}} - {{movie.rating}} <br>
                             {{movie.genre}} : {{movie.tags[0] +", "+ movie.tags[1] +", "+ movie.tags[2]}}
                             <button type="button" @click="addToFavorites(movie)">Add to Favorites</button>
                         </li>
-                        <!-- <li>
-                        <h3 class="title">Title</h3>                                  
-                        <p class="score">Score</p>                                 
-                        <p class="tags">Tags</p>
-                        <p class="description>">Description</p>
-                        <img class="photo" src="" alt="">
-                    </li> -->
+
+                            <!-- <li>
+                            <h3 class="title">Title</h3>                                  
+                            <p class="score">Score</p>                                 
+                            <p class="tags">Tags</p>
+                            <p class="description>">Description</p>
+                            <img class="photo" src="" alt="">
+                            </li> -->
                     </ol>
+
                 </div>
+
                 <div id="favorites-list">
+
                     <h2>Favorites</h2>
+
                     <ol>
                         <li v-for="(favorite, index) in favorites">
                             {{ favorite.title }}
                             <button type="button" @click="removeFromFavorites(index)">Remove</button>
                         </li>
                     </ol>
+
+                </div>
+
+                <div id="addMoviePage">
+                    <h2>Add a movie</h2>
+                        <h3>TitleName</h3>
+                        <input type="text" id="titleInput" placeholder="Enter a title" v-model="titleInput">
+
+                        <h3>Genre</h3> 
+
                 </div>
 
                 <div v-if="searchResults.length > 0">

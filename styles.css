@@ -130,6 +130,25 @@ h2 {
     padding:10px;
 }
 
+ol#titlesWithBestScore {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    overflow: hidden;
+    list-style:none;
+    padding:30px;
+    
+}
+
+ol.li {
+    display:inline;
+    padding-right:25px;
+    margin: 30px;
+    
+}
+
 
 
 @media (max-width:800px) {
@@ -152,4 +171,9 @@ li::marker {
     
 #favorites-list {
     display: none;
+}
+
+#addMoviePage {
+    display: none;
+    
 }
