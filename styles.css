@@ -181,3 +181,7 @@ li::marker {
     display: none;
     border:solid 10px green;   
 }
+
+img {
+    width: 200px;
+}

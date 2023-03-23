@@ -18,6 +18,9 @@ Vue.createApp({
             });
     },
     methods: {
+        selectRandom(array) {
+            return array[Math.floor(Math.random() * array.length)];
+        },
         searchMovies() {
             const allMovies = [
                 ...this.jsonData.comedy,
@@ -39,72 +42,6 @@ Vue.createApp({
             this.searchResults = result;
         },
 
-        // addMoviePosters() {
-
-        //     let allMovies = [
-        //         ...this.jsonData.comedy,
-        //         ...this.jsonData.action,
-        //         ...this.jsonData.drama,
-        //         ...this.jsonData.romance,
-        //         ...this.jsonData.horror.robots,
-        //         ...this.jsonData.horror.aliens,
-        //         ...this.jsonData.horror.zombies,
-        //         ...this.jsonData.horror.vampires
-        //     ];
-
-        //     const comedyImages = this.jsonData.comedyImages;
-        //     const actionImages = this.jsonData.actionImages;
-        //     const dramaImages = this.jsonData.dramaImages;
-        //     const zombiesImages = this.jsonData.zombiesImages;
-        //     const vampiresImages = this.jsonData.vampiresImages;
-        //     const aliensImages = this.jsonData.aliensImages;
-        //     const robotsImages = this.jsonData.robotsImages;
-
-        //     let moviePoster;
-
-        //     for (let i = 0; i < allMovies.lenght; i++) {
-
-        //         if (genre === "comedy") {
-        //             moviePoster = this.selectRandom(comedyImages);
-        //         }
-
-        //         if (genre === "action") {
-        //             moviePoster = this.selectRandom(actionImages);
-        //         }
-
-        //         if (genre === "drama") {
-        //             moviePoster = this.selectRandom(dramaImages);
-        //         }
-
-        //         if (genre === "romance") {
-        //             moviePoster = this.selectRandom(dramaImages);
-        //         }
-
-        //         if (genre === "Zombies") {
-        //             moviePoster = this.selectRandom(zombiesImages);
-        //         }
-
-        //         if (genre === "Vampires") {
-        //             moviePoster = this.selectRandom(vampiresImages);
-        //         }
-
-        //         if (genre === "Aliens") {
-        //             moviePoster = this.selectRandom(aliensImages);
-        //         }
-
-        //         if (genre === "Robots") {
-        //             moviePoster = this.selectRandom(robotsImages);
-        //         }
-
-        //         let poster = {
-        //             image: moviePoster
-        //         }
-        //         movies.push(poster);
-        //         topMovies.push(poster);
-        //         searchResults.push(poster);
-        //     }
-        // },
-
         getTopMovies() {
             //Combines all genre arrays into one.
             let allMovies = [
@@ -125,6 +62,8 @@ Vue.createApp({
                 }
             });
 
+            let moviePoster;
+
             const comedyImages = this.jsonData.comedyImages;
             const actionImages = this.jsonData.actionImages;
             const dramaImages = this.jsonData.dramaImages;
@@ -133,47 +72,45 @@ Vue.createApp({
             const aliensImages = this.jsonData.aliensImages;
             const robotsImages = this.jsonData.robotsImages;
 
-            let moviePoster;
+            for (let i = 0; i < allMovies.length; i++) {
 
-            for (let i = 0; i < 10; i++) {
-
-                if (json.genre === "comedy") {
+                if (allMovies[i].genre === "Comedy") {
                     moviePoster = this.selectRandom(comedyImages);
                 }
 
-                if (genre === "action") {
+                if (allMovies[i].genre === "Action") {
                     moviePoster = this.selectRandom(actionImages);
                 }
 
-                if (genre === "drama") {
+                if (allMovies[i].genre === "Drama") {
                     moviePoster = this.selectRandom(dramaImages);
                 }
 
-                if (genre === "romance") {
+                if (allMovies[i].genre === "Romance") {
                     moviePoster = this.selectRandom(dramaImages);
                 }
 
-                if (genre === "Zombies") {
+                if (allMovies[i].genre === "Zombies") {
                     moviePoster = this.selectRandom(zombiesImages);
                 }
 
-                if (genre === "Vampires") {
+                if (allMovies[i].genre === "Vampires") {
                     moviePoster = this.selectRandom(vampiresImages);
                 }
 
-                if (genre === "Aliens") {
+                if (allMovies[i].genre === "Aliens") {
                     moviePoster = this.selectRandom(aliensImages);
                 }
 
-                if (genre === "Robots") {
+                if (allMovies[i].genre === "Robots") {
                     moviePoster = this.selectRandom(robotsImages);
                 }
 
-                let poster = {
-                    image: moviePoster
-                }
-                topMovies.push(poster);
+                allMovies[i].image = moviePoster;
+
+                this.topMovies.push(allMovies[i]);
             }
+
 
             this.topMovies = allMovies.slice(0, 10);
         },

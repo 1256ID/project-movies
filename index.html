@@ -101,7 +101,9 @@
                     <h2>Search results:</h2>
                     <ul>
                         <li v-for="result in searchResults">
+                            <img :src="result.image" alt="Movie poster">
                             {{ result.title }} - {{result.genre}} - {{result.year}}
+                            <button type="button" @click="addToFavorites(result)">Add to Favorites</button>
                         </li>
                     </ul>
                 </div>
