@@ -118,8 +118,7 @@ Vue.createApp({
 
         showTopMovies() {
 
-            
-            
+           
             
             /*
 
@@ -189,6 +188,9 @@ Vue.createApp({
 
         showAddMovie() {
 
+          
+
+            /*
             // Enable/Disable active/inactive divs
 
             document.querySelector("#topMovies").style.display = "none";
@@ -196,12 +198,6 @@ Vue.createApp({
             document.querySelector("#myMoviesPage").style.display = "none";
             document.querySelector("#addMoviePage").style.display = "block";
 
-            // Enable/Disable buttons.
-
-            document.getElementById("topMovies").disabled = "false";
-            document.getElementById("myFavorites").disabled = "false";
-            document.getElementById("myMovies").disabled = "false";
-            document.getElementById("addMovie").disabled = "true";
 
            // Enable/Disable buttons.
                
@@ -209,7 +205,7 @@ Vue.createApp({
            document.getElementById("myFavorites").enabled = "true";
            document.getElementById("myMovies").enabled = "true";
            document.getElementById("addMovie").disabled = "true";
-            
+            */
         }
 
 
