@@ -30,18 +30,18 @@
             <div class="menu">
                 <form @submit.prevent="searchMovies">
                     <input type="text" id="searchbox" placeholder="Search for a movie" v-model="search">
-                    <button type="submit">Search</button>
-                    <input id="topMovies" type="button" value="Top movies" @click="showTopMovies()">
-                    <input id="myFavorites" type="button" value="My favorites" @click="showFavorites()">
-                    <input id="myMovies" type="button" value="My movies" @click="showMyMovies()">
-                    <input id="addMovie" type="button" value="Add a movie" @click="showAddMovie()">
+                    <button type="submit" id="submit">Submit</button>       
+                    <input id="topMovies" type="button" value="Top movies" @click="showTopMovies()" :enabled="currentPage !== 'topMovies'">
+                    <input id="myFavorites" type="button" value="My favorites" @click="showFavorites()" :enabled="currentPage !== 'favorites'">
+                    <input id="myMovies" type="button" value="My movies" @click="showMyMovies()" :enabled="currentPage !== 'myMoviesPage'">
+                    <input id="addMovie" type="button" value="Add a movie" @click="showAddMovie()" :disabled="currentPage === 'addMoviePage'">
                     <input id="categories" type="button" value="Categories"> 
                 </form>
             </div>
 
             <div class="main">
 
-                <div id="topMovies">
+                <div id="topMovies" :class="{ hidden: !showTopMoviesPage }">
 
                     <h2>Our users favorite movies</h2>
 
@@ -65,7 +65,7 @@
 
                 </div>
 
-                <div id="favorites-list">
+                <div id="favorites-list" :class="{ hidden: !showFavoritesPage }">
 
                     <h2>Favorites</h2>
 
@@ -79,7 +79,7 @@
                 </div>
 
 
-                <div id="myMoviesPage">
+                <div id="myMoviesPage" :class="{ hidden: !showMyMoviesPage }">
 
 
 
@@ -87,7 +87,7 @@
 
                 </div>
 
-                <div id="addMoviePage">
+                <div id="addMoviePage" :class="{ hidden: !showAddMoviePage }">
                     <h2>Add a movie</h2>
                         <h3>TitleName</h3>
                         <input type="text" id="titleInput" placeholder="Enter a title" v-model="titleInput">
