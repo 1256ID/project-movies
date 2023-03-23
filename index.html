@@ -48,6 +48,7 @@
                     <ol id="titlesWithBestScore">
 
                         <li v-for="movie in topMovies">
+                            <img :src="movie.image" alt="Movie poster">
                             <!-- INTE BR, !CSS! -->
                             {{movie.title}} - {{movie.rating}} <br>
                             {{movie.genre}} : {{movie.tags[0] +", "+ movie.tags[1] +", "+ movie.tags[2]}}
@@ -100,7 +101,9 @@
                     <h2>Search results:</h2>
                     <ul>
                         <li v-for="result in searchResults">
+                            <img :src="result.image" alt="Movie poster">
                             {{ result.title }} - {{result.genre}} - {{result.year}}
+                            <button type="button" @click="addToFavorites(result)">Add to Favorites</button>
                         </li>
                     </ul>
                 </div>
