@@ -19,6 +19,25 @@ Vue.createApp({
             });
     },
     methods: {
+
+
+        searchMovies() {
+            const allMovies = [
+                ...this.jsonData.comedy,
+                ...this.jsonData.action,
+                ...this.jsonData.drama,
+                ...this.jsonData.romance,
+                ...this.jsonData.horror.robots,
+                ...this.jsonData.horror.aliens,
+                ...this.jsonData.horror.zombies,
+                ...this.jsonData.horror.vampires
+            ];
+
+            let result = allMovies.filter(movie => movie.title.toLowerCase().includes(this.search.toLowerCase()));
+
+            this.searchResults = result;
+        },
+
         getTopMovies() {
             //Combines all genre arrays into one.
             let allMovies = [
@@ -42,6 +61,23 @@ Vue.createApp({
             this.topMovies = allMovies.slice(0, 10);
         },
 
+        showTopMovies() {
+
+            // Enable/Disable active/inactive divs
+
+            document.querySelector("#topMovies").style.display = "block";    
+            document.querySelector("#favorites-list").style.display = "none";
+            document.querySelector("#myMoviesPage").style.display = "none";
+            document.querySelector("#addMoviePage").style.display = "none";  
+            
+            // Enable/Disable buttons.
+
+            document.getElementById("topMovies").disabled = "true";
+            document.getElementById("myFavorites").disabled = "false";
+            document.getElementById("myMovies").disabled = "false";
+            document.getElementById("addMovie").disabled = "false";
+        },
+
         addToFavorites(movie) {
             this.favorites.push(movie);
         },
@@ -51,48 +87,64 @@ Vue.createApp({
         },
 
         showFavorites() {
-            let button = document.getElementById("myFavorites");
-            let favPage = button.value === "My favorites";
 
-            if (favPage) {
-                document.querySelector("#topMovies").style.display = "none";
-                document.querySelector("#favorites-list").style.display = "block";
-                button.value = "Top Movies";
-            }
+            // Enable/Disable active/inactive divs
 
-            else {
-                document.querySelector("#topMovies").style.display = "block";
-                document.querySelector("#favorites-list").style.display = "none";
-                button.value = "My favorites";
-            }
+            document.querySelector("#topMovies").style.display = "none";
+            document.querySelector("#favorites-list").style.display = "block";
+            document.querySelector("#myMoviesPage").style.display = "none";
+            document.querySelector("#addMoviePage").style.display = "none";
+
+            // Enable/Disable buttons.
+                
+            document.getElementById("topMovies").disabled = "false";
+            document.getElementById("myFavorites").disabled = "true";
+            document.getElementById("myMovies").disabled = "false";
+            document.getElementById("addMovie").disabled = "false";
         },
 
-        searchMovies() {
-            const allMovies = [
-                ...this.jsonData.comedy,
-                ...this.jsonData.action,
-                ...this.jsonData.drama,
-                ...this.jsonData.romance,
-                ...this.jsonData.horror.robots,
-                ...this.jsonData.horror.aliens,
-                ...this.jsonData.horror.zombies,
-                ...this.jsonData.horror.vampires
-            ];
+        showMyMovies () {
 
-            let result = allMovies.filter(movie => movie.title.toLowerCase().includes(this.search.toLowerCase()));
+           // Enable/Disable active/inactive divs
 
-            this.searchResults = result;
+           document.querySelector("#topMovies").style.display = "none";
+           document.querySelector("#favorites-list").style.display = "none";
+           document.querySelector("#myMoviesPage").style.display = "block";
+           document.querySelector("#addMoviePage").style.display = "none";
+
+           // Enable/Disable buttons.
+               
+           document.getElementById("topMovies").disabled = "false";
+           document.getElementById("myFavorites").disabled = "false";
+           document.getElementById("myMovies").disabled = "true";
+           document.getElementById("addMovie").disabled = "false";
+
         },
-
-        
-        
-        showAddMovie () {
-            let button = document.getElementById("addMovie");   
-        },
+       
 
         addMovie() {
 
+        },
+        
+        showAddMovie () {
+            
+           // Enable/Disable active/inactive divs
+
+           document.querySelector("#topMovies").style.display = "none";
+           document.querySelector("#favorites-list").style.display = "none";
+           document.querySelector("#myMoviesPage").style.display = "none";
+           document.querySelector("#addMoviePage").style.display = "block";
+
+           // Enable/Disable buttons.
+               
+           document.getElementById("topMovies").disabled = "false";
+           document.getElementById("myFavorites").disabled = "false";
+           document.getElementById("myMovies").disabled = "false";
+           document.getElementById("addMovie").disabled = "true";
+            
         }
+
+        
         
     }
 }).mount("#app");
