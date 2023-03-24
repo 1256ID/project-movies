@@ -81,7 +81,7 @@
                     </form>
                 </div>
 
-                <div id="results" v-if="searchResults.length > 0">
+                <div id="results" v-if="searchResults.length > 0 && currentPage === 'searchResults'">
                     <h2>Search results:</h2>
                     <ul id="resultList">
                         <li v-for="result in searchResults">

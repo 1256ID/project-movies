@@ -7,8 +7,7 @@ Vue.createApp({
             topMovies: [],
             searchResults: [],
             newMovie: { title: '', year: null },            
-            currentPage: 'topMovies',
-            disabledButton: 'topMoviesButton',
+            currentPage: 'topMovies',        
             jsonData: null
         };
     },
@@ -87,7 +86,10 @@ Vue.createApp({
                     || movie.genre.toLowerCase().includes(this.search.toLowerCase()) || movie.year == this.search);
 
             this.searchResults = result;
+            this.currentPage = 'searchResults';
         },
+
+       
 
         getTopMovies() {
             // Combines all genre arrays into one.
@@ -118,7 +120,6 @@ Vue.createApp({
 
         showTopMovies() {
             this.currentPage = 'topMovies';
-            this.disabledButton = 'topMoviesButton';
         },
 
         addToFavorites(movie) {
@@ -130,30 +131,11 @@ Vue.createApp({
         },
 
         showFavorites() {
-
             this.currentPage = 'favorites';
-            this.disabledButton = 'favoritesButton';
-
-            /*
-            // Enable/Disable active/inactive divs
-
-            document.querySelector("#topMovies").style.display = "none";
-            document.querySelector("#favorites").style.display = "block";
-            document.querySelector("#myMoviesPage").style.display = "none";
-            document.querySelector("#addMoviePage").style.display = "none";
-
-            // Enable/Disable buttons.
-
-            document.getElementById("topMovies").enabled = "true";
-            document.getElementById("myFavorites").disabled = "true";
-            document.getElementById("myMovies").enabled = "true";
-            document.getElementById("addMovie").enabled = "true";
-            */
         },
 
         showMyMovies() {
             this.currentPage = 'myMovies';
-            this.disabledButton = 'myMoviesButton';
         },
 
 
@@ -163,7 +145,6 @@ Vue.createApp({
 
         showAddMovies() {
             this.currentPage = 'addMovies';
-            this.disabledButton = 'addMoviesButton';
         },
 
 
