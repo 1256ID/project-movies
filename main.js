@@ -1,12 +1,14 @@
 Vue.createApp({
     data() {
         return {
-            currentPage: 'topMovies',
             search: "",
             movies: [],
             favorites: [],
             topMovies: [],
             searchResults: [],
+            newMovie: { title: '', year: null },            
+            currentPage: 'topMovies',
+            disabledButton: 'topMoviesButton',
             jsonData: null
         };
     },
@@ -115,25 +117,8 @@ Vue.createApp({
         },
 
         showTopMovies() {
-
-
-
-            /*
-
-            // Enable/Disable active/inactive divs
-
-            document.querySelector("#topMovies").style.display = "block";
-            document.querySelector("#favorites-list").style.display = "none";
-            document.querySelector("#myMoviesPage").style.display = "none";
-            document.querySelector("#addMoviePage").style.display = "none";
-
-            // Enable/Disable buttons.
-
-            document.getElementById("topMovies").disabled = "true";
-            document.getElementById("myFavorites").enabled = "true";
-            document.getElementById("myMovies").enabled = "true";
-            document.getElementById("addMovie").enabled = "true";
-            */
+            this.currentPage = 'topMovies';
+            this.disabledButton = 'topMoviesButton';
         },
 
         addToFavorites(movie) {
@@ -146,6 +131,10 @@ Vue.createApp({
 
         showFavorites() {
 
+            this.currentPage = 'favorites';
+            this.disabledButton = 'favoritesButton';
+
+            /*
             // Enable/Disable active/inactive divs
 
             document.querySelector("#topMovies").style.display = "none";
@@ -159,52 +148,23 @@ Vue.createApp({
             document.getElementById("myFavorites").disabled = "true";
             document.getElementById("myMovies").enabled = "true";
             document.getElementById("addMovie").enabled = "true";
+            */
         },
 
         showMyMovies() {
-
-            // Enable/Disable active/inactive divs
-
-            document.querySelector("#topMovies").style.display = "none";
-            document.querySelector("#favorites").style.display = "none";
-            document.querySelector("#myMoviesPage").style.display = "block";
-            document.querySelector("#addMoviePage").style.display = "none";
-
-            // Enable/Disable buttons.
-
-            document.getElementById("topMovies").enabled = "true";
-            document.getElementById("myFavorites").enabled = "true";
-            document.getElementById("myMovies").disabled = "true";
-            document.getElementById("addMovie").enabled = "true";
-
+            this.currentPage = 'myMovies';
+            this.disabledButton = 'myMoviesButton';
         },
 
 
         addMovie() {
-
+           
         },
 
-        showAddMovie() {
-
-
-
-            /*
-            // Enable/Disable active/inactive divs
-
-            document.querySelector("#topMovies").style.display = "none";
-            document.querySelector("#favorites-list").style.display = "none";
-            document.querySelector("#myMoviesPage").style.display = "none";
-            document.querySelector("#addMoviePage").style.display = "block";
-
-
-           // Enable/Disable buttons.
-               
-           document.getElementById("topMovies").enabled = "true";
-           document.getElementById("myFavorites").enabled = "true";
-           document.getElementById("myMovies").enabled = "true";
-           document.getElementById("addMovie").disabled = "true";
-            */
-        }
+        showAddMovies() {
+            this.currentPage = 'addMovies';
+            this.disabledButton = 'addMoviesButton';
+        },
 
 
 

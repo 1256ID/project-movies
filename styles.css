@@ -10,7 +10,8 @@ html {
 .grid-container {
     display: grid;
     grid-template-columns: 200px repeat(3, 1fr) 200px;
-    grid-template-rows: 1fr 50px repeat(5, 1fr) 50px;
+    /*grid-template-rows: 1fr 50px repeat(5, 1fr) 50px;
+    */
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     background-image: url(Media/test.png);
@@ -148,15 +149,16 @@ li::marker {
     display: none;
 }
 
+/*
 #topMovies,
 #favorites,
 #myMoviesPage,
-#addMoviePage {
+#addMoviePage { 
     color: black;
     display: none;
     background-image: url(Media/background-image-whitegrey.png);
 }
-
+*/
 #resultList,
 #favoritesList,
 #titlesWithBestScore {
