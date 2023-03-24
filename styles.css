@@ -157,25 +157,6 @@ li::marker {
     background-image: url(Media/background-image-whitegrey.png);
 }
 
-#resultList,
-#favoritesList,
-#titlesWithBestScore {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-#resultList li,
-#favoritesList li,
-#titlesWithBestScore li {
-    width: 20%;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
 img {
-    max-width: 100%;
-    height: auto;
+    width: 200px;
 }
