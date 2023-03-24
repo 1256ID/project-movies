@@ -1,18 +1,11 @@
 html {
-    color:rgb(151, 221, 59); 
-
-    background-color:rgba(19, 19, 19, 0.808);
+    color: rgb(151, 221, 59);
+    background-color: rgba(19, 19, 19, 0.808);
     font-family: Stardos Stencil;
-    /*
-    background-image:url(Media/background-image-whitegrey.png);
-    border:solid 18px rgb(0, 0, 0);
-    */
-    
-    border-bottom:0;
-
-
+    /* background-image:url(Media/background-image-whitegrey.png);
+    border:solid 18px rgb(0, 0, 0); */
+    border-bottom: 0;
 }
-
 
 .grid-container {
     display: grid;
@@ -20,144 +13,118 @@ html {
     grid-template-rows: 1fr 50px repeat(5, 1fr) 50px;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    background-image:url(Media/test.png);
-    }
+    background-image: url(Media/test.png);
+}
 
- 
-    
-    .header { 
-        grid-area: 1 / 1 / 2 / 6; 
-        padding-top:20px;
-        padding-left:100px;
-        padding-right:100px;
-        border-top:solid 1px green;  
-        border-right:solid 1px green;
-        border-left:solid 1px green;   
-        
+.header {
+    grid-area: 1 / 1 / 2 / 6;
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-top: solid 1px green;
+    border-right: solid 1px green;
+    border-left: solid 1px green;
+}
 
-    }
+.menu {
+    grid-area: 2 / 1 / 3 / 6;
+    background-color: rgb(0, 0, 0);
+    /* border-bottom:solid 5px rgb(88, 88, 88); */
+    justify-self: center;
+    align-self: center;
+    border-top: solid 1px green;
+    border-left: solid 1px green;
+    border-right: solid 1px green;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+}
 
-    .menu {       
-        grid-area: 2 / 1 / 3 / 6; 
-        
-        background-color: rgb(0, 0, 0); ;
+#searchbox {
+    justify-self: baseline;
+    margin: 10px;
+    margin-left: 0px;
+    margin-right: 25p;
+}
 
-        /*
-        border-bottom:solid 5px rgb(88, 88, 88);
-        
-        */ 
-        
-        justify-self: center;
-        align-self: center;
-        border-top:solid 1px green;
-        border-left:solid 1px green;  
-        border-right:solid 1px green;
-        padding-top:5px;
-        padding-bottom:5px;
-        padding-left:10px; 
-        padding-right:10px;
-        margin:0;
-          
-    }
+#submit {
+    margin-right: 10px;
+}
 
-   
+.menu input[type="button"] {
+    justify-self: center;
+    align-items: center;
+    /* background-image:url(Media/background-image-whitegrey.png); */
+    padding: 5px;
+    background-color: white;
+    margin: 3px;
+    border: solid 2px rgb(0, 0, 0);
+    outline: solid 2px black;
+}
 
-    #searchbox {
-        
-        justify-self: baseline;
-        margin:10px;
-        margin-left:0px;
-        margin-right:25p;
-    }
+.main,
+.ads {
+    border: solid 1px green;
+}
 
-    #submit {
-        margin-right:10px;
-    }
+.header,
+.main,
+.left,
+.footer {
+    background-image: url(Media/test.png);
+}
 
+.main {
+    grid-area: 3 / 1 / 7 / 6;
+    padding-top: 0;
+}
 
-    .menu input[type="button"] {
-        
-        justify-self: center;
-        align-items: center;
-        /*
-        background-image:url(Media/background-image-whitegrey.png);
-        */
-        padding:5px;
-        background-color: white;
-        margin: 3px;
-        border:solid 2px rgb(0, 0, 0);
-        outline: solid 2px black;
-    }
+.ads {
+    grid-area: 7 / 1 / 8 / 6;
+    text-align: center;
+    border-left: solid 1px green;
+    border-right: solid 1px green;
+    background-color: black;
+}
 
-   
+.footer {
+    grid-area: 8 / 1 / 9 / 6;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    border: solid 1px green;
+}
 
-
-    .main, .ads {
-        border:solid 1px green;
-    }
-
-    .header, .main, .left, .footer {
-        background-image: url(Media/test.png);
-    }
-
-
-
-  
-
-    .main { 
-        grid-area: 3 / 1 / 7 / 6;  
-        padding-top:0;
-        
-    }
-
-    .ads { 
-        grid-area: 7 / 1 / 8 / 6; 
-        text-align:center;      
-        border-left:solid 1px green;
-        border-right:solid 1px green;
-        background-color: black;  
-    }
-    
-    .footer {
-        grid-area: 8 / 1 / 9 / 6;
-        text-align:center; 
-        background-color: rgb(0, 0, 0);  
-        border:solid 1px green;      
-    }
-  
 h1 {
-    font-size:48px;
-    text-align:center;
+    font-size: 48px;
+    text-align: center;
     font-family: Special Elite;
 }
 
 h2 {
-    font-size:28px;
+    font-size: 28px;
     text-align: center;
     font-family: Coustard;
-    padding:10px;
+    padding: 10px;
 }
 
-ol#titlesWithBestScore {
+/* ol#titlesWithBestScore {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     list-style-type: none;
     overflow: hidden;
-    list-style:none;
-    padding:30px;
-    
-}
+    list-style: none;
+    padding: 30px;
+} */
 
-ol.li {
-    display:inline;
-    padding-right:25px;
+/* ol.li {
+    display: inline;
+    padding-right: 25px;
     margin: 30px;
-    
-}
-
-
+} */
 
 @media (max-width:800px) {
     .header {
@@ -165,27 +132,29 @@ ol.li {
     }
 }
 
-#titlesWithBestScore {
+/* #titlesWithBestScore {
     position: relative;
-}
+} */
 
 .title {
-    font-size:24px;
+    font-size: 24px;
 }
 
 li::marker {
     visibility: hidden;
 }
-    
-#favorites-list {
+
+#favorites {
     display: none;
 }
 
-
-#topMovies, #favorites-list, #myMoviesPage, #addMoviePage {
-    color:black;
+#topMovies,
+#favorites,
+#myMoviesPage,
+#addMoviePage {
+    color: black;
     display: none;
-    background-image:url(Media/background-image-whitegrey.png); 
+    background-image: url(Media/background-image-whitegrey.png);
 }
 
 img {
