@@ -2,11 +2,8 @@ html {
     color: rgb(151, 221, 59);
     background-color: rgba(19, 19, 19, 0.808);
     font-family: Stardos Stencil;
-    /*
-    background-image:url(Media/background-image-whitegrey.png);
-    border:solid 18px rgb(0, 0, 0);
-    */
-
+    /* background-image:url(Media/background-image-whitegrey.png);
+    border:solid 18px rgb(0, 0, 0); */
     border-bottom: 0;
 }
 
@@ -112,7 +109,7 @@ h2 {
     padding: 10px;
 }
 
-ol#titlesWithBestScore {
+/* ol#titlesWithBestScore {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -121,13 +118,13 @@ ol#titlesWithBestScore {
     overflow: hidden;
     list-style: none;
     padding: 30px;
-}
+} */
 
-ol.li {
+/* ol.li {
     display: inline;
     padding-right: 25px;
     margin: 30px;
-}
+} */
 
 @media (max-width:800px) {
     .header {
@@ -135,9 +132,9 @@ ol.li {
     }
 }
 
-#titlesWithBestScore {
+/* #titlesWithBestScore {
     position: relative;
-}
+} */
 
 .title {
     font-size: 24px;
@@ -147,12 +144,12 @@ li::marker {
     visibility: hidden;
 }
 
-#favorites-list {
+#favorites {
     display: none;
 }
 
 #topMovies,
-#favorites-list,
+#favorites,
 #myMoviesPage,
 #addMoviePage {
     color: black;
@@ -160,6 +157,25 @@ li::marker {
     background-image: url(Media/background-image-whitegrey.png);
 }
 
+#resultList,
+#favoritesList,
+#titlesWithBestScore {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#resultList li,
+#favoritesList li,
+#titlesWithBestScore li {
+    width: 20%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
 img {
-    width: 200px;
+    max-width: 100%;
+    height: auto;
 }

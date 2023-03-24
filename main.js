@@ -151,7 +151,7 @@ Vue.createApp({
             // Enable/Disable active/inactive divs
 
             document.querySelector("#topMovies").style.display = "none";
-            document.querySelector("#favorites-list").style.display = "block";
+            document.querySelector("#favorites").style.display = "block";
             document.querySelector("#myMoviesPage").style.display = "none";
             document.querySelector("#addMoviePage").style.display = "none";
 
@@ -168,7 +168,7 @@ Vue.createApp({
             // Enable/Disable active/inactive divs
 
             document.querySelector("#topMovies").style.display = "none";
-            document.querySelector("#favorites-list").style.display = "none";
+            document.querySelector("#favorites").style.display = "none";
             document.querySelector("#myMoviesPage").style.display = "block";
             document.querySelector("#addMoviePage").style.display = "none";
 
