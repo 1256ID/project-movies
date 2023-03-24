@@ -183,3 +183,12 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+#addMovies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   
+   
+}

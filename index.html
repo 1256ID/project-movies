@@ -45,7 +45,7 @@
 
             <div class="main">
 
-                <div v-if="currentPage === 'topMovies'">
+                <div id="topMovies" v-if="currentPage === 'topMovies'">
                     <h2>Our users favorite movies</h2>
                     <ol id="titlesWithBestScore">
                         <li v-for="movie in topMovies">
@@ -58,7 +58,7 @@
                     </ol>
                 </div>
 
-                <div v-if="currentPage === 'favorites'">
+                <div id="myfavorites" v-if="currentPage === 'favorites'">
                     <h2>Favorites</h2>
                     <ol id="favoritesList">
                         <li v-for="(favorite, index) in favorites">
@@ -69,10 +69,10 @@
                     </ol>
                 </div>
 
-                <div v-if="currentPage === 'myMovies'">
+                <div id="myMovies" v-if="currentPage === 'myMovies'">
                 </div>
 
-                <div v-if="currentPage === 'addMovies'">
+                <div id="addMovies" v-if="currentPage === 'addMovies'">
                     <form>
                         <h2>Add a movie</h2>
                         <h3>TitleName</h3>
