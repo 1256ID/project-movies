@@ -1,12 +1,13 @@
 Vue.createApp({
     data() {
         return {
-            currentPage: 'topMovies',
             search: "",
             movies: [],
             favorites: [],
             topMovies: [],
             searchResults: [],
+            newMovie: { title: '', year: null },            
+            currentPage: 'topMovies',        
             jsonData: null
         };
     },
@@ -85,7 +86,10 @@ Vue.createApp({
                     || movie.genre.toLowerCase().includes(this.search.toLowerCase()) || movie.year == this.search);
 
             this.searchResults = result;
+            this.currentPage = 'searchResults';
         },
+
+       
 
         getTopMovies() {
             // Combines all genre arrays into one.
@@ -115,25 +119,7 @@ Vue.createApp({
         },
 
         showTopMovies() {
-
-
-
-            /*
-
-            // Enable/Disable active/inactive divs
-
-            document.querySelector("#topMovies").style.display = "block";
-            document.querySelector("#favorites-list").style.display = "none";
-            document.querySelector("#myMoviesPage").style.display = "none";
-            document.querySelector("#addMoviePage").style.display = "none";
-
-            // Enable/Disable buttons.
-
-            document.getElementById("topMovies").disabled = "true";
-            document.getElementById("myFavorites").enabled = "true";
-            document.getElementById("myMovies").enabled = "true";
-            document.getElementById("addMovie").enabled = "true";
-            */
+            this.currentPage = 'topMovies';
         },
 
         addToFavorites(movie) {
@@ -145,66 +131,21 @@ Vue.createApp({
         },
 
         showFavorites() {
-
-            // Enable/Disable active/inactive divs
-
-            document.querySelector("#topMovies").style.display = "none";
-            document.querySelector("#favorites").style.display = "block";
-            document.querySelector("#myMoviesPage").style.display = "none";
-            document.querySelector("#addMoviePage").style.display = "none";
-
-            // Enable/Disable buttons.
-
-            document.getElementById("topMovies").enabled = "true";
-            document.getElementById("myFavorites").disabled = "true";
-            document.getElementById("myMovies").enabled = "true";
-            document.getElementById("addMovie").enabled = "true";
+            this.currentPage = 'favorites';
         },
 
         showMyMovies() {
-
-            // Enable/Disable active/inactive divs
-
-            document.querySelector("#topMovies").style.display = "none";
-            document.querySelector("#favorites").style.display = "none";
-            document.querySelector("#myMoviesPage").style.display = "block";
-            document.querySelector("#addMoviePage").style.display = "none";
-
-            // Enable/Disable buttons.
-
-            document.getElementById("topMovies").enabled = "true";
-            document.getElementById("myFavorites").enabled = "true";
-            document.getElementById("myMovies").disabled = "true";
-            document.getElementById("addMovie").enabled = "true";
-
+            this.currentPage = 'myMovies';
         },
 
 
         addMovie() {
-
+           
         },
 
-        showAddMovie() {
-
-
-
-            /*
-            // Enable/Disable active/inactive divs
-
-            document.querySelector("#topMovies").style.display = "none";
-            document.querySelector("#favorites-list").style.display = "none";
-            document.querySelector("#myMoviesPage").style.display = "none";
-            document.querySelector("#addMoviePage").style.display = "block";
-
-
-           // Enable/Disable buttons.
-               
-           document.getElementById("topMovies").enabled = "true";
-           document.getElementById("myFavorites").enabled = "true";
-           document.getElementById("myMovies").enabled = "true";
-           document.getElementById("addMovie").disabled = "true";
-            */
-        }
+        showAddMovies() {
+            this.currentPage = 'addMovies';
+        },
 
 
 

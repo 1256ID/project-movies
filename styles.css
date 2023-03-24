@@ -10,7 +10,8 @@ html {
 .grid-container {
     display: grid;
     grid-template-columns: 200px repeat(3, 1fr) 200px;
-    grid-template-rows: 1fr 50px repeat(5, 1fr) 50px;
+    /*grid-template-rows: 1fr 50px repeat(5, 1fr) 50px;
+    */
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     background-image: url(Media/test.png);
@@ -79,6 +80,7 @@ html {
 .main {
     grid-area: 3 / 1 / 7 / 6;
     padding-top: 0;
+    
 }
 
 .ads {
@@ -148,15 +150,16 @@ li::marker {
     display: none;
 }
 
+/*
 #topMovies,
 #favorites,
 #myMoviesPage,
-#addMoviePage {
+#addMoviePage { 
     color: black;
     display: none;
     background-image: url(Media/background-image-whitegrey.png);
 }
-
+*/
 #resultList,
 #favoritesList,
 #titlesWithBestScore {
@@ -173,6 +176,7 @@ li::marker {
     width: 20%;
     padding: 10px;
     box-sizing: border-box;
+    
 }
 
 img {
@@ -220,3 +224,12 @@ img {
     text-align: center;
 }
 /* ChatGPT help */
+
+#addMovies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   
+   
+}
