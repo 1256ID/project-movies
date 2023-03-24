@@ -84,7 +84,12 @@
                     <h2>Search results:</h2>
                     <ul id="resultList">
                         <li v-for="result in searchResults">
-                            <img :src="result.image" alt="Movie poster">
+                            <div class="container">
+                                <img :src="result.image" alt="Movie poster" class="image">
+                                <div class="overlay">
+                                    <div class="text">Description: Lorem ipsum dolor sit amet. {{result.tags[0]}}, {{result.tags[1]}}, {{result.tags[2]}}</div>
+                                </div>
+                            </div>
                             {{ result.title }} - {{result.genre}} - {{result.year}}
                             <button type="button" @click="addToFavorites(result)">Add to Favorites</button>
                         </li>
