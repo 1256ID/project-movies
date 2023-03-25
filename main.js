@@ -6,8 +6,9 @@ Vue.createApp({
             favorites: [],
             topMovies: [],
             searchResults: [],
-            newMovie: { title: '', year: null },            
-            currentPage: 'topMovies',        
+            newMovie: { title: '', year: null },
+            currentPage: 'topMovies',
+            sortBy: "A-Z",
             jsonData: null
         };
     },
@@ -25,7 +26,6 @@ Vue.createApp({
         },
 
         addMoviePosters(movie) {
-
             const comedyImages = this.jsonData.comedyImages;
             const actionImages = this.jsonData.actionImages;
             const dramaImages = this.jsonData.dramaImages;
@@ -43,7 +43,7 @@ Vue.createApp({
                 moviePoster = this.selectRandom(actionImages);
             }
 
-            else if (movie.genre === "Drama"|| movie.genre === "Romance") {
+            else if (movie.genre === "Drama" || movie.genre === "Romance") {
                 moviePoster = this.selectRandom(dramaImages);
             }
 
@@ -88,8 +88,6 @@ Vue.createApp({
             this.searchResults = result;
             this.currentPage = 'searchResults';
         },
-
-       
 
         getTopMovies() {
             // Combines all genre arrays into one.
@@ -140,14 +138,25 @@ Vue.createApp({
 
 
         addMovie() {
-           
+
         },
 
         showAddMovies() {
             this.currentPage = 'addMovies';
         },
 
+        sortMovies() {
+            if (this.sortBy === 'year') {
+                return this.searchResults.sort((a, b) => b.year - a.year);
+            }
+            //ChatGPT help
+            else if (this.sortBy === 'alphabetically') {
+                return this.searchResults.sort((a, b) => a.title.localeCompare(b.title));
+            }
 
-
+            else {
+                return this.searchResults;
+            }
+        }
     }
 }).mount("#app");
