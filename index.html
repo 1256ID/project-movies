@@ -37,8 +37,8 @@
                         :enabled="currentPage !== 'favorites'">
                     <input id="myMovies" type="button" value="My movies" @click="showMyMovies()"
                         :enabled="currentPage !== 'myMovies'">
-                    <input id="addMovie" type="button" value="Add a movie" @click="showAddMovies()" 
-                    :enabled="currentPage !== 'addMovies'">
+                    <input id="addMovie" type="button" value="Add a movie" @click="showAddMovies()"
+                        :enabled="currentPage !== 'addMovies'">
                     <input id="categories" type="button" value="Categories">
                 </form>
             </div>
@@ -49,10 +49,15 @@
                     <h2>Our users favorite movies</h2>
                     <ol id="titlesWithBestScore">
                         <li v-for="movie in topMovies">
-                            <img :src="movie.image" alt="Movie poster">
-                            <!-- INTE BR, !CSS! -->
-                            {{movie.title}} - {{movie.rating}} <br>
-                            {{movie.genre}} : {{movie.tags[0] +", "+ movie.tags[1] +", "+ movie.tags[2]}}
+                            <div class="container">
+                                <img :src="movie.image" alt="Movie poster" class="image">
+                                <div class="overlay">
+                                    <div class="text">Description: Lorem ipsum dolor sit amet. {{movie.genre}}
+                                        {{movie.tags[0]}}, {{movie.tags[1]}}, {{movie.tags[2]}} Rating
+                                        {{movie.rating}} </div>
+                                </div>
+                            </div>
+                            {{ movie.title }} - {{movie.year}}
                             <button type="button" @click="addToFavorites(movie)">Add to Favorites</button>
                         </li>
                     </ol>
@@ -62,8 +67,15 @@
                     <h2>Favorites</h2>
                     <ol id="favoritesList">
                         <li v-for="(favorite, index) in favorites">
-                            <img :src="favorite.image" alt="Movie poster">
-                            {{ favorite.title }}
+                            <div class="container">
+                                <img :src="favorite.image" alt="Movie poster" class="image">
+                                <div class="overlay">
+                                    <div class="text">Description: Lorem ipsum dolor sit amet. {{favorite.genre}}
+                                        {{favorite.tags[0]}}, {{favorite.tags[1]}}, {{favorite.tags[2]}} Rating
+                                        {{favorite.rating}} </div>
+                                </div>
+                            </div>
+                            {{ favorite.title }} - {{favorite.year}}
                             <button type="button" @click="removeFromFavorites(index)">Remove</button>
                         </li>
                     </ol>
@@ -88,10 +100,12 @@
                             <div class="container">
                                 <img :src="result.image" alt="Movie poster" class="image">
                                 <div class="overlay">
-                                    <div class="text">Description: Lorem ipsum dolor sit amet. {{result.tags[0]}}, {{result.tags[1]}}, {{result.tags[2]}}</div>
+                                    <div class="text">Description: Lorem ipsum dolor sit amet. {{result.genre}}
+                                        {{result.tags[0]}}, {{result.tags[1]}}, {{result.tags[2]}} Rating
+                                        {{result.rating}} </div>
                                 </div>
                             </div>
-                            {{ result.title }} - {{result.genre}} - {{result.year}}
+                            {{ result.title }} - {{result.year}}
                             <button type="button" @click="addToFavorites(result)">Add to Favorites</button>
                         </li>
                     </ul>
