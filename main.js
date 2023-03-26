@@ -201,54 +201,51 @@ Vue.createApp({
         },
 
         sortAllMovies() {
+            let sortedMovies = this.movies.slice();
 
             if (this.selectedGenre === "comedy") {
-                return this.movies.filter(movie => movie.genre === "comedy");
+                sortedMovies = sortedMovies.filter(movie => movie.genre === "Comedy");
             }
 
             else if (this.selectedGenre === "drama") {
-                return this.movies.filter(movie => movie.genre === "drama");
+                sortedMovies = sortedMovies.filter(movie => movie.genre === "Drama");
             }
 
             else if (this.selectedGenre === "action") {
-                return this.movies.filter(movie => movie.genre === "action");
+                sortedMovies = sortedMovies.filter(movie => movie.genre === "Action");
             }
 
             else if (this.selectedGenre === "horror") {
-                return this.movies.filter(movie => movie.genre === "horror");
+                return this.movies.filter(movie => movie.genre === "Aliens" || movie.genre === "Robots"
+                    || movie.genre === "Zombies" || movie.genre === "Vampires");
             }
 
-            if (this.sortBy === 'title') {
-                return this.movies.sort((a, b) => a.title.localeCompare(b.title));
+            if (this.sortBy === "title") {
+                sortedMovies.sort((a, b) => a.title.localeCompare(b.title));
             }
 
-            else if (this.sortBy === 'year') {
-                return this.movies.sort((a, b) => b.year - a.year);
+            else if (this.sortBy === "year") {
+                sortedMovies.sort((a, b) => b.year - a.year);
             }
 
-            else if (this.sortBy === 'genre') {
-                return this.movies.sort((a, b) => a.genre.localeCompare(b.genre));
-            }
-
-            else if (this.sortBy === 'ratingHigh') {
-                return this.movies.sort((a, b) => {
+            else if (this.sortBy === "ratingHigh") {
+                sortedMovies.sort((a, b) => {
                     if (a.rating > b.rating) {
                         return -1;
                     }
                 });
             }
 
-            else if (this.sortBy === 'ratingLow') {
-                return this.movies.sort((a, b) => {
+            else if (this.sortBy === "ratingLow") {
+                sortedMovies.sort((a, b) => {
                     if (a.rating < b.rating) {
                         return -1;
                     }
                 });
             }
 
-            else {
-                return this.movies;
-            }
+            return sortedMovies;
+
         }
     }
 }).mount("#app");
