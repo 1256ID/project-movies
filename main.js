@@ -146,12 +146,33 @@ Vue.createApp({
         },
 
         sortMovies() {
-            if (this.sortBy === 'year') {
+            //ChatGPT help
+            if (this.sortBy === 'alphabetically') {
+                return this.searchResults.sort((a, b) => a.title.localeCompare(b.title));
+            }
+
+            else if (this.sortBy === 'year') {
                 return this.searchResults.sort((a, b) => b.year - a.year);
             }
-            //ChatGPT help
-            else if (this.sortBy === 'alphabetically') {
-                return this.searchResults.sort((a, b) => a.title.localeCompare(b.title));
+
+            else if (this.sortBy === 'genre') {
+                return this.searchResults.sort((a, b) => a.genre.localeCompare(b.genre));
+            }
+
+            else if (this.sortBy === 'ratingHigh') {
+                return this.searchResults.sort((a, b) => {
+                    if (a.rating > b.rating) {
+                        return -1;
+                    }
+                });
+            }
+
+            else if (this.sortBy === 'ratingLow') {
+                return this.searchResults.sort((a, b) => {
+                    if (a.rating < b.rating) {
+                        return -1;
+                    }
+                });
             }
 
             else {

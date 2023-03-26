@@ -98,8 +98,11 @@
                     <div>
                         <p>Order by:</p>
                         <select v-model="sortBy">
-                            <option value="year">Year</option>
                             <option value="alphabetically">A-Z</option>
+                            <option value="year">Year</option>
+                            <option value="genre">Genre</option>
+                            <option value="ratingHigh">Highest to lowest rating</option>
+                            <option value="ratingLow">Lowest to highest rating</option>
                         </select>
 
                     </div>
@@ -111,21 +114,6 @@
                                     <div class="text">Description: Lorem ipsum dolor sit amet. {{result.genre}}
                                         {{result.tags[0]}}, {{result.tags[1]}}, {{result.tags[2]}} Rating
                                         {{result.rating}}</div>
-                                </div>
-                            </div>
-                            {{ result.title }} - {{result.year}}
-                            <button type="button" @click="addToFavorites(result)">Add to Favorites</button>
-                        </li>
-                    </ul>
-
-                    <ul id="resultList">
-                        <li v-for="result in sortMovies()">
-                            <div class="container">
-                                <img :src="result.image" alt="Movie poster" class="image">
-                                <div class="overlay">
-                                    <div class="text">Description: Lorem ipsum dolor sit amet. {{result.genre}}
-                                        {{result.tags[0]}}, {{result.tags[1]}}, {{result.tags[2]}} Rating
-                                        {{result.rating}} </div>
                                 </div>
                             </div>
                             {{ result.title }} - {{result.year}}
