@@ -39,7 +39,7 @@
                         :enabled="currentPage !== 'myMovies'">
                     <input id="addMovie" type="button" value="Add a movie" @click="showAddMovies()"
                         :enabled="currentPage !== 'addMovies'">
-                    <input id="categories" type="button" value="Categories">
+                    <input id="categories" type="button" value="Categories" @click="showGenres()">
                 </form>
             </div>
 
@@ -98,13 +98,12 @@
                     <div>
                         <p>Order by:</p>
                         <select v-model="sortBy">
-                            <option value="alphabetically">A-Z</option>
+                            <option value="title">Title</option>
                             <option value="year">Year</option>
                             <option value="genre">Genre</option>
                             <option value="ratingHigh">Highest to lowest rating</option>
                             <option value="ratingLow">Lowest to highest rating</option>
                         </select>
-
                     </div>
                     <ul id="resultList">
                         <li v-for="result in sortMovies()">
@@ -121,6 +120,45 @@
                         </li>
                     </ul>
                 </div>
+
+                <div id="genres" v-if="currentPage === 'genres'">
+                    <h2>Genres</h2>
+                    <div id="genreOptions">
+                        <div>
+                            <p>Categories</p>
+                            <select v-model="genre">
+                                <option value="comedy">Comedy</option>
+                                <option value="romance">Romance</option>
+                                <option value="action">Action</option>
+                                <option value="drama">Drama</option>
+                                <option value="horror">Horror</option>
+                            </select>
+                        </div>
+                        <div>
+                            <p>Order by:</p>
+                            <select>
+                                <option value="title">Title</option>
+                                <option value="rating">Rating</option>
+                                <option value="year">Year</option>
+                            </select>
+                        </div>
+                    </div>
+                    <ul>
+                        <li v-for="movie in filteredMovies">
+                            <div class="container">
+                                <img :src="movie.image" alt="Movie poster" class="image">
+                                <div class="overlay">
+                                    <div class="text">Description: Lorem ipsum dolor sit amet. {{movie.genre}}
+                                        {{movie.tags[0]}}, {{movie.tags[1]}}, {{movie.tags[2]}} Rating
+                                        {{movie.rating}} </div>
+                                </div>
+                            </div>
+                            {{ movie.title }} - {{movie.year}}
+                            <button type="button" @click="addToFavorites(movie)">Add to Favorites</button>
+                        </li>
+                    </ul>
+                </div>
+
 
             </div>
 

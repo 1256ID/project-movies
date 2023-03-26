@@ -3,6 +3,7 @@ Vue.createApp({
         return {
             search: "",
             movies: [],
+            moviesByGenre: [],
             favorites: [],
             topMovies: [],
             searchResults: [],
@@ -147,7 +148,7 @@ Vue.createApp({
 
         sortMovies() {
             //ChatGPT help
-            if (this.sortBy === 'alphabetically') {
+            if (this.sortBy === 'title') {
                 return this.searchResults.sort((a, b) => a.title.localeCompare(b.title));
             }
 
@@ -178,6 +179,15 @@ Vue.createApp({
             else {
                 return this.searchResults;
             }
+        },
+
+        showGenres() {
+            this.currentPage = 'genres';
+        },
+
+        showMoviesByGenre() {
+            this.moviesByGenre = this.movies.filter(movie => movie.genre === this.genre);
+            this.currentPage = 'showMoviesByGenre';
         }
     }
 }).mount("#app");
