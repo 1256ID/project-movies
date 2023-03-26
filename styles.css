@@ -162,7 +162,8 @@ li::marker {
 */
 #resultList,
 #favoritesList,
-#titlesWithBestScore {
+#titlesWithBestScore,
+#genreList {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
@@ -172,7 +173,8 @@ li::marker {
 
 #resultList li,
 #favoritesList li,
-#titlesWithBestScore li {
+#titlesWithBestScore li,
+#genreList li {
     width: 20%;
     padding: 10px;
     box-sizing: border-box;

@@ -3,13 +3,13 @@ Vue.createApp({
         return {
             search: "",
             movies: [],
-            moviesByGenre: [],
             favorites: [],
             topMovies: [],
             searchResults: [],
             newMovie: { title: '', year: null },
             currentPage: 'topMovies',
-            sortBy: "A-Z",
+            sortBy: "title",
+            selectedGenre: "all",
             jsonData: null
         };
     },
@@ -24,6 +24,21 @@ Vue.createApp({
     methods: {
         selectRandom(array) {
             return array[Math.floor(Math.random() * array.length)];
+        },
+
+        allMovies() {
+            const allMovies = [
+                ...this.jsonData.comedy,
+                ...this.jsonData.action,
+                ...this.jsonData.drama,
+                ...this.jsonData.romance,
+                ...this.jsonData.horror.robots,
+                ...this.jsonData.horror.aliens,
+                ...this.jsonData.horror.zombies,
+                ...this.jsonData.horror.vampires
+            ];
+
+            this.movies = allMovies;
         },
 
         addMoviePosters(movie) {
@@ -146,7 +161,11 @@ Vue.createApp({
             this.currentPage = 'addMovies';
         },
 
-        sortMovies() {
+        showGenres() {
+            this.currentPage = 'genres';
+        },
+
+        sortMovieResults() {
             //ChatGPT help
             if (this.sortBy === 'title') {
                 return this.searchResults.sort((a, b) => a.title.localeCompare(b.title));
@@ -181,13 +200,55 @@ Vue.createApp({
             }
         },
 
-        showGenres() {
-            this.currentPage = 'genres';
-        },
+        sortAllMovies() {
 
-        showMoviesByGenre() {
-            this.moviesByGenre = this.movies.filter(movie => movie.genre === this.genre);
-            this.currentPage = 'showMoviesByGenre';
+            if (this.selectedGenre === "comedy") {
+                return this.movies.filter(movie => movie.genre === "comedy");
+            }
+
+            else if (this.selectedGenre === "drama") {
+                return this.movies.filter(movie => movie.genre === "drama");
+            }
+
+            else if (this.selectedGenre === "action") {
+                return this.movies.filter(movie => movie.genre === "action");
+            }
+
+            else if (this.selectedGenre === "horror") {
+                return this.movies.filter(movie => movie.genre === "horror");
+            }
+
+            if (this.sortBy === 'title') {
+                return this.movies.sort((a, b) => a.title.localeCompare(b.title));
+            }
+
+            else if (this.sortBy === 'year') {
+                return this.movies.sort((a, b) => b.year - a.year);
+            }
+
+            else if (this.sortBy === 'genre') {
+                return this.movies.sort((a, b) => a.genre.localeCompare(b.genre));
+            }
+
+            else if (this.sortBy === 'ratingHigh') {
+                return this.movies.sort((a, b) => {
+                    if (a.rating > b.rating) {
+                        return -1;
+                    }
+                });
+            }
+
+            else if (this.sortBy === 'ratingLow') {
+                return this.movies.sort((a, b) => {
+                    if (a.rating < b.rating) {
+                        return -1;
+                    }
+                });
+            }
+
+            else {
+                return this.movies;
+            }
         }
     }
 }).mount("#app");
