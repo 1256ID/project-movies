@@ -25,7 +25,7 @@ Vue.createApp({
         selectRandom(array) {
             return array[Math.floor(Math.random() * array.length)];
         },
-
+        //Adds all movies from the json-file to movies:[]
         allMovies() {
             const allMovies = [
                 ...this.jsonData.comedy,
@@ -40,7 +40,7 @@ Vue.createApp({
 
             this.movies = allMovies;
         },
-
+        //Adds random images to the movies according to their genre
         addMoviePosters(movie) {
             const comedyImages = this.jsonData.comedyImages;
             const actionImages = this.jsonData.actionImages;
@@ -82,21 +82,10 @@ Vue.createApp({
             movie.image = moviePoster;
             this.movies.push(movie);
         },
-
+        //Searches "movies:[]" based on user input "search:[]"
         searchMovies() {
-            const allMovies = [
-                ...this.jsonData.comedy,
-                ...this.jsonData.action,
-                ...this.jsonData.drama,
-                ...this.jsonData.romance,
-                ...this.jsonData.horror.robots,
-                ...this.jsonData.horror.aliens,
-                ...this.jsonData.horror.zombies,
-                ...this.jsonData.horror.vampires
-            ];
-
             let result =
-                allMovies.filter(movie =>
+                this.movies.filter(movie =>
                     movie.title.toLowerCase().includes(this.search.toLowerCase())
                     || movie.tags.some(tag => tag.toLowerCase().includes(this.search.toLowerCase()))
                     || movie.genre.toLowerCase().includes(this.search.toLowerCase()) || movie.year == this.search);
@@ -105,6 +94,7 @@ Vue.createApp({
             this.currentPage = 'searchResults';
         },
 
+        //Get all movies and returns 10 with the highest rating
         getTopMovies() {
             // Combines all genre arrays into one.
             let allMovies = [
@@ -165,22 +155,24 @@ Vue.createApp({
             this.currentPage = 'genres';
         },
 
+        //Sorts movies based on options that the user selects
         sortMovieResults() {
-            //ChatGPT help
+            let sortedMovies = this.searchResults.slice();
+
             if (this.sortBy === 'title') {
-                return this.searchResults.sort((a, b) => a.title.localeCompare(b.title));
+                sortedMovies = sortedMovies.sort((a, b) => a.title.localeCompare(b.title));
             }
 
             else if (this.sortBy === 'year') {
-                return this.searchResults.sort((a, b) => b.year - a.year);
+                sortedMovies = sortedMovies.sort((a, b) => b.year - a.year);
             }
 
             else if (this.sortBy === 'genre') {
-                return this.searchResults.sort((a, b) => a.genre.localeCompare(b.genre));
+                sortedMovies = sortedMovies.sort((a, b) => a.genre.localeCompare(b.genre));
             }
 
             else if (this.sortBy === 'ratingHigh') {
-                return this.searchResults.sort((a, b) => {
+                sortedMovies = sortedMovies.sort((a, b) => {
                     if (a.rating > b.rating) {
                         return -1;
                     }
@@ -188,18 +180,17 @@ Vue.createApp({
             }
 
             else if (this.sortBy === 'ratingLow') {
-                return this.searchResults.sort((a, b) => {
+                sortedMovies = sortedMovies.sort((a, b) => {
                     if (a.rating < b.rating) {
                         return -1;
                     }
                 });
             }
 
-            else {
-                return this.searchResults;
-            }
+            return sortedMovies;
         },
 
+        //Sorts movies based on options that the user selects
         sortAllMovies() {
             let sortedMovies = this.movies.slice();
 
@@ -245,7 +236,6 @@ Vue.createApp({
             }
 
             return sortedMovies;
-
         }
     }
 }).mount("#app");
