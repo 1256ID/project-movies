@@ -57,7 +57,7 @@
                                         {{movie.rating}} </div>
                                 </div>
                             </div>
-                            {{ movie.title }} - {{movie.year}}
+                            <p>{{ movie.title }} - {{movie.year}}</p>
                             <button type="button" @click="addToFavorites(movie)">Add to Favorites</button>
                         </li>
                     </ol>
@@ -75,7 +75,7 @@
                                         {{favorite.rating}} </div>
                                 </div>
                             </div>
-                            {{ favorite.title }} - {{favorite.year}}
+                            <p>{{ favorite.title }} - {{favorite.year}}</p>
                             <button type="button" @click="removeFromFavorites(index)">Remove</button>
                         </li>
                     </ol>
@@ -115,8 +115,8 @@
                                         {{result.rating}}</div>
                                 </div>
                             </div>
-                            {{ result.title }} - {{result.year}}
-                            <button type="button" @click="addToFavorites(result)">Add to Favorites</button>
+                            <p>{{ result.title }} - {{result.year}}</p>
+                            <button type="button" id="addFav" @click="addToFavorites(result)">Add to Favorites</button>
                         </li>
                     </ul>
                 </div>
@@ -154,7 +154,7 @@
                                     </div>
                                 </div>
                             </div>
-                            {{ movie.title }} - {{movie.year}}
+                            <p>{{ movie.title }} - {{movie.year}}</p>
                             <button type="button" @click="addToFavorites(movie)">Add to Favorites</button>
                         </li>
                     </ul>
