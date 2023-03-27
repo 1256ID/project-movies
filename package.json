@@ -1,0 +1,21 @@
+{
+  "name": "project-movies",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1256ID/project-movies.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1256ID/project-movies/issues"
+  },
+  "homepage": "https://github.com/1256ID/project-movies#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.32.1"
+  }
+}

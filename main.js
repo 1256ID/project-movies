@@ -8,7 +8,8 @@ Vue.createApp({
             searchResults: [],
             newMovie: { title: '', year: null },
             currentPage: 'topMovies',
-            sortBy: "A-Z",
+            sortBy: "title",
+            selectedGenre: "all",
             jsonData: null
         };
     },
@@ -23,6 +24,21 @@ Vue.createApp({
     methods: {
         selectRandom(array) {
             return array[Math.floor(Math.random() * array.length)];
+        },
+
+        allMovies() {
+            const allMovies = [
+                ...this.jsonData.comedy,
+                ...this.jsonData.action,
+                ...this.jsonData.drama,
+                ...this.jsonData.romance,
+                ...this.jsonData.horror.robots,
+                ...this.jsonData.horror.aliens,
+                ...this.jsonData.horror.zombies,
+                ...this.jsonData.horror.vampires
+            ];
+
+            this.movies = allMovies;
         },
 
         addMoviePosters(movie) {
@@ -145,18 +161,91 @@ Vue.createApp({
             this.currentPage = 'addMovies';
         },
 
-        sortMovies() {
-            if (this.sortBy === 'year') {
+        showGenres() {
+            this.currentPage = 'genres';
+        },
+
+        sortMovieResults() {
+            //ChatGPT help
+            if (this.sortBy === 'title') {
+                return this.searchResults.sort((a, b) => a.title.localeCompare(b.title));
+            }
+
+            else if (this.sortBy === 'year') {
                 return this.searchResults.sort((a, b) => b.year - a.year);
             }
-            //ChatGPT help
-            else if (this.sortBy === 'alphabetically') {
-                return this.searchResults.sort((a, b) => a.title.localeCompare(b.title));
+
+            else if (this.sortBy === 'genre') {
+                return this.searchResults.sort((a, b) => a.genre.localeCompare(b.genre));
+            }
+
+            else if (this.sortBy === 'ratingHigh') {
+                return this.searchResults.sort((a, b) => {
+                    if (a.rating > b.rating) {
+                        return -1;
+                    }
+                });
+            }
+
+            else if (this.sortBy === 'ratingLow') {
+                return this.searchResults.sort((a, b) => {
+                    if (a.rating < b.rating) {
+                        return -1;
+                    }
+                });
             }
 
             else {
                 return this.searchResults;
             }
+        },
+
+        sortAllMovies() {
+            let sortedMovies = this.movies.slice();
+
+            if (this.selectedGenre === "comedy") {
+                sortedMovies = sortedMovies.filter(movie => movie.genre === "Comedy");
+            }
+
+            else if (this.selectedGenre === "drama") {
+                sortedMovies = sortedMovies.filter(movie => movie.genre === "Drama");
+            }
+
+            else if (this.selectedGenre === "action") {
+                sortedMovies = sortedMovies.filter(movie => movie.genre === "Action");
+            }
+
+            else if (this.selectedGenre === "horror") {
+                return this.movies.filter(movie => movie.genre === "Aliens" || movie.genre === "Robots"
+                    || movie.genre === "Zombies" || movie.genre === "Vampires");
+            }
+
+            if (this.sortBy === "title") {
+                sortedMovies.sort((a, b) => a.title.localeCompare(b.title));
+            }
+
+            else if (this.sortBy === "year") {
+                sortedMovies.sort((a, b) => b.year - a.year);
+            }
+
+            else if (this.sortBy === "ratingHigh") {
+                sortedMovies.sort((a, b) => {
+                    if (a.rating > b.rating) {
+                        return -1;
+                    }
+                });
+            }
+
+            else if (this.sortBy === "ratingLow") {
+                sortedMovies.sort((a, b) => {
+                    if (a.rating < b.rating) {
+                        return -1;
+                    }
+                });
+            }
+
+            return sortedMovies;
+
         }
     }
 }).mount("#app");

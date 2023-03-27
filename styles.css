@@ -80,7 +80,7 @@ html {
 .main {
     grid-area: 3 / 1 / 7 / 6;
     padding-top: 0;
-    
+
 }
 
 .ads {
@@ -162,7 +162,8 @@ li::marker {
 */
 #resultList,
 #favoritesList,
-#titlesWithBestScore {
+#titlesWithBestScore,
+#genreList {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
@@ -172,11 +173,12 @@ li::marker {
 
 #resultList li,
 #favoritesList li,
-#titlesWithBestScore li {
+#titlesWithBestScore li,
+#genreList li {
     width: 20%;
     padding: 10px;
     box-sizing: border-box;
-    
+
 }
 
 img {
@@ -223,6 +225,7 @@ img {
     transform: translate(-50%, -50%);
     text-align: center;
 }
+
 /* ChatGPT help */
 
 #addMovies {
@@ -230,6 +233,10 @@ img {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-   
-   
+
+
+}
+
+#genreOptions {
+    display: flex;
 }
