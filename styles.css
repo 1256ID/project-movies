@@ -234,22 +234,30 @@ img {
 
 #addMovies {
     display: flex;
+    flex-flow:row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
+
+#addMovies form input, select, button {
+    font-size:15px;
+    flex-flow:row;
+    row-gap:10px;
+    margin:10px;
+    padding:5px; 
+}
+
 
 #genreOptions {
     display: flex;
 }
 
 .menu .dropdown {  
-    display: inline-block;
-    
-    
-  }
+    display: inline-block; 
+}
 
-  .menu .dropdown-content {
+.menu .dropdown-content {
     display:block;
     display:inline-flex;
     flex-flow:row;
@@ -263,7 +271,7 @@ img {
     margin-right:10px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-  }
+}
 
 .dropdown-content a {
     padding-left:10px;
