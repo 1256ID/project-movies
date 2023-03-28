@@ -37,7 +37,7 @@ Vue.createApp({
             });
     },
 
-    // https://stackoverflow.com/questions/49704744/generate-years-from-1900-to-current-year-with-vuejs
+    
     computed : {
         years () {
           const year = new Date().getFullYear()
