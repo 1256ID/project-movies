@@ -33,13 +33,27 @@
                     <button type="submit" id="submit">Submit</button>
                     <input id="topMovies" type="button" value="Top movies" @click="showTopMovies()"
                         :enabled="currentPage !== 'topMovies'">
-                    <input id="myFavorites" type="button" value="My favorites" @click="showFavorites()"
+                    <input id="myFavorites" type="button" value="My favorites" @click="showMyFavorites()"
                         :enabled="currentPage !== 'favorites'">
                     <input id="myMovies" type="button" value="My movies" @click="showMyMovies()"
                         :enabled="currentPage !== 'myMovies'">
                     <input id="addMovie" type="button" value="Add a movie" @click="showAddMovies()"
                         :enabled="currentPage !== 'addMovies'">
-                    <input id="categories" type="button" value="Categories" @click="showGenres()">
+                    
+                    <div class="dropDown">
+
+                        <input id="categories" type="button" value="Categories" @click="toggleCategories()">
+   
+
+                        <div class="dropdown-content" v-if="active">
+                            <a href="#" @click="showGenre('comedy')">Comedy</a>
+                            <a href="#" @click="showGenre('drama')">Drama</a>
+                            <a href="#" @click="showGenre('action')">Action</a>
+                            <a href="#" @click="showGenre('horror')">Horror</a>
+                        </div>
+
+                        
+                    </div>
                 </form>
             </div>
 
@@ -63,7 +77,7 @@
                     </ol>
                 </div>
 
-                <div id="myfavorites" v-if="currentPage === 'favorites'">
+                <div id="myfavorites" v-if="currentPage === 'myfavorites'">
                     <h2>Favorites</h2>
                     <ol id="favoritesList">
                         <li v-for="(favorite, index) in favorites">
@@ -122,8 +136,12 @@
                 </div>
 
                 <div id="genres" v-if="currentPage === 'genres'">
-                    <h2>Genres</h2>
+
+                    
+
+                    
                     <div id="genreOptions">
+                        <!-- 
                         <div>
                             <p>Genres</p>
                             <select v-model="selectedGenre">
@@ -134,6 +152,11 @@
                                 <option value="horror">Horror</option>
                             </select>
                         </div>
+
+                        -->
+
+                        <h2>{{heading}}</h2>
+
                         <div>
                             <p>Order by:</p>
                             <select v-model="sortBy">

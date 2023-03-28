@@ -2,6 +2,7 @@ Vue.createApp({
     data() {
         return {
             search: "",
+            active: false,
             movies: [],
             favorites: [],
             topMovies: [],
@@ -10,6 +11,7 @@ Vue.createApp({
             currentPage: 'topMovies',
             sortBy: "title",
             selectedGenre: "all",
+            heading: '',
             jsonData: null
         };
     },
@@ -124,22 +126,26 @@ Vue.createApp({
 
         showTopMovies() {
             this.currentPage = 'topMovies';
+            this.selectedGenre = 'all';
         },
 
         addToFavorites(movie) {
             this.favorites.push(movie);
+            this.selectedGenre = 'all';
         },
 
         removeFromFavorites(index) {
             this.favorites.splice(index, 1);
         },
 
-        showFavorites() {
-            this.currentPage = 'favorites';
+        showMyFavorites() {
+            this.currentPage = 'myfavorites';
+            this.selectedGenre = 'all';
         },
 
         showMyMovies() {
             this.currentPage = 'myMovies';
+            this.selectedGenre = 'all';
         },
 
 
@@ -149,10 +155,34 @@ Vue.createApp({
 
         showAddMovies() {
             this.currentPage = 'addMovies';
+            this.selectedGenre = 'all';
         },
 
-        showGenres() {
+        toggleCategories () {
+            this.active = !this.active
+        },  
+
+        showGenre(genre) {
+
             this.currentPage = 'genres';
+            this.selectedGenre = genre;
+
+            if (genre === 'comedy') {
+                this.heading = 'Comedy Movies';
+            }
+
+            else if (genre === 'drama') {
+                this.heading = 'Drama Movies';
+            }
+
+            else if (genre === 'action') {
+                this.heading = 'Action Movies';
+            }
+
+            else if (genre === 'horror') {
+                this.heading = 'Horror Movies';
+            } 
+           
         },
 
         //Sorts movies based on options that the user selects
@@ -237,5 +267,6 @@ Vue.createApp({
 
             return sortedMovies;
         }
+
     }
 }).mount("#app");

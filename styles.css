@@ -65,6 +65,10 @@ html {
     outline: solid 2px black;
 }
 
+.menu input[type="button"]:hover {
+    background-color:rgb(151, 221, 59);
+}
+
 .main,
 .ads {
     border: solid 1px green;
@@ -233,10 +237,56 @@ img {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
-
 }
 
 #genreOptions {
     display: flex;
 }
+
+.menu .dropdown {  
+    display: inline-block;
+    
+    
+  }
+
+  .menu .dropdown-content {
+    display:block;
+    display:inline-flex;
+    flex-flow:row;
+   
+    color:green; 
+    align-content: center;
+    
+    
+    padding-right:10px;
+    margin-left:5px;
+    margin-right:10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+.dropdown-content a {
+    padding-left:10px;
+    padding-right:10px;
+    color: rgb(241, 239, 239);
+    
+}
+
+.dropdown-content a:hover {background-color: #dddddd36;}
+
+#genreOptions {
+    display:flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 0;
+    padding-bottom:20px;
+
+}
+
+
+
+  
+  
+  
+  
