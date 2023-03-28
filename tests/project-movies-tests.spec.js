@@ -21,7 +21,6 @@ test("keyword 'adventure' gives 8 titles", async ({ page }) => {
     await expect(page.locator('#resultList li p')).toHaveText(movies);
 });
 
-//Does not work right now
 test("keyword 'dark' and order by 'year'", async ({ page }) => {
     await page.goto("http://127.0.0.1:5500/index.html");
 
@@ -35,10 +34,9 @@ test("keyword 'dark' and order by 'year'", async ({ page }) => {
     await search.fill("dark");
     await search.press("Enter");
 
-    const sortBy = page.locator("select[v-model='sortBy']");
-    await sortBy.selectOption("year");
+    // const resultList = page.locator("#resultList li p");
+    await page.locator("select.resultFilter").selectOption("year");
  
-
     const resultList = await page.locator("#resultList li p");
     await expect(resultList).toHaveText(movies);
 });
@@ -50,16 +48,16 @@ test("add movie to 'Favorites'", async ({ page }) => {
     await search.fill("crazy");
     await search.press("Enter");
 
-    const resultList = await page.locator("#resultList li p");
+    const resultList = page.locator("#resultList li p");
     await expect(resultList).toHaveText("The Crazy Cat Lady Chronicles - 2010");
 
-    let addFav = await page.locator("#addFav");
+    let addFav = page.locator("#addFav");
     await addFav.click();
 
-    let favPage = await page.locator("#myFavorites");
+    let favPage = page.locator("#myFavorites");
     await favPage.click();
 
-    const favList = await page.locator("#favoritesList li p");
+    const favList = page.locator("#favoritesList li p");
     await expect(favList).toHaveText("The Crazy Cat Lady Chronicles - 2010");
 });
 
