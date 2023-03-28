@@ -169,18 +169,22 @@ Vue.createApp({
 
             if (genre === 'comedy') {
                 this.heading = 'Comedy Movies';
+                this.selectedGenre = genre;
             }
 
             else if (genre === 'drama') {
                 this.heading = 'Drama Movies';
+                this.selectedGenre = genre;
             }
 
             else if (genre === 'action') {
                 this.heading = 'Action Movies';
+                this.selectedGenre = genre;
             }
 
             else if (genre === 'horror') {
                 this.heading = 'Horror Movies';
+                this.selectedGenre = genre;
             } 
            
         },
@@ -237,8 +241,8 @@ Vue.createApp({
             }
 
             else if (this.selectedGenre === "horror") {
-                return this.movies.filter(movie => movie.genre === "Aliens" || movie.genre === "Robots"
-                    || movie.genre === "Zombies" || movie.genre === "Vampires");
+                sortedMovies = sortedMovies.filter(movie => movie.genre === "Aliens" || movie.genre === "Robots"
+                || movie.genre === "Zombies" || movie.genre === "Vampires");
             }
 
             if (this.sortBy === "title") {
