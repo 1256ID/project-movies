@@ -6,11 +6,24 @@ Vue.createApp({
             movies: [],
             favorites: [],
             topMovies: [],
+            myMovies: [],
             searchResults: [],
-            newMovie: { title: '', year: null },
+
+            newMovie: {title: "", genre: "", year: '', 
+            rating: '', tags: ["", "", ""]},
+
+            title: "",
+            genre: "",
+            year: '',
+            rating: '',
+            tag1: '',
+            tag2: '',
+            tag3: '',
+
             currentPage: 'topMovies',
             sortBy: "title",
             selectedGenre: "all",
+            choosenGenre: "comedy",
             heading: '',
             jsonData: null
         };
@@ -23,6 +36,21 @@ Vue.createApp({
                 this.getTopMovies();
             });
     },
+
+    // https://stackoverflow.com/questions/49704744/generate-years-from-1900-to-current-year-with-vuejs
+    computed : {
+        years () {
+          const year = new Date().getFullYear()
+          return Array.from({length: year - 1900}, (value, index) => 1901 + index)
+        },
+        
+        ratingList () {     
+            return Array.from([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], (x) => x)
+        },
+
+        
+    },
+
     methods: {
         selectRandom(array) {
             return array[Math.floor(Math.random() * array.length)];
@@ -84,6 +112,8 @@ Vue.createApp({
             movie.image = moviePoster;
             this.movies.push(movie);
         },
+
+
         //Searches "movies:[]" based on user input "search:[]"
         searchMovies() {
             let result =
@@ -95,6 +125,7 @@ Vue.createApp({
             this.searchResults = result;
             this.currentPage = 'searchResults';
         },
+
 
         //Get all movies and returns 10 with the highest rating
         getTopMovies() {
@@ -149,8 +180,13 @@ Vue.createApp({
         },
 
 
-        addMovie() {
+        addMovie(writtenTitle, selectedGenre, selectedYear, 
+            selectedRating, writtenTag1, writtenTag2, writtetag3) {
 
+            this.newMovie = {writtenTitle, selectedGenre, selectedYear, 
+            selectedRating, tags:[writtenTag1, writtenTag2, writtetag3]}
+            
+            this.myMovies.push(newMovie);
         },
 
         showAddMovies() {

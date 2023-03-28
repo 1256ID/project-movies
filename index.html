@@ -96,14 +96,71 @@
                 </div>
 
                 <div id="myMovies" v-if="currentPage === 'myMovies'">
+
+                    <ol id="myMoviesList">
+                        <li v-for="(movie, index) in myMovies">
+
+                            <div class="myMoviesContainer">
+                                <img :src="myMovies.image" alt="Movie poster" class="image">
+                                <div class="overlay">
+                                    <div class="text">Description: Lorem ipsum dolor sit amet. {{myMovies.genre}}
+                                        {{myMovies.tags[0]}}, {{myMovies.tags[1]}}, {{myMovies.tags[2]}} Rating
+                                        {{myMovies.rating}}</div>
+                                </div>
+                            </div>
+                            <p>{{ myMovies.title }} - {{myMovies.year}}</p>
+                            <button type="button" @click="removeFrommyMovies(index)">Remove</button>
+
+                        </li>
+
+                    </ol>
+
                 </div>
 
                 <div id="addMovies" v-if="currentPage === 'addMovies'">
-                    <form>
+                    <form @submit.prevent="addMovie(title, genre, year, rating, tag1, tag2, tag3)">
+
                         <h2>Add a movie</h2>
-                        <h3>TitleName</h3>
-                        <input type="text" id="titleInput" placeholder="Enter a title" v-model="titleInput">
-                        <h3>Genre</h3>
+
+                        <h3>Write down the title of the movie you want to add.</h3>
+
+                        <input v-model="title"  placeholder="Enter a title">
+
+                        <h3>Choose a genre</h3>
+
+                        <select v-model="genre">
+                            <option value="comedy">Comedy</option>
+                            <option value="drama">Drama</option>
+                            <option value="action">Action</option>
+                                <optgroup label="Horror">
+                                    <option value="aliens">Aliens</option>
+                                    <option value="robots">Robots</option>
+                                    <option value="zombies">Zombies</option>
+                                    <option value="vampires">Vampires</option>
+                        </select>
+
+                        <h3>Select the year the movie was released</h3>
+
+                        <select v-model="year">                
+                            <option v-for="year in years" :value="year">{{ year }}</option>
+                        </select>
+
+                        <h3>Select a rating</h3>
+
+                        <select v-model="rating">
+                            <option v-for="rating in ratingList" :value="rating">{{ rating }}</option>
+                        </select>
+
+                        <h3>Write down three tags which describes the movie the best</h3>
+
+                        <div class="tags">
+                            <input v-model="tag1" placeholder="Enter the first tag">
+                            <input v-model="tag2" placeholder="Enter the second tag">
+                            <input v-model="tag3" placeholder="Enter the third tag">    
+                        </div>
+
+                        <button type="submit" id="submitMovie">Submit</button>
+  
                     </form>
                 </div>
 
@@ -136,9 +193,6 @@
                 </div>
 
                 <div id="genres" v-if="currentPage === 'genres'">
-
-                    
-
                     
                     <div id="genreOptions">
 
