@@ -101,7 +101,7 @@
                         <li v-for="(movie, index) in myMovies">
 
                             <div class="myMoviesContainer">
-                                <img :src="myMovies.image" alt="Movie poster" class="image">
+                                
                                 <div class="overlay">
                                     <div class="text">Description: Lorem ipsum dolor sit amet. {{myMovies.genre}}
                                         {{myMovies.tags[0]}}, {{myMovies.tags[1]}}, {{myMovies.tags[2]}} Rating
@@ -118,7 +118,7 @@
                 </div>
 
                 <div id="addMovies" v-if="currentPage === 'addMovies'">
-                    <form @submit.prevent="addMovie(title, genre, year, rating, tag1, tag2, tag3)">
+                    <form @submit.prevent="addMovie">
 
                         <h2>Add a movie</h2>
 
