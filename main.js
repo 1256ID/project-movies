@@ -9,8 +9,8 @@ Vue.createApp({
             myMovies: [],
             searchResults: [],
 
-            newMovie: {title: "", genre: "", year: '', 
-            rating: '', tags: ["", "", ""]},
+            newMovie: {title: "", genre: "", year: 2000, 
+            rating: "7,54", tags: ["", "", ""]},
 
             title: "",
             genre: "",
@@ -180,11 +180,21 @@ Vue.createApp({
         },
 
 
-        addMovie(writtenTitle, selectedGenre, selectedYear, 
-            selectedRating, writtenTag1, writtenTag2, writtetag3) {
+        addMovie() {
 
-            this.newMovie = {writtenTitle, selectedGenre, selectedYear, 
+            let selectedTitle = this.title;
+            let selectedGenre = this.genre;
+            let selectedYear = this.year;
+            let selectedRating = this.rating;
+            let writtenTag1 = this.tag1;
+            let writtenTag2 = this.tag2;
+            let writtetag3 = this.tag3;
+ 
+
+            this.newMovie = {selectedTitle, selectedGenre, selectedYear, 
             selectedRating, tags:[writtenTag1, writtenTag2, writtetag3]}
+
+            let newMovie = this.newMovie;
             
             this.myMovies.push(newMovie);
         },
