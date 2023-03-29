@@ -9,17 +9,16 @@ Vue.createApp({
             myMovies: [],
             searchResults: [],
 
-            newMovie: {title: "", genre: "", year: 2000, 
-            rating: "7,54", tags: ["", "", ""]},
-
             title: "",
             genre: "",
             year: '',
-            rating: '',
-            tag1: '',
-            tag2: '',
-            tag3: '',
+            rating: "",
+            tag1: "",
+            tag2: "",
+            tag3: "",
 
+            userHasSubmited: false,
+            confirmationText: "",
             currentPage: 'topMovies',
             sortBy: "title",
             selectedGenre: "all",
@@ -158,6 +157,7 @@ Vue.createApp({
         showTopMovies() {
             this.currentPage = 'topMovies';
             this.selectedGenre = 'all';
+            this.userHasSubmited = false;
         },
 
         addToFavorites(movie) {
@@ -172,38 +172,68 @@ Vue.createApp({
         showMyFavorites() {
             this.currentPage = 'myfavorites';
             this.selectedGenre = 'all';
+            this.userHasSubmited = false;
         },
 
         showMyMovies() {
             this.currentPage = 'myMovies';
             this.selectedGenre = 'all';
-        },
-
-
-        addMovie() {
-
-            let selectedTitle = this.title;
-            let selectedGenre = this.genre;
-            let selectedYear = this.year;
-            let selectedRating = this.rating;
-            let writtenTag1 = this.tag1;
-            let writtenTag2 = this.tag2;
-            let writtetag3 = this.tag3;
- 
-
-            this.newMovie = {selectedTitle, selectedGenre, selectedYear, 
-            selectedRating, tags:[writtenTag1, writtenTag2, writtetag3]}
-
-            let newMovie = this.newMovie;
-            
-            this.myMovies.push(newMovie);
+            this.userHasSubmited = false;
         },
 
         showAddMovies() {
+
+            if (this.confirmationText !== "The form was incomplete, please try again") 
+            {
+                this.title = "",
+                this.genre = "",
+                this.year = '',
+                this.rating = "",
+                this.tag1 = "",
+                this.tag2 = "",
+                this.tag3 = ""
+            }
+  
             this.currentPage = 'addMovies';
+            this.selectedGenre = 'all';
+            this.userHasSubmited = false;
+        },
+
+        addMovie() {
+
+            if (this.title === ""|| this.genre === "" || this.year === '' 
+            || this.rating === "" || this.tag1 === "" || this.tag2 === ""
+            || this.tag3 === "") 
+            {
+                this.confirmationText = "The form was incomplete, please try again";
+            }
+
+            else 
+            {
+                this.myMovies.push({
+                    title: this.title,
+                    genre: this.genre,
+                    year: this.year,
+                    rating: this.rating,
+                    tags: [
+                        this.tag1,
+                        this.tag2,
+                        this.tag3
+                    ]           
+                });
+                
+                this.confirmationText = "The movie" + " " + this.title + " " + "has now been added to My Movies";
+            }
+
+            this.userHasSubmited = true;
             this.selectedGenre = 'all';
         },
 
+        removeFromMyMovies(index) {
+            this.myMovies.splice(index, 1);
+        },
+
+      
         toggleCategories () {
             this.active = !this.active
         },  
@@ -212,6 +242,7 @@ Vue.createApp({
 
             this.currentPage = 'genres';
             this.selectedGenre = genre;
+            this.userHasSubmited = false;
 
             if (genre === 'comedy') {
                 this.heading = 'Comedy Movies';

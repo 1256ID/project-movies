@@ -97,19 +97,21 @@
 
                 <div id="myMovies" v-if="currentPage === 'myMovies'">
 
+                    <h2>My Movies</h2>
+
                     <ol id="myMoviesList">
                         <li v-for="(movie, index) in myMovies">
 
-                            <div class="myMoviesContainer">
+                            <div class="container">
                                 
                                 <div class="overlay">
-                                    <div class="text">Description: Lorem ipsum dolor sit amet. {{myMovies.genre}}
-                                        {{myMovies.tags[0]}}, {{myMovies.tags[1]}}, {{myMovies.tags[2]}} Rating
-                                        {{myMovies.rating}}</div>
+                                    <div class="text">Description: Lorem ipsum dolor sit amet. {{movie.genre}}
+                                        {{movie.tags[0]}}, {{movie.tags[1]}}, {{movie.tags[2]}} Rating
+                                        {{movie.rating}}</div>
                                 </div>
                             </div>
-                            <p>{{ myMovies.title }} - {{myMovies.year}}</p>
-                            <button type="button" @click="removeFrommyMovies(index)">Remove</button>
+                            <p>{{ movie.title }} - {{movie.year}}</p>
+                            <button type="button" @click="removeFromMyMovies(index)">Remove</button>
 
                         </li>
 
@@ -118,7 +120,7 @@
                 </div>
 
                 <div id="addMovies" v-if="currentPage === 'addMovies'">
-                    <form @submit.prevent="addMovie">
+                    <form class="addMoviesForm" @submit.prevent="addMovie" v-if="userHasSubmited === false">
 
                         <h2>Add a movie</h2>
 
@@ -162,6 +164,20 @@
                         <button type="submit" id="submitMovie">Submit</button>
   
                     </form>
+
+                    <div id="confirmationPage" v-if="userHasSubmited === true">
+
+                        <h2>{{confirmationText}}</h2>
+
+                        <input id="returnToMyMovies" value="Show My Movies" type="button" 
+                        v-if="confirmationText !== 'The form was incomplete, please try again'" 
+                        @click="showMyMovies()">
+
+                        <input id="returnToAddMovies" value="Go back to the previous page" type="button" 
+                        v-if="confirmationText === 'The form was incomplete, please try again'" 
+                        @click="showAddMovies()">
+ 
+                    </div>
                 </div>
 
                 <div id="results" v-if="currentPage === 'searchResults'">
@@ -195,20 +211,6 @@
                 <div id="genres" v-if="currentPage === 'genres'">
                     
                     <div id="genreOptions">
-
-                        <!-- 
-                        <div>
-                            <p>Genres</p>
-                            <select v-model="selectedGenre">
-                                <option value="all">All Genres</option>
-                                <option value="comedy">Comedy</option>
-                                <option value="action">Action</option>
-                                <option value="drama">Drama</option>
-                                <option value="horror">Horror</option>
-                            </select>
-                        </div>
-
-                        -->
 
                         <h2>{{heading}}</h2>
 
