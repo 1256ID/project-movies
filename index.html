@@ -181,8 +181,10 @@
                 </div>
 
                 <div id="results" v-if="currentPage === 'searchResults'">
-                    <h2>Search results:</h2>
-                    <div>
+
+                    <h2>Search results</h2>
+
+                    <div class="genreFilter">
                         <p>Order by:</p>
                         <select class="resultFilter" v-model="sortBy">
                             <option value="title">Title</option>
@@ -209,22 +211,20 @@
                 </div>
 
                 <div id="genres" v-if="currentPage === 'genres'">
-                    
-                    <div id="genreOptions">
+    
+                    <h2>{{heading}}</h2>
 
-                        <h2>{{heading}}</h2>
-
-                        <div>
+                        <div class="genreFilter">
                             <p>Order by:</p>
-                            <select v-model="sortBy">
-                                <option value="title">Title</option>
-                                <option value="year">Year</option>
-                                <option value="ratingHigh">Highest to lowest rating</option>
-                                <option value="ratingLow">Lowest to highest rating</option>
-                            </select>
+                                <select v-model="sortBy">
+                                    <option value="title">Title</option>
+                                    <option value="year">Year</option>
+                                    <option value="ratingHigh">Highest to lowest rating</option>
+                                    <option value="ratingLow">Lowest to highest rating</option>
+                                </select>
                         </div>
 
-                    </div>
+                   
 
                     <ul id="genreList">
                         <li v-for="movie in sortAllMovies()">

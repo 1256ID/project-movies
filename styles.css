@@ -196,13 +196,15 @@ img {
 }
 
 
-#addMovies {
+#addMovies, #results, #genres, .genreFilter {
     display: flex;
     flex-flow:row;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
+    justify-content:center;
+    column-gap:10px;
 }
+
 
 #addMovies form input, select, button {
     font-size:15px;
@@ -218,11 +220,6 @@ img {
     font-family:Coustard;
     align-items: center;
     padding:20px;
-}
-
-
-#genreOptions {
-    display: flex;
 }
 
 .menu .dropdown {  
