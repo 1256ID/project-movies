@@ -118,6 +118,48 @@ h2 {
 }
 
 
+@media (max-width: 500px) {
+
+    html {
+        max-width: fit-content;
+    }
+
+    .grid-container {
+        width: fit-content;
+    }
+
+    ol {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align:center;
+    }
+      
+
+    li, li .overlay {
+        display:block;
+        flex-basis: 100%;
+        max-width: 100%;
+        height:auto;
+        
+    }
+
+    #addMovies, #results {
+        row-gap:20px;
+        padding: 50px;
+        margin:25px;
+    }
+
+    #genres {
+        display: flex;
+        row-gap:20px;
+        
+        padding: 0;
+    }
+}
+
 .title {
     font-size: 24px;
 }
