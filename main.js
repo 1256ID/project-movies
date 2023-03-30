@@ -27,6 +27,7 @@ Vue.createApp({
             jsonData: null
         };
     },
+
     created() {
         fetch('movieLibrary.json')
             .then(response => response.json())
@@ -35,9 +36,9 @@ Vue.createApp({
                 this.getTopMovies();
             });
     },
-
-    
+ 
     computed : {
+
         years () {
           const year = new Date().getFullYear()
           return Array.from({length: year - 1900}, (value, index) => 1901 + index)
@@ -45,16 +46,16 @@ Vue.createApp({
         
         ratingList () {     
             return Array.from([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], (x) => x)
-        },
-
-        
+        },     
     },
 
     methods: {
         selectRandom(array) {
             return array[Math.floor(Math.random() * array.length)];
         },
+
         //Adds all movies from the json-file to movies:[]
+
         allMovies() {
             const allMovies = [
                 ...this.jsonData.comedy,
@@ -69,7 +70,9 @@ Vue.createApp({
 
             this.movies = allMovies;
         },
+
         //Adds random images to the movies according to their genre
+
         addMoviePosters(movie) {
             const comedyImages = this.jsonData.comedyImages;
             const actionImages = this.jsonData.actionImages;
@@ -114,6 +117,7 @@ Vue.createApp({
 
 
         //Searches "movies:[]" based on user input "search:[]"
+
         searchMovies() {
             let result =
                 this.movies.filter(movie =>
@@ -125,10 +129,12 @@ Vue.createApp({
             this.currentPage = 'searchResults';
         },
 
-
         //Get all movies and returns 10 with the highest rating
+
         getTopMovies() {
+
             // Combines all genre arrays into one.
+
             let allMovies = [
                 ...this.jsonData.comedy,
                 ...this.jsonData.action,
@@ -141,6 +147,7 @@ Vue.createApp({
             ];
 
             // Sorts the highest rated movies.
+
             allMovies = allMovies.sort((a, b) => {
                 if (a.rating > b.rating) {
                     return -1;
@@ -154,34 +161,7 @@ Vue.createApp({
             this.topMovies = allMovies.slice(0, 10);
         },
 
-        showTopMovies() {
-            this.currentPage = 'topMovies';
-            this.selectedGenre = 'all';
-            this.userHasSubmited = false;
-        },
-
-        addToFavorites(movie) {
-            this.favorites.push(movie);
-            this.selectedGenre = 'all';
-        },
-
-        removeFromFavorites(index) {
-            this.favorites.splice(index, 1);
-        },
-
-        showMyFavorites() {
-            this.currentPage = 'myfavorites';
-            this.selectedGenre = 'all';
-            this.userHasSubmited = false;
-        },
-
-        showMyMovies() {
-            this.currentPage = 'myMovies';
-            this.selectedGenre = 'all';
-            this.userHasSubmited = false;
-        },
-
-        showAddMovies() {
+        show(specifiedPage) {
 
             if (this.confirmationText !== "The form was incomplete, please try again") 
             {
@@ -193,15 +173,15 @@ Vue.createApp({
                 this.tag2 = "",
                 this.tag3 = ""
             }
-  
-            this.currentPage = 'addMovies';
+
+            this.currentPage = specifiedPage;
             this.selectedGenre = 'all';
             this.userHasSubmited = false;
         },
 
         addMovie() {
 
-            if (this.title === ""|| this.genre === "" || this.year === '' 
+            if (this.title === "" || this.genre === "" || this.year === '' 
             || this.rating === "" || this.tag1 === "" || this.tag2 === ""
             || this.tag3 === "") 
             {
@@ -229,11 +209,19 @@ Vue.createApp({
             this.selectedGenre = 'all';
         },
 
+        addToFavorites(movie) {
+            this.favorites.push(movie);
+            this.selectedGenre = 'all';
+        },
+
+        removeFromFavorites(index) {
+            this.favorites.splice(index, 1);
+        },
+
         removeFromMyMovies(index) {
             this.myMovies.splice(index, 1);
         },
 
-      
         toggleCategories () {
             this.active = !this.active
         },  
@@ -267,6 +255,7 @@ Vue.createApp({
         },
 
         //Sorts movies based on options that the user selects
+
         sortMovieResults() {
             let sortedMovies = this.searchResults.slice();
 
@@ -302,6 +291,7 @@ Vue.createApp({
         },
 
         //Sorts movies based on options that the user selects
+
         sortAllMovies() {
             let sortedMovies = this.movies.slice();
 
@@ -350,4 +340,5 @@ Vue.createApp({
         }
 
     }
+    
 }).mount("#app");

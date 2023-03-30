@@ -31,13 +31,13 @@
                 <form @submit.prevent="searchMovies">
                     <input type="text" id="searchbox" placeholder="Search for a movie" v-model="search">
                     <button type="submit" id="submit">Submit</button>
-                    <input id="topMovies" type="button" value="Top movies" @click="showTopMovies()"
+                    <input id="topMovies" type="button" value="Top movies" @click="show('topMovies')"
                         :enabled="currentPage !== 'topMovies'">
-                    <input id="myFavorites" type="button" value="My favorites" @click="showMyFavorites()"
+                    <input id="myFavorites" type="button" value="My favorites" @click="show('myfavorites')"
                         :enabled="currentPage !== 'favorites'">
-                    <input id="myMovies" type="button" value="My movies" @click="showMyMovies()"
+                    <input id="myMovies" type="button" value="My movies" @click="show('myMovies')"
                         :enabled="currentPage !== 'myMovies'">
-                    <input id="addMovie" type="button" value="Add a movie" @click="showAddMovies()"
+                    <input id="addMovie" type="button" value="Add a movie" @click="show('addMovies')"
                         :enabled="currentPage !== 'addMovies'">
                     
                     <div class="dropDown">
@@ -171,11 +171,11 @@
 
                         <input id="returnToMyMovies" value="Show My Movies" type="button" 
                         v-if="confirmationText !== 'The form was incomplete, please try again'" 
-                        @click="showMyMovies()">
+                        @click="show('myMovies')">
 
                         <input id="returnToAddMovies" value="Go back to the previous page" type="button" 
                         v-if="confirmationText === 'The form was incomplete, please try again'" 
-                        @click="showAddMovies()">
+                        @click="show('addMovies')">
  
                     </div>
                 </div>
@@ -223,7 +223,9 @@
                                 <option value="ratingLow">Lowest to highest rating</option>
                             </select>
                         </div>
+
                     </div>
+
                     <ul id="genreList">
                         <li v-for="movie in sortAllMovies()">
                             <div class="container">
