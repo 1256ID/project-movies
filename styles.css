@@ -126,6 +126,9 @@ h2 {
         width: fit-content;
     }
 
+    .header p {
+        padding-bottom:25px;
+    }
     ol {
         display: flex;
         flex-direction: row;
