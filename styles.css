@@ -50,7 +50,6 @@ html {
 }
 
 .menu input[type="button"] {
-
     justify-self: center;
     align-items: center;
     padding: 5px;
@@ -61,7 +60,7 @@ html {
 }
 
 .menu input[type="button"]:hover {
-    background-color:rgb(151, 221, 59);
+    background-color: rgb(151, 221, 59);
 }
 
 .main,
@@ -79,7 +78,6 @@ html {
 .main {
     grid-area: 3 / 1 / 7 / 6;
     padding-top: 0;
-
 }
 
 .ads {
@@ -110,13 +108,11 @@ h2 {
     padding: 10px;
 }
 
-
 @media (max-width:800px) {
     .header {
         justify-self: right;
     }
 }
-
 
 @media (max-width: 500px) {
 
@@ -134,28 +130,27 @@ h2 {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        text-align:center;
+        text-align: center;
     }
-      
 
-    li, li .overlay {
-        display:block;
+    li,
+    li .overlay {
+        display: block;
         flex-basis: 100%;
         max-width: 100%;
-        height:auto;
-        
+        height: auto;
     }
 
-    #addMovies, #results {
-        row-gap:20px;
+    #addMovies,
+    #results {
+        row-gap: 20px;
         padding: 50px;
-        margin:25px;
+        margin: 25px;
     }
 
     #genres {
         display: flex;
-        row-gap:20px;
-        
+        row-gap: 20px;
         padding: 0;
     }
 }
@@ -176,7 +171,8 @@ li::marker {
 #resultList,
 #favoritesList,
 #titlesWithBestScore,
-#genreList, #myMoviesList {
+#genreList,
+#myMoviesList {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
@@ -187,7 +183,8 @@ li::marker {
 #resultList li,
 #favoritesList li,
 #titlesWithBestScore li,
-#genreList li, #myMoviesList li {
+#genreList li,
+#myMoviesList li {
     width: 20%;
     padding: 10px;
     box-sizing: border-box;
@@ -237,75 +234,70 @@ img {
     text-align: center;
 }
 
-
-#addMovies, #results, #genres, .genreFilter {
+#addMovies,
+#results,
+#genres,
+.genreFilter {
     display: flex;
-    flex-flow:row;
+    flex-flow: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content:center;
-    column-gap:10px;
+    justify-content: center;
+    column-gap: 10px;
 }
 
-
-#addMovies form input, select, button {
-    font-size:15px;
-    flex-flow:row;
-    row-gap:10px;
-    margin:10px;
-    padding:5px; 
+#addMovies form input,
+select,
+button {
+    font-size: 15px;
+    flex-flow: row;
+    row-gap: 10px;
+    margin: 10px;
+    padding: 5px;
 }
 
-#confirmationPage, #confirmationPage input [type=button], #confirmationPage h2{
-    display:flex;
+#confirmationPage,
+#confirmationPage input [type=button],
+#confirmationPage h2 {
+    display: flex;
     flex-flow: column;
-    font-family:Coustard;
+    font-family: Coustard;
     align-items: center;
-    padding:20px;
+    padding: 20px;
 }
 
-.menu .dropdown {  
-    display: inline-block; 
+.menu .dropdown {
+    display: inline-block;
 }
 
 .menu .dropdown-content {
-    display:block;
-    display:inline-flex;
-    flex-flow:row;
-   
-    color:green; 
+    display: block;
+    display: inline-flex;
+    flex-flow: row;
+    color: green;
     align-content: center;
-    
-    
-    padding-right:10px;
-    margin-left:5px;
-    margin-right:10px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding-right: 10px;
+    margin-left: 5px;
+    margin-right: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
 .dropdown-content a {
-    padding-left:10px;
-    padding-right:10px;
+    padding-left: 10px;
+    padding-right: 10px;
     color: rgb(241, 239, 239);
-    
 }
 
-.dropdown-content a:hover {background-color: #dddddd36;}
+.dropdown-content a:hover {
+    background-color: #dddddd36;
+}
 
 #genreOptions {
-    display:flex;
+    display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
     row-gap: 0;
-    padding-bottom:20px;
-
+    padding-bottom: 20px;
 }
-
-
-
-  
-  
-  
-  
